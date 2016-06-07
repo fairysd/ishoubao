@@ -63,7 +63,7 @@
     <div class = "leftBox">
         <div class = "box">
             <i></i>
-            <span class="quickClose">X</span>
+            <span class="quickClose"><img src="${baseurl}res/images/closebtn.png"/></span>
             <ul style="display:none;">
                 <li class = "active"><i></i>我要卖</li>
                 <li><i></i>我要抵押</li>
@@ -102,9 +102,8 @@
                     <ul class="quickProductTypeSelect">
                         <li data-value="贵金属寄卖">贵金属寄卖</li>
                         <li data-value="珠宝寄卖">珠宝寄卖</li>
-                        <li data-value="名表寄卖">名表寄卖</li>
-                        <li data-value="车辆寄卖">车辆寄卖</li>
-                        <li data-value="民品寄卖">民品寄卖</li>
+                        <li data-value="名表寄卖">名表寄卖</li>                        
+                        <li data-value="名包寄卖">名宝寄卖</li>
                     </ul>
                 </label>
                     <label class = "select"><span>寄卖金额</span><b class = "no"><input type = "text" name="rzJe" id="quickrzJe">万元</b></label>
@@ -120,19 +119,19 @@
     <div class = "imgBox">
         <ul>
             <li class = "active">
-                <div class = "out_box"><img src = "${baseurl}res/images/banner1.jpg"></div>
+                <div class = "img_out_box"><img src = "${baseurl}res/images/banner1.jpg"></div>
             </li>
             <li>
-                <div class = "out_box"><img src = "${baseurl}res/images/banner2.jpg"></div>
+                <div class = "img_out_box"><img src = "${baseurl}res/images/banner2.jpg"></div>
             </li>
             <li>
-                <div class = "out_box"><img src = "${baseurl}res/images/banner3.jpg"></div>
+                <div class = "img_out_box"><img src = "${baseurl}res/images/banner3.jpg"></div>
             </li>
             <li>
-                <div class = "out_box"><img src = "${baseurl}res/images/banner4.jpg"></div>
+                <div class = "img_out_box"><img src = "${baseurl}res/images/banner4.jpg"></div>
             </li>
             <li>
-                <div class = "out_box"><img src = "${baseurl}res/images/banner5.jpg"></div>
+                <div class = "img_out_box"><img src = "${baseurl}res/images/banner5.jpg"></div>
             </li>
         </ul>
     </div>
@@ -405,7 +404,7 @@
         <div class="pure-g">
             <div class="pure-u-3-5 hotnews">
                 <p class="news_title">观前直营店开业啦</p>
-                <p class="news_desc">热烈庆祝位于观前大井巷15号的爱收宝开业！爱收宝是一家回收、寄卖：黄金珠宝，名包名表，手机数码等互联网+回收O2O的公司！全国服务热线：400-086-1131。《爱收宝》打造二手名品交易第一平台！</p>
+                <p class="news_desc">热烈庆祝位于观前大井巷15号的爱收宝开业！爱收宝是一家回收、寄卖：黄金珠宝，名包名表，手机数码等互联网+回收O2O的公司！全国服务热线：400-086-1131。《爱收宝》打造二手名品交易平台！</p>
                 <div class="newsmarquee">
                 <ul class="newslist">
                     <li><a href="${mybaseurl}/news/1"><span>></span>3D硬金与千足金的区别</a></li>

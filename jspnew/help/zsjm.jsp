@@ -54,7 +54,7 @@
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7、您能服从总部市场管理和要求。</p>
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8、您对配合总部的经营统计工作和管理模式的认同。</p>
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（二）对店面的要求</p>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、店面面积：按城市类别划分，60m2--100—150--250m2以上。</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、店面面积：按城市类别划分，60--100m²—150--250m²以上。</p>
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、店面位置：高级商场超市、高档写字楼、门店。</p>
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、店面装修：按公司总部要求统一规范的装修方案进行，保持爱收宝的统一形象。</p>
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4、店面设备：触摸屏、广告机、电脑一台（旋转屏）、电子称、测钻笔、莫桑石笔、烧金设备、监控设备、针式打印机、身份证识别器等（详见开店物料清单）</p>
