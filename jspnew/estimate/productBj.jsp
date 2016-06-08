@@ -121,7 +121,7 @@
         .zlylef15_1 img{height:62px;width:100px;}
         .zlylef15_2{width:570px;height:62px; float:left;margin-top: 30px;margin-left: 20px;}
         .zlylef15_2 p{margin-top: 0;margin-bottom: 0;font-size: 12px;color:#676767;}
-        .zlyri_f2 a{color:#9B9B9B;}
+        .zlyri_f2 a{color:#df3d3e;border: 1px solid  #df3d3e;border-radius: 5px;margin: auto 0;display: block;}
     </style>
 </head>
 <body>
