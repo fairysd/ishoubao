@@ -60,7 +60,7 @@
         <ul>
             <li><a style="color:#e1882a;font-size:14px;">奢侈品养护频道</a></li>
             <li style="margin-left:10px;"><a style="color:#e1882a;">Luxury maintenance</a></li>
-            <li style="margin-left:533px;"><a href="${baseurl}luxury">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;养护首页</a></li>
+            <li style="margin-left:500px;"><a href="${baseurl}luxury">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;养护首页</a></li>
             <li style="margin-left:15px;"><a href="${baseurl}luxury/maintenance" >丨&nbsp;&nbsp;&nbsp;&nbsp;爱收宝奢护</a></li>
             <li style="margin-left:15px;"><a href="#wyyh" >丨&nbsp;&nbsp;&nbsp;&nbsp;我要养护</a></li>
             <li style="margin-left:15px;"><a href="#yhlc" >丨&nbsp;&nbsp;&nbsp;&nbsp;养护流程</a></li>
@@ -73,21 +73,21 @@
 </div>
 <div class="zly_floor2">
     <div class="zly_f2co">
-        <p style="color:#717171;font-size:20px;margin-top:50px;"><a name="wyyh"></a>我要养护&nbsp;/&nbsp;CONSERVE<span style="float:right;font-size:12px;"><a href="" style="color:#717171;text-decoration:none;">更多套餐>></a></span></p>
+        <p style="color:#717171;font-size:20px;margin-top:50px;margin-bottom: 45px;"><a name="wyyh"></a>我要养护&nbsp;/&nbsp;CONSERVE<span style="float:right;font-size:12px;"><a href="" style="color:#717171;text-decoration:none;">更多套餐>></a></span></p>
         <div class="zly_f2co1">
             <img src="${baseurl}res/images/new/luxury/lux_2.png" alt="" style="margin-top:20px;">
-            <p style="margin-right:70px;">奢侈品皮具基础清洗养护套餐</p>
-            <p><span style="float: left;margin-left:20px;">￥400</span><span style="float: right;margin-right:20px;"><s>￥400</s></span></p>
+            <p style="margin-right:65px;margin-top:25px;">奢侈品皮具基础清洗养护套餐</p>
+            <p style="margin-top:10px;"><span style="float: left;margin-left:30px;">￥400</span><span style="float: right;margin-right:35px;"><s>￥600</s></span></p>
         </div>
         <div class="zly_f2co2">
             <img src="${baseurl}res/images/new/luxury/lux_3.png" alt="" style="margin-top:20px;">
-            <p style="margin-right:80px;">&nbsp;品名鞋养护&nbsp;单鞋</p>
-            <p><span style="float: left;margin-left:20px;">￥400</span><span style="float: right;margin-right:20px;"><s>￥400</s></span></p>
+            <p style="margin-right:90px;margin-top:25px;">&nbsp;珠宝养护&nbsp;专业珠宝清洗</p>
+            <p style="margin-top:10px;"><span style="float: left;margin-left:30px;">￥400</span><span style="float: right;margin-right:35px;"><s>￥600</s></span></p>
         </div>
         <div class="zly_f2co3">
             <img src="${baseurl}res/images/new/luxury/lux_4.png" alt="" style="margin-top:20px;">
-            <p style="margin-right:80px;">&nbsp;腕表打磨新番服务&nbsp;</p>
-            <p><span  style="float: left;margin-left:20px;">￥400</span><span style="float: right;margin-right:20px;"><s>￥400</s></span></p>
+            <p style="margin-right:50px;margin-top:25px;">SECOO&nbsp;腕表打磨翻新服务&nbsp;钢款</p>
+            <p style="margin-top:10px;"><span  style="float: left;margin-left:30px;">￥300</span><span style="float: right;margin-right:35px;"><s>￥700</s></span></p>
         </div>
     </div>
 </div>

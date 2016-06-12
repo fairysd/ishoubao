@@ -36,14 +36,14 @@
     </div>
     <div class="pure-u-2-3">
         <ul>
-            <a href="${mybaseurl}/product/8fa078e445184f1f9041ea1be763a5e8?ptype=gjs&goldType=gold"><li><p>黄金寄卖</p><p>专业寄卖,值得信赖</p></li></a>
-            <a href="${mybaseurl}/product/diamond"><li><p>珠宝寄卖</p><p>专业的团队鉴定人员</p></li></a>
+            <a href="${mybaseurl}/product/8fa078e445184f1f9041ea1be763a5e8?ptype=gjs&goldType=gold"><li><p>黄金/珠宝寄卖</p><p>专业寄卖,值得信赖</p></li></a>
+            <a href="${mybaseurl}/product/diamond"><li><p>钻石寄卖</p><p>专业的团队鉴定人员</p></li></a>
             <a href="${mybaseurl}/category/08d2d4cbf3974d8i8d56b26ba29266aa/0"><li><p>名包寄卖</p><p>保证客户利益失效执行</p></li></a>
         </ul>
         <ul>
             <a href="${mybaseurl}/category/08d2d4cbff6j48f08d56b26ba29266aa/0"><li style="margin-left: 100px;"><p>名表寄卖</p><p>资深的推广运营团队</p></li></a>
-            <a href="${mybaseurl}/category/08d2d4cbf39748f08d56b26ba29266aa/0"><li><p>手机寄卖</p><p>线上线下整合营销推广</p></li></a>
-            <a href="${mybaseurl}/category/08d2d4cbf39748f08d56b26ba29266aa/0"><li><p>数码寄卖</p><p>量身定制品牌营销方案</p></li></a>
+            <a href="${mybaseurl}/category/08d2d4cbf39748f08d56b26ba29266aa/0"><li><p>手机/数码寄卖</p><p>线上线下整合营销推广</p></li></a>
+            <a href="${mybaseurl}/category/08d2d4cbf39748f08d56b26ba29266aa/0"><li><p>贵金属寄卖</p><p>量身定制品牌营销方案</p></li></a>
         </ul>
     </div>
 </div>
