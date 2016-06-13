@@ -35,7 +35,6 @@
                 </div>
                 <div class="content_2co2">
                     <div class="co2_content">
-                    	  <h2>苏州爱收宝网络科技有限公司（总部）</h2>
                         <p style="color:#9B6600;font-size:13px;">全国统一服务热线：400-086-1131</p>
                         <h6>人力资源</h6>
                         <p>电话：0512-81875069</p>
