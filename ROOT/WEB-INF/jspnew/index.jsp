@@ -19,42 +19,7 @@
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/style.css">
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/main.css">
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/root.css">
-    <style>
-        .quickEstimateBrand{height:150px;overflow-y:scroll;}
-        #chooseCity{padding: 15px; text-align: center;display:none;}
-        #chooseCity p{padding-bottom:20px;font-size:14px;}
-        #chooseCity p:first-child{padding-top:20px;font-size:18px;}
-        #chooseCity p:last-child{padding-top:15px;}
-        #chooseCity .realCity{display: inline-block;width: 150px;height: 40px;line-height: 40px;background: #00A298;color: #fff;}
-        #chooseCity .oriCity{display:inline-block;width:150px;height: 40px;line-height:40px;background: #858585;color:#fff;margin-left:20px;}
-        #chooseCity img{vertical-align: middle;}
-        #chooseCity a{color:#fff;}
-        #chooseCity a:hover{color:#FFFF00;}
-        .newsmarquee{height:168px;overflow:hidden;}
-        .hzhb{width:1198px;height:87px;overflow: hidden;text-align: center;}
-        .hzhb ul li{float:left;width:162px;padding-left:10px;}
-        .hzhb ul li img{display:block;}
-        .pro-slide{ position:relative;height: 140px;width: 1107px;margin-left: 47px;}
-        .border-dash{height: 1px; width:98%;border-bottom: 1px dashed #f3d2a6;position: absolute;top: 72px;left: 0;z-index: 0;}
-        .pro-slide ul{padding-top: 30px;margin-left: -71px;position: absolute;z-index: 2;width: 1200px;}
-        .pro-slide ul li{ float: left;width: 71px;height: 72px;margin-left: 66px; position:relative;}
-        .pro-slide ul li.act{  margin-right:-10px;}
-        .pro-slide ul li b{ position:absolute; left:-29px; top:37px; z-index:5; display:inline-block; width:10px; height:11px;background:url(${mybaseurl}/res/images/v2/yh_tit.png) no-repeat; background-position:0 -236px;}
-
-        .pro-slide .JText{width: 297px;border: 1px solid #f3941f;border-radius: 2px;background-color: #fff;padding: 10px;line-height: 16px;color: #666; display:none; overflow:hidden;position:absolute; right:0; top:8px;font-size: 12px;}
-        .pro-slide .JText:first-child,.pro-slide .JText:last-child{top:3px;}
-        .skSmallStyle .JText{ width:216px;}
-        .pro-slide ul li.act .JText{/* display:block*/}
-        .Jicon{width: 92px; height:130px; text-align:center; font-family:"微软雅黑"; margin:6px 0 0; color:#666;font-weight: bold;}
-        .Jicon em{width: 71px; height:72px; margin-bottom:1px; display:inline-block;background: url(${mybaseurl}/res/images/v2/yh_tit.png) no-repeat;margin-right: 8px;}
-        .Jicon em.Jicon01{ background-position:0 -72px;}
-        .Jicon em.Jicon02{ background-position:-72px -72px;}
-        .Jicon em.Jicon03{ background-position:-144px -72px;}
-        .Jicon em.Jicon04{ background-position:-0 -144px;}
-        .Jicon em.Jicon05{ background-position:-72px -144px;}
-        .Jicon em.Jicon06{ background-position:-144px -144px;}
-        .clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}* html .clearfix{zoom:1}*:first-child+html .clearfix{zoom:1}
-    </style>
+    <link type="text/css" rel="stylesheet" href="${baseurl}res/css/idangerous.swiper.css">    
 </head>
 <body>
 <%@ include file="common/header.jsp"%>
@@ -116,7 +81,7 @@
             </ul>
         </div>
     </div>
-    <div class = "imgBox">
+    <!--<div class = "imgBox">
         <ul>
             <li class = "active">
                 <div class = "img_out_box"><img src = "${baseurl}res/images/banner1.jpg"></div>
@@ -134,12 +99,31 @@
                 <div class = "img_out_box"><img src = "${baseurl}res/images/banner5.jpg"></div>
             </li>
         </ul>
-    </div>
+    </div>-->
+    <div class = "swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class = "swiper-slide">
+	                <div class = "img_out_box"><img src = "${baseurl}res/images/banner1.jpg"></div>
+	            </div>
+	            <div class = "swiper-slide" >
+	                <div class = "img_out_box"><img src = "${baseurl}res/images/banner2.jpg"></div>
+	            </div >
+	            <div class = "swiper-slide">
+	                <div class = "img_out_box"><img src = "${baseurl}res/images/banner3.jpg"></div>
+	            </div>
+	            <div class = "swiper-slide">
+	                <div class = "img_out_box"><img src = "${baseurl}res/images/banner4.jpg"></div>
+	            </div>
+	            <div class = "swiper-slide">
+	                <div class = "img_out_box"><img src = "${baseurl}res/images/banner5.jpg"></div>
+	            </div>
+	        </div>
+	        <div class="pagination"></div>  
+	    </div>
     <div class = "banner_nav_button">
         <img id="estimateBtn" src="${mybaseurl}/res/images/v2/ban_1.gif">
         <img id="mortgageBtn" src="${mybaseurl}/res/images/v2/ban_2.gif">
-    </div>
-    <div class = "banner_nav"><span class = "active"></span><span></span><span></span><span></span><span></span></div>
+    </div>    
 </div>
 <div class="out_box">
     <ul id="content">
@@ -463,8 +447,18 @@
 <%@ include file="common/footer.jsp"%>
 <script src="${baseurl}res/js/jquery.lazyload.min.js"></script>
 <script type="text/javascript" src="${baseurl}res/js/layer/layer.js"></script>
+<script type="text/javascript" src="${baseurl}res/js/idangerous.swiper.js"></script>
 <script type="text/javascript" src="${baseurl}res/js/scroll.js"></script>
 <script>
+	  var mySwiper = new Swiper('.swiper-container',{
+		    pagination: '.pagination',
+		    autoplay:2000,
+		    loop:true,
+		    speed:1000,
+		    grabCursor: true,
+		    autoplayDisableOnInteraction : false,
+		    paginationClickable: true
+		  })
     function getCategoryByTop(id) {
         $.ajax({
             url: "${baseurl}category/json/"+id,    //请求的url地址

@@ -31,7 +31,7 @@
 </div>
 <div class="out_box">
 <div class="pure-g jmcategory">
-    <div class="pure-u-1-3">
+    <!--<div class="pure-u-1-3">
         <img src="${mybaseurl}/res/images/v2/jm_left.jpg"/>
     </div>
     <div class="pure-u-2-3">
@@ -45,7 +45,8 @@
             <a href="${mybaseurl}/category/08d2d4cbf39748f08d56b26ba29266aa/0"><li><p>手机/数码寄卖</p><p>线上线下整合营销推广</p></li></a>
             <a href="${mybaseurl}/category/08d2d4cbf39748f08d56b26ba29266aa/0"><li><p>贵金属寄卖</p><p>量身定制品牌营销方案</p></li></a>
         </ul>
-    </div>
+    </div>-->
+    
 </div>
 </div>
 <div class="pure-g footerimg">

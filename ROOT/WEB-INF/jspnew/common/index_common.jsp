@@ -4,15 +4,14 @@
   Time: 15:59
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<div class="mywrapper indexbg" style="height:577px;clear:both;">
+<div class="mywrapper indexbg" style="height:970px;clear:both;">
     <div class = "out_box">
         <!-- 轻松估价 -->
         <div class = "title">
-            <h6>RECYCLING VALUATION<br>回收估价</h6>
-            <small><a href = "${mybaseurl}/category/first">更多</a></small>
+            <h6>RECYCLING VALUATION<br>回收估价</h6>            
         </div>
         <div class = "man_content">
-            <div class = "t_nav">
+            <!--<div class = "t_nav">
                 <ul class = "t_nav_right myhs">
                     <li class = "active"><a href="${mybaseurl}/category/first"><span>回收的宝贝</span></a><i></i></li>
                     <li><a href="${mybaseurl}/product/8fa078e445184f1f9041ea1be763a5e8?ptype=gjs&goldType=gold"><span>黄金回收</span></a><i></i></li>
@@ -285,7 +284,58 @@
                         </div>
                     </li>
                 </ul>
-            </div>
+            </div>-->
+            <!--新的主页回收模块-->
+            <div class="reclaim-box">
+				<div class="pure-g">
+					<div class="pure-u-1-3">						
+							<div class="pure-u-1 img-box"style="position: relative;height:287px;width: 387px;line-height: 287px;">
+								<a class="" style="display: block; position: absolute;" href="">黄金/珠宝回收</a>
+								<a href="${mybaseurl}/product/8fa078e445184f1f9041ea1be763a5e8?ptype=gjs&goldType=gold"><img class="pure-img" style="position: absolute;"  src="${mybaseurl}/res/images/new/category/reclaim_03.jpg"/></a>
+							</div>	
+							<div class="pure-u-1 img-box"style="position: relative;height:144px;width: 387px; line-height: 144px;">
+								<a class="" style="display: block; position: absolute;" href="">铂金回收</a>
+								<a href="${mybaseurl}/product/21577fd8a5324e62a416978d15367515?ptype=gjs&goldType=pt"><img class="pure-img" style="position: absolute;"  src="${mybaseurl}/res/images/new/category/reclaim_12.jpg"/></a>
+							</div>							
+							<div class="pure-u-1 img-box"style="position: relative;height:144px;width: 387px; line-height: 144px;">
+								<a class="" style="display: block; position: absolute;" href="">钯金回收</a>
+								<a href="${mybaseurl}/product/094c2f5308514105a862c6299f9d320b?ptype=gjs&goldType=palau"><img class="pure-img" style="position: absolute;"  src="${mybaseurl}/res/images/new/category/reclaim_20.jpg"/></a>
+							</div>
+							<div class="pure-u-1 img-box"style="position: relative;height:287px;width: 387px; line-height: 287px;">
+								<a class="" style="display: block; position: absolute;" href="">名表回收</a>
+								<a href="${mybaseurl}/category/08d2d4cbff6j48f08d56b26ba29266aa/0"><img class="pure-img" style="position: absolute;"  src="${mybaseurl}/res/images/new/category/reclaim_25.jpg"/></a>
+							</div>
+					</div>
+					<div class="pure-u-1-3">
+						<div class="pure-u-1 img-box"style="position: relative;height:287px;width: 387px;line-height: 287px;">
+								<a class="" style="display: block; position: absolute;" href="">钻石回收</a>
+								<a href="${mybaseurl}/product/diamond"><img class="pure-img" style="position: absolute;"  src="${mybaseurl}/res/images/new/category/reclaim_05.jpg"/></a>
+						</div>	
+						<div class="pure-u-1 img-box img-box-static"style="position: relative;height:611px;width: 387px; line-height: 611px;">								
+								<img class="pure-img" style="position: absolute;"  src="${mybaseurl}/res/images/new/category/reclaim_14.jpg"/>
+						</div>
+					</div>
+					<div class="pure-u-1-3">
+						<div class="pure-u-1 img-box"style="position: relative;height:287px;width: 389px;line-height: 287px;">
+								<a class="" style="display: block; position: absolute;" href="">名包回收</a>
+								<a href="${mybaseurl}/category/08d2d4cbf3974d8i8d56b26ba29266aa/0"><img class="pure-img" style="position: absolute;"  src="${mybaseurl}/res/images/new/category/reclaim_07.jpg"/></a>
+							</div>	
+							<div class="pure-u-1 img-box"style="position: relative;height:144px;width: 389px; line-height: 144px;">
+								<a class="" style="display: block; position: absolute;" href="">白银回收</a>
+								<a href="${mybaseurl}/product/5f67c6baca4b4167a4b49b6df510a3f1?ptype=gjs&goldType=sliver"><img class="pure-img" style="position: absolute;"  src="${mybaseurl}/res/images/new/category/reclaim_16.jpg"/></a>
+							</div>							
+							<div class="pure-u-1 img-box"style="position: relative;height:144px;width: 389px; line-height: 144px;">
+								<a class="" style="display: block; position: absolute;" href="">K金回收</a>
+								<a href="${mybaseurl}/product/bcf8086e4f4647fabcfc3409430baa60?ptype=gjs&goldType=k"><img class="pure-img" style="position: absolute;"  src="${mybaseurl}/res/images/new/category/reclaim_21.jpg"/></a>
+							</div>
+							<div class="pure-u-1 img-box"style="position: relative;height:287px;width: 389px; line-height: 287px;">
+								<a class="" style="display: block; position: absolute;" href="">手机/数码回收</a>
+								<a href="${mybaseurl}/category/08d2d4cbf39748f08d56b26ba29266aa/0"><img class="pure-img" style="position: absolute;"  src="${mybaseurl}/res/images/new/category/reclaim_27.jpg"/></a>
+							</div>
+					</div>
+				</div>
+				
+			</div>
         </div>
     </div>
 </div>
@@ -296,6 +346,7 @@
 <div class = "out_box">
     <div class = "title">
         <h6>CONSIGNMENT<br>寄卖</h6>
+        <small><a href = "${mybaseurl}/mortgage/">详情</a></small>
     </div>
     <div class = "man_content main_content_js" style="padding-bottom:0;">
         <div class="pure-g">
