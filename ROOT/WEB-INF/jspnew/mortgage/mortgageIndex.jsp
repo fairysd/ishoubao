@@ -115,7 +115,7 @@
 <%@ include file="../common/header.jsp" %>
 <div class="pure-g topimg">
     <div class="pure-u-1-1">
-        <img src="${mybaseurl}/res/images/v2/jm_top.jpg" width="1200"/>
+        <img src="${mybaseurl}/res/images/v2/jm_top.jpg" />
     </div>
 </div>
 <div class="out_box" style="margin-bottom: 20px;" >
@@ -174,7 +174,7 @@
 </div>
 <div class="pure-g footerimg">
     <div class="pure-u-1-1">
-        <img class="lazy" data-original="${mybaseurl}/res/images/v2/jm_footer.jpg"/>
+        <img class="lazy" data-original="${mybaseurl}/res/images/v2/jm_footer.jpg" width="100%"/>
     </div>
 </div>
 
@@ -197,7 +197,7 @@
 				this.time = time;
 			}
 			var ad = new Array();
-			ad[0] = new AdItem('黄金珠宝回收', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/1.png', '专业寄卖值得信赖', '', '#');
+			ad[0] = new AdItem('黄金珠宝寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/1.png', '专业寄卖值得信赖', '', '#');
 			ad[1] = new AdItem('名包寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/2.png', '专业的鉴定团队鉴定人', '', '#');
 			ad[2] = new AdItem('名表寄卖', '400-666-3572', '', '${mybaseurl}/res/images/new/mortage/3.png', '保证客户利益有效实行', '', '#');
 			ad[3] = new AdItem('手机/数码专卖', '400-666-3572', '', '${mybaseurl}/res/images/new/mortage/4.png', '资深的推广运营团队', '', '#');

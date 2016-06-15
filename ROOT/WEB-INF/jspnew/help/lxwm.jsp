@@ -30,6 +30,7 @@
                 <a>首页>联系我们</a>
             </div>
             <div class="content_2co">
+            	<h2>爱收宝网络科技有限公司（总部）</h2>
                 <div class="content_2co1">
                     <a>联系我们</a>
                 </div>

@@ -16,6 +16,7 @@
     <meta name="description" content=""/>
     <title>爱收宝</title>
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/style.css">
+    <link type="text/css" rel="stylesheet" href="${baseurl}res/js/layer/skin/layer.css">
     <style>
         #allmap{width:100%;height:400px;}/*百度地图*/
         .zly_total{width: 100%;background-color: #FBFBFB;overflow: hidden;}
@@ -330,7 +331,7 @@
                     <p>交易方式：门店回收&nbsp;&nbsp;上门回收&nbsp;&nbsp;快递回收</p>
                 </div>
                 <div class="zly_lj">
-                    <a href="#" id="estimate">立即回收</a>
+                    <a href="${baseurl}login.jsp" id="estimate">立即回收</a>
                 </div>
                 <div class="zly_lj">
                     <a href="#" id="goMortgage">立即抵押</a>
@@ -363,6 +364,7 @@
     <input type="hidden" name="isMortgage" id="isMortgage" value=""/>
 </form>
 <%@ include file="../common/footer.jsp"%>
+<script type="text/javascript" src="${baseurl}res/js/layer/layer.js"></script>
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=DeQszKLbgZNzVKY4ZflHkDbX"></script>
 <script>
     $(document).ready(function(){
@@ -371,11 +373,22 @@
         }
     });
 </script>
-<script>
-//    $("img.lazy").lazyload({effect: "fadeIn"});
-    $("#estimate").on({
+<script type="text/javascript">
+	    $("#estimate").on({
         click:function(){
-            $("#productBjForm").submit();
+        	if(userinfo.userId){
+        		$("#productBjForm").submit();
+        	}
+            else{
+            layer.open({
+      			type:2,
+      			area:["491px","591px"],
+      			content:[this.href,"no"],
+      			shadeClose:true,
+//    			closeBtn: 0,
+      			title:false
+      		})
+            }
         }
     });
 
@@ -385,6 +398,9 @@
            $("#productBjForm").submit();
        }
     });
+</script>
+<script>
+//    $("img.lazy").lazyload({effect: "fadeIn"});
 
 // 百度地图API功能
     var map = new BMap.Map("allmap");

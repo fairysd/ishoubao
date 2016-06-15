@@ -77,17 +77,17 @@
         <div class="zly_f2co1">
             <img src="${baseurl}res/images/new/luxury/lux_2.png" alt="" style="margin-top:20px;">
             <p style="margin-right:65px;margin-top:25px;">奢侈品皮具基础清洗养护套餐</p>
-            <p style="margin-top:10px;"><span style="float: left;margin-left:30px;">￥400</span><span style="float: right;margin-right:35px;"><s>￥600</s></span></p>
+            <p style="margin-top:10px;"><span style="float: left;margin-left:30px;">￥280</span><span style="float: right;margin-right:35px;"><s>￥600</s></span></p>
         </div>
         <div class="zly_f2co2">
             <img src="${baseurl}res/images/new/luxury/lux_3.png" alt="" style="margin-top:20px;">
             <p style="margin-right:90px;margin-top:25px;">&nbsp;珠宝养护&nbsp;专业珠宝清洗</p>
-            <p style="margin-top:10px;"><span style="float: left;margin-left:30px;">￥400</span><span style="float: right;margin-right:35px;"><s>￥600</s></span></p>
+            <p style="margin-top:10px;"><span style="float: left;margin-left:30px;">￥125</span><span style="float: right;margin-right:35px;"><s>￥325</s></span></p>
         </div>
         <div class="zly_f2co3">
             <img src="${baseurl}res/images/new/luxury/lux_4.png" alt="" style="margin-top:20px;">
             <p style="margin-right:50px;margin-top:25px;">SECOO&nbsp;腕表打磨翻新服务&nbsp;钢款</p>
-            <p style="margin-top:10px;"><span  style="float: left;margin-left:30px;">￥300</span><span style="float: right;margin-right:35px;"><s>￥700</s></span></p>
+            <p style="margin-top:10px;"><span  style="float: left;margin-left:30px;">￥296</span><span style="float: right;margin-right:35px;"><s>￥700</s></span></p>
         </div>
     </div>
 </div>
