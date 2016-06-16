@@ -693,7 +693,7 @@
 #content>li>div,#content>li>img{float: left;}
 #content>li>div>p{font-size: 18px;}
 #content>li>div>span{font-size: 15px;}
-.hsdiv{width: 90%;border: 1px solid #e6e6e6;padding: 30px 0;}
+.hsdiv{width: 90%;border: 1px solid #e6e6e6;}
 .hsdiv p{font-size: 18px; padding-top: 10px;}
 .hsdiv small{font-size: 14px;color: #9F9F9F;}
 
@@ -729,7 +729,6 @@
 .hotnews ul{border-top:1px solid #047AF5;}
 .hotnews ul li{height:42px;line-height:42px;border-bottom:1px solid #D6D6D6;}
 .hotnews ul li span{color: #047AF5;padding-right:10px;}
-.ssindex{padding:60px 10px;}
 .ssindex ul li{display: inline;padding-left:15px;}
 .myshop .t_nav_right li {
     display: table;

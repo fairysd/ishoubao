@@ -19,7 +19,71 @@
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/style.css">
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/main.css">
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/root.css">
-    <link type="text/css" rel="stylesheet" href="${baseurl}res/css/idangerous.swiper.css">    
+    <link type="text/css" rel="stylesheet" href="${baseurl}res/css/idangerous.swiper.css"> 
+ <!--寄卖轮转图-->
+    <style type="text/css">
+    	#dHomePageCarousel {
+				background: url("${mybaseurl}/res/images/new/mortage/mortagebg1_03.jpg") no-repeat scroll 0 0 transparent;
+				height: 364px;
+				width: 1200px;
+				position: relative;
+				margin: 0 auto;
+				padding-left: 15px;
+			}
+			
+			#dLocalHomesCarousel {
+				height:268px;
+				margin: 0px 2px 3px 1px;
+				overflow: hidden;
+				position: relative;
+			}
+			
+			.divCarouselInfo {
+				color: #3C404E;
+				font-size: 24px;				
+				letter-spacing: 1px;
+				width: 1200px;
+				height: 80px;
+				line-height: 32px;
+				margin-right: 15px;
+				padding-top: 20px;
+				position: relative;
+			}
+			
+			.imgBorder {
+				border: 3px solid #fff;
+				position: absolute;
+				cursor: pointer;
+			}
+			
+			.imgBorder:hover {
+				border: 2px solid #FFAA55;
+				cursor: pointer;
+				position: absolute;
+			}
+			
+			.btnCarouselLT {
+				background: url("${mybaseurl}/res/images/new/mortage/arrow_09.jpg") no-repeat scroll left top transparent;
+				display: block;
+				height: 46px;
+				overflow: hidden;
+				position: absolute;
+				cursor: pointer;
+				top: 17px;
+				width: 28px;
+			}
+			
+			.btnCarouselRT {
+				background: url("${mybaseurl}/res/images/new/mortage/arrow_06.jpg") no-repeat scroll right top transparent;
+				display: block;
+				height: 115px;
+				overflow: hidden;
+				position: absolute;
+				cursor: pointer;
+				top: 17px;
+				width: 28px;
+			}
+    </style>
 </head>
 <body>
 <%@ include file="common/header.jsp"%>
@@ -398,7 +462,7 @@
                 </ul>
                 </div>
             </div>
-            <div class="pure-u-2-5" style="text-align:right;"><img class="lazy" style="padding-right:60px;" data-original="${mybaseurl}/res/images/v2/news.jpg"/></div>
+            <div class="pure-u-2-5" style="text-align:right;"><img class="lazy" style="padding-left:175px;" data-original="${mybaseurl}/res/images/v2/news.jpg"/></div>
         </div>
     </div>
 </div>
@@ -449,6 +513,62 @@
 <script type="text/javascript" src="${baseurl}res/js/layer/layer.js"></script>
 <script type="text/javascript" src="${baseurl}res/js/idangerous.swiper.js"></script>
 <script type="text/javascript" src="${baseurl}res/js/scroll.js"></script>
+<script type="text/javascript" src="${baseurl}res/js/action.js"></script>
+<script type="text/javascript">	
+			function AdItem(name, phone, address, Photo, price, time, url) {
+				this.name = name;
+				this.phone = phone;
+				this.address = address;
+				this.Photo = Photo;
+				this.url = url;
+				this.price = price;
+				this.time = time;
+			}
+			var ad = new Array();
+			ad[0] = new AdItem('黄金寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/1.png', '专业寄卖值得信赖', '', '#');
+			ad[1] = new AdItem('名包寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/2.png', '专业的鉴定团队鉴定人', '', '#');
+			ad[2] = new AdItem('名表寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/3.png', '保证客户利益有效实行', '', '#');
+			ad[3] = new AdItem('手机/数码专卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/4.png', '资深的推广运营团队', '', '#');
+			ad[4] = new AdItem('铂金寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/5.png', '线上线下整合营销推广', '', '#');
+			ad[5] = new AdItem('钯金寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/6.png', '量身定制品牌营销方案', '', '#');
+			ad[6] = new AdItem('K金寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/7.png', '量身定制品牌营销方案', '', '#');
+			ad[7] = new AdItem('白银寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/8.png', '量身定制品牌营销方案', '', '#');
+			ad[8] = new AdItem('钻石寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/9.png', '量身定制品牌营销方案', '', '#');
+			var img = new Array();
+			img[0] = document.getElementById("imgSmallLeft");
+			img[1] = document.getElementById("imgMiddleLeft");
+			img[2] = document.getElementById("imgBig");
+			img[3] = document.getElementById("imgMiddleRight");
+			img[4] = document.getElementById("imgSmallRight");
+			img[5] = document.getElementById("imgHidden");
+			img[6] = document.getElementById("imgHidden1");
+			img[7] = document.getElementById("imgHidden2");
+			img[8] = document.getElementById("imgHidden3");
+			var position = 0;
+			for (i = 0; i < img.length; i++) {
+				img[i].src = ad[i].Photo;
+			}
+			var adname = document.getElementById("adname");
+			var adtel = document.getElementById("adtel");
+			var adaddr = document.getElementById("adaddr");
+			var adprice = document.getElementById("adprice");
+			var adtime = document.getElementById("adtime");
+			var cur = 2;
+			adname.href = ad[2].url;
+			if (navigator.userAgent.indexOf("Firefox") > 0) {
+				adname.textContent = ad[2].name;
+				adtel.textContent = ad[2].phone;
+				adaddr.textContent = ad[2].address;
+				adprice.textContent = ad[2].price;
+				adtime.textContent = ad[2].time;
+			} else {
+				adname.innerText = ad[2].name;
+				adtel.innerText = ad[2].phone;
+				adaddr.innerText = ad[2].address;
+				adprice.innerText = ad[2].price;
+				adtime.innerText = ad[2].time;
+			}		
+</script>
 <script>
 	  var mySwiper = new Swiper('.swiper-container',{
 		    pagination: '.pagination',

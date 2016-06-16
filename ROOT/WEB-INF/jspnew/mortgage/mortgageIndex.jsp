@@ -9,7 +9,7 @@
     <meta content="zh-cn" http-equiv="content-language"/>
     <meta name="keywords" content=""/>
     <meta name="description" content=""/>
-    <title>爱收宝抵押</title>
+    <title>爱收宝寄卖</title>
     <style>
 
         .topimg{text-align: center;}
@@ -37,7 +37,7 @@
 			
 			#dHomePageCarousel {
 				background: url("${mybaseurl}/res/images/new/mortage/mortagebg1_03.jpg") no-repeat scroll 0 0 transparent;
-				height: 427px;
+				height: 364px;
 				width: 1200px;
 				position: relative;
 				margin: 0 auto;
@@ -53,13 +53,13 @@
 			
 			.divCarouselInfo {
 				color: #3C404E;
-				font-size: 24px;
-				font-family: "宋体";
+				font-size: 24px;				
+				letter-spacing: 1px;
 				width: 1200px;
-				height: 150px;
+				height: 80px;
 				line-height: 32px;
 				margin-right: 15px;
-				padding-top: 40px;
+				padding-top: 20px;
 				position: relative;
 			}
 			
@@ -78,7 +78,7 @@
 			.btnCarouselLT {
 				background: url("${mybaseurl}/res/images/new/mortage/arrow_09.jpg") no-repeat scroll left top transparent;
 				display: block;
-				height: 115px;
+				height: 46px;
 				overflow: hidden;
 				position: absolute;
 				cursor: pointer;
@@ -159,10 +159,7 @@
 							<tr>
 								<td height="28" align=center>
 									<a id="adname" class="name" href="#"></a>&nbsp;&nbsp;&nbsp;&nbsp;贵宾热线：<span id="adtel" class="tel"></span></td>
-							</tr>
-							<tr>
-								<td align=center><span id="adaddr"></span>&nbsp;&nbsp;&nbsp;&nbsp;保障：<span id="adprice" class="org"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="adtime" class="org"></span></td>
-							</tr>
+							</tr>							
 						</tbody>
 					</table>
 					<a id="btnCarouselRt" class="btnCarouselRT" style="right: 86px;" onclick="clearInterval(autoplay);move('r');"></a>
@@ -174,7 +171,7 @@
 </div>
 <div class="pure-g footerimg">
     <div class="pure-u-1-1">
-        <img class="lazy" data-original="${mybaseurl}/res/images/v2/jm_footer.jpg" width="100%"/>
+        <img class="lazy" data-original="${mybaseurl}/res/images/v2/jm_footer.jpg" width: 1200;/>
     </div>
 </div>
 
@@ -197,15 +194,15 @@
 				this.time = time;
 			}
 			var ad = new Array();
-			ad[0] = new AdItem('黄金珠宝寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/1.png', '专业寄卖值得信赖', '', '#');
+			ad[0] = new AdItem('黄金寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/1.png', '专业寄卖值得信赖', '', '#');
 			ad[1] = new AdItem('名包寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/2.png', '专业的鉴定团队鉴定人', '', '#');
-			ad[2] = new AdItem('名表寄卖', '400-666-3572', '', '${mybaseurl}/res/images/new/mortage/3.png', '保证客户利益有效实行', '', '#');
-			ad[3] = new AdItem('手机/数码专卖', '400-666-3572', '', '${mybaseurl}/res/images/new/mortage/4.png', '资深的推广运营团队', '', '#');
-			ad[4] = new AdItem('铂金寄卖', '400-666-3572', '', '${mybaseurl}/res/images/new/mortage/5.png', '线上线下整合营销推广', '', '#');
-			ad[5] = new AdItem('钯金寄卖', '400-666-3572', '', '${mybaseurl}/res/images/new/mortage/6.png', '量身定制品牌营销方案', '', '#');
-			ad[6] = new AdItem('K金寄卖', '400-666-3572', '', '${mybaseurl}/res/images/new/mortage/7.png', '量身定制品牌营销方案', '', '#');
-			ad[7] = new AdItem('白银寄卖', '400-666-3572', '', '${mybaseurl}/res/images/new/mortage/8.png', '量身定制品牌营销方案', '', '#');
-			ad[8] = new AdItem('钻石寄卖', '400-666-3572', '', '${mybaseurl}/res/images/new/mortage/9.png', '量身定制品牌营销方案', '', '#');
+			ad[2] = new AdItem('名表寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/3.png', '保证客户利益有效实行', '', '#');
+			ad[3] = new AdItem('手机/数码专卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/4.png', '资深的推广运营团队', '', '#');
+			ad[4] = new AdItem('铂金寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/5.png', '线上线下整合营销推广', '', '#');
+			ad[5] = new AdItem('钯金寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/6.png', '量身定制品牌营销方案', '', '#');
+			ad[6] = new AdItem('K金寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/7.png', '量身定制品牌营销方案', '', '#');
+			ad[7] = new AdItem('白银寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/8.png', '量身定制品牌营销方案', '', '#');
+			ad[8] = new AdItem('钻石寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/9.png', '量身定制品牌营销方案', '', '#');
 			var img = new Array();
 			img[0] = document.getElementById("imgSmallLeft");
 			img[1] = document.getElementById("imgMiddleLeft");
