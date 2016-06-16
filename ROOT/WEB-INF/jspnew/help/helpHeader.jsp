@@ -37,13 +37,15 @@
     h5 {
         margin-top: 5px;
         margin-bottom: 5px;
+        font-size: 16px;
+        font-weight: bold;
     }
 
     p {
         line-height: 25px;
         margin-top: 5px;
         margin-bottom: 5px;
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .total {

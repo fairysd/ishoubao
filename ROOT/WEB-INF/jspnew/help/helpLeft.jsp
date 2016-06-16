@@ -7,10 +7,10 @@
         <div class="content_1co_1">
             <ul>
                 <li class="zha">关于我们</li>
-                <li><a href="${baseurl}help/gsjj">公司简介</a></li>
-                <li><a href="${baseurl}help/fzlc">发展历程</a></li>
+                <li><a href="${baseurl}help/gsjj">走进爱收宝</a></li>
+                <li><a href="${baseurl}help/fzlc">我们一路走来</a></li>
                 <li><a href="${baseurl}help/lxwm">联系我们</a></li>
-                <li><a href="${baseurl}help/zsjm">招商加盟</a></li>
+                <li><a href="${baseurl}help/zsjm">成为合伙人</a></li>
             </ul>
         </div>
         <div class="content_1co_2">
@@ -33,7 +33,7 @@
         <div class="content_1co_2">
             <ul>
                 <li class="zha">售后服务</li>
-                <li><a href="${baseurl}help/wlth">七天无理由退货</a></li>
+                <li><a href="${baseurl}help/wlth">48小时退货</a></li>
                 <li><a href="${baseurl}help/sqtk">如何申请退款</a></li>
                 <li><a href="${baseurl}help/bjsm">维修补件说明</a></li>
             </ul>

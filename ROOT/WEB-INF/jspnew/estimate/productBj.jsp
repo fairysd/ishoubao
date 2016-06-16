@@ -334,7 +334,7 @@
                     <a href="${baseurl}login.jsp" id="estimate">立即回收</a>
                 </div>
                 <div class="zly_lj">
-                    <a href="#" id="goMortgage">立即抵押</a>
+                    <a href="${baseurl}login.jsp" id="goMortgage">立即寄卖</a>
                 </div>
                 <div>
 
@@ -374,29 +374,44 @@
     });
 </script>
 <script type="text/javascript">
-	    $("#estimate").on({
-        click:function(){
-        	if(userinfo.userId){
+			$(document).ready(function(){
+				  $("#estimate").click(function(){
+				  	$("#isMortgage").attr("value", "0");
+	    	if(userinfo.userId){
         		$("#productBjForm").submit();
         	}
             else{
-            layer.open({
-      			type:2,
-      			area:["491px","591px"],
-      			content:[this.href,"no"],
-      			shadeClose:true,
-//    			closeBtn: 0,
-      			title:false
-      		})
+            alert("请您先登录或注册");
+            	layer.open({
+		      			type:2,
+		      			area:["491px","591px"],
+		      			content:[this.href,"no"],
+		      			shadeClose:true,
+		      			title:false
+      				})
             }
-        }
-    });
-
-    $("#goMortgage").on({
-       click:function(){
-           $("#isMortgage").attr("value", "1");
-           $("#productBjForm").submit();
-       }
+             return false;
+	    	});
+	    	$("#goMortgage").click(function(){
+	    		$("#isMortgage").attr("value", "1");
+		       	if(userinfo.userId){
+		        		$("#productBjForm").submit();
+		        	}
+		        else{
+		            	alert("请您先登录或注册");
+			            layer.open({
+			      			type:2,
+			      			area:["491px","591px"],
+			      			content:[this.href,"no"],
+			      			shadeClose:true,
+			      			title:false
+			      			})
+		            }
+		        return false;
+	    	});  
+//       $("#isMortgage").attr("value", "1");
+//       $("#productBjForm").submit();
+       
     });
 </script>
 <script>

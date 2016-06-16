@@ -173,15 +173,15 @@
 			<div class="reg_container" style="display: none;">
 				<form action="http://shop.aishoubao.com/user.php" method="post">
 					<p class="input_char"><span>用户名:</span><input class="user_id" type="text" name="" id="" value="" /></p>
-					<p class="cue_char">123</p>
+					<p class="cue_char">请输入您的用户名</p>
 					<p class="input_char"><span>Email:</span><input class="user_email" type="email" name="" id="" value="" /></p>
-					<p class="cue_char">123</p>
+					<p class="cue_char">请输入您的邮箱地址</p>
 					<p class="input_char"><span>密码:</span><input class="user_psword" type="password" name="" id="" value="" /></p>
-					<p class="cue_char">123</p>
+					<p class="cue_char">请输入密码</p>
 					<p class="input_char"><span>确认密码:</span><input class="user_rpsword" type="password" name="" id="" value="" /></p>
-					<p class="cue_char">123</p>
+					<p class="cue_char">请确认密码</p>
 					<p class="input_char"><span>手机:</span><input class="user_phone" type="text" name="" id="" value="" /></p>
-					<p class="cue_char">123</p>
+					<p class="cue_char">请输入大陆手机号</p>
 					<p class="input_char"><span>验证码:</span><input class="verify_code" type="text" name="" id="" value="" /><img src="http://shop.aishoubao.com/captcha.php?+Math.random()" style="cursor: pointer;width: 110px; height: 30px;padding-left: 15px;" onclick="this.src='http://shop.aishoubao.com/'+'captcha.php?'+Math.random()"/></p>
 					<input class="reg_submit" type="submit" name="" id="" value="同意以下协议并注册" />
 				</form>
@@ -203,46 +203,34 @@
 				$(".reg_container").css("display","block");
 			});	
 	$(document).ready(function(){
-		$(".login_container .login_submit").click(function(){
-			alert($("#username").val())
+		$(".login_container .login_submit").click(function(){			
 		    $.ajax({
-            url: "http://shop.aishoubao.com/user.php",
-            dataType: "jsonp",
-            jsonp:'callback',
-            async: true,
-            data:  {
-					username:$("#username").val(),
-					password:$("#password").val(),
-					ajax:1,
-					act:"act_login",
-				},
-            type: "POST",
-            success: function(data) {
-            alert(data.success)
-//			userinfo = data;
-//          userinfo = JSON.stringify(userinfo);             	
-//			userinfo = $.parseJSON(userinfo);
-//			console.log(userinfo); 
-//			console.log(userinfo.userId);	
-                
-//              if(data.userId) {
-//                  $('#loginUserInfo').html('<a href="http://shop.aishoubao.com/user.php" target="_top">'+data.userInfo.username+'</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://shop.aishoubao.com/user.php?act=logout&backurl=http://www.aishoubao.com" target="_top">退出</a>');
-//              } else {
-//                  $('#loginUserInfo').html('<a href="http://shop.aishoubao.com/user.php?backurl=http://www.aishoubao.com" target="_top">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://shop.aishoubao.com/user.php?act=register&backurl=http://www.aishoubao.com" target="_top">注册</a>');
-//              }
-            },
-            error:function(data){
-            	alert(data.success)
-            alert("wrong")
-            }
-        	});
-				
+	            url: "http://shop.aishoubao.com/user.php",
+	            dataType: "jsonp",
+	            jsonp:'callback',
+	            async: true,
+	            data:  {
+						username:$("#username").val(),
+						password:$("#password").val(),
+						ajax:1,
+						act:"act_login",
+					},
+	            type: "post",
+		        success: function(data) {
+		            if(data.success){
+		            	alert("登录成功")
+		            	$('#productBjForm', parent.document).submit();
+		            }else{
+		            	alert("帐号或密码错误")
+		            }
+		            },
+	            error:function(data){            	
+	            alert("wrong")
+	            }
+        	});				
 			return false;
 		});
 	});
-			
-			
-		
 		</script>
 	</body>
 </html>

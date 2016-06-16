@@ -84,7 +84,7 @@
         }
     }
 //    document.domain = 'aishoubao.com';
-window.onload = function(){
+$(document).ready(function(){			 
 	$.ajax({
             url: "http://shop.aishoubao.com/userheader.php?ajax=1",
             dataType: "jsonp",
@@ -97,29 +97,23 @@ window.onload = function(){
             userinfo = JSON.stringify(userinfo);             	
 			userinfo = $.parseJSON(userinfo);
 			console.log(userinfo); 
-			console.log(userinfo.userId);	
-                
+			console.log(userinfo.userId);	                
                 if(data.userId) {
                     $('#loginUserInfo').html('<a href="http://shop.aishoubao.com/user.php" target="_top">'+data.userInfo.username+'</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://shop.aishoubao.com/user.php?act=logout&backurl=http://www.aishoubao.com" target="_top">退出</a>');
                 } else {
                     $('#loginUserInfo').html('<a href="http://shop.aishoubao.com/user.php?backurl=http://www.aishoubao.com" target="_top">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://shop.aishoubao.com/user.php?act=register&backurl=http://www.aishoubao.com" target="_top">注册</a>');
                 }
-            }
+            },
         });
-        $("#estimate").click(function(){
-        	console.log(userinfo.userId)
-        	alert(1)
-        	return false;
-        });
-}
-    $(document).ready(function(e) {
-    	var  userinfo = new  Array;
+       
+});
+    $(document).ready(function(e) {    	
         b();
-
         $('#gotopBtn').click(function(){
             $(document).scrollTop(0);
         });
-		          
+
+              
     });
   
     $(window).scroll(function(e){
