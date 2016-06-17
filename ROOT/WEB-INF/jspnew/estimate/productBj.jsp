@@ -375,8 +375,7 @@
 </script>
 <script type="text/javascript">
 			$(document).ready(function(){
-				  $("#estimate").click(function(){
-				  	$("#isMortgage").attr("value", "0");
+				  $("#estimate").click(function(){				  	
 	    	if(userinfo.userId){
         		$("#productBjForm").submit();
         	}

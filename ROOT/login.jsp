@@ -147,6 +147,17 @@
 				color: #FFFFFF;
 				border: none;
 				margin-top: 20px;
+				cursor: pointer;
+			}
+			.reg_container a{
+				text-decoration: none;
+				color: #8D8D8D;
+				font-size: 14px;
+			}
+			.agreement_box{
+				position: relative;
+				top: 40px;
+    			left: 180px;
 			}
 		</style>
 	</head>
@@ -172,18 +183,22 @@
 			</div>
 			<div class="reg_container" style="display: none;">
 				<form action="http://shop.aishoubao.com/user.php" method="post">
-					<p class="input_char"><span>用户名:</span><input class="user_id" type="text" name="" id="" value="" /></p>
-					<p class="cue_char">请输入您的用户名</p>
-					<p class="input_char"><span>Email:</span><input class="user_email" type="email" name="" id="" value="" /></p>
-					<p class="cue_char">请输入您的邮箱地址</p>
-					<p class="input_char"><span>密码:</span><input class="user_psword" type="password" name="" id="" value="" /></p>
-					<p class="cue_char">请输入密码</p>
-					<p class="input_char"><span>确认密码:</span><input class="user_rpsword" type="password" name="" id="" value="" /></p>
-					<p class="cue_char">请确认密码</p>
-					<p class="input_char"><span>手机:</span><input class="user_phone" type="text" name="" id="" value="" /></p>
-					<p class="cue_char">请输入大陆手机号</p>
-					<p class="input_char"><span>验证码:</span><input class="verify_code" type="text" name="" id="" value="" /><img src="http://shop.aishoubao.com/captcha.php?+Math.random()" style="cursor: pointer;width: 110px; height: 30px;padding-left: 15px;" onclick="this.src='http://shop.aishoubao.com/'+'captcha.php?'+Math.random()"/></p>
-					<input class="reg_submit" type="submit" name="" id="" value="同意以下协议并注册" />
+					<p class="input_char"><span>用户名:</span><input class="user_id" type="text" name="" id="regUsername" value="" /></p>
+					<p id="regUsername_cue" class="cue_char">请输入您的用户名</p>
+					<p class="input_char"><span>Email:</span><input class="user_email" type="email" name="" id="regEmail" value="" /></p>
+					<p id="regEmail_cue" class="cue_char">请输入您的邮箱地址</p>
+					<p class="input_char"><span>密码:</span><input class="user_psword" type="password" name="" id="regPassword" value="" /></p>
+					<p id="regPassword_cue" class="cue_char">请输入密码</p>
+					<p class="input_char"><span>确认密码:</span><input class="user_rpsword" type="password" name="" id="regRePassword" value="" /></p>
+					<p id="regRePassword_cue" class="cue_char">请确认密码</p>
+					<p class="input_char"><span>手机:</span><input class="user_phone" type="text" name="" id="regPhoneNumber" value="" /></p>
+					<p id="regPhoneNumber_cue" class="cue_char">请输入大陆手机号</p>
+					<p class="input_char"><span>验证码:</span><input class="verify_code" type="text" name="" id="regVeryCode" value="" /><img src="http://shop.aishoubao.com/captcha.php?+Math.random()" style="cursor: pointer;width: 110px; height: 30px;padding-left: 15px;" onclick="this.src='http://shop.aishoubao.com/'+'captcha.php?'+Math.random()"/></p>
+					<input id="regSubmit" class="reg_submit" type="submit" name="" id="" value="同意以下协议并注册" />
+					<div class="agreement_box">
+						<input type="checkbox" name="agreement" id="regAgreement" value="1" checked="checked"/><a href="">我已阅读并同意《用户注册协议》</a>
+					</div>
+					
 				</form>
 			</div>
 		</div>
@@ -203,6 +218,15 @@
 				$(".reg_container").css("display","block");
 			});	
 	$(document).ready(function(){
+		$("#regAgreement").click(function(){
+			var check = document.getElementById("regAgreement").checked;
+			if (check) {
+				$(this).val("1");				
+			} else{
+				$(this).val("0");
+			}
+		});
+//		login and register ajax request
 		$(".login_container .login_submit").click(function(){			
 		    $.ajax({
 	            url: "http://shop.aishoubao.com/user.php",
@@ -215,7 +239,7 @@
 						ajax:1,
 						act:"act_login",
 					},
-	            type: "post",
+	            type: "get",
 		        success: function(data) {
 		            if(data.success){
 		            	alert("登录成功")
@@ -230,6 +254,50 @@
         	});				
 			return false;
 		});
+		$(".reg_container .reg_submit").click(function(){			
+		    $.ajax({
+	            url: "http://shop.aishoubao.com/user.php",
+	            dataType: "jsonp",
+	            jsonp:'callback',
+	            async: true,
+	            data:  {
+						username:$("#regUsername").val(),
+						password:$("#regPassword").val(),
+						email:$("#regEmail").val(),
+						extend_field5:$("#regPhoneNumber").val(),
+						captcha:$("#regVeryCode").val(),
+//						agreement:$("#regAgreement").val(),
+						agreement:"1",
+						ajax:1,
+						act:"act_register",
+					},
+	            type: "get",
+		        success: function(data) {
+		            if(data.success){
+		            	alert("注册成功")
+		            	$('#productBjForm', parent.document).submit();
+		            }else{
+		            	alert(data.msg)
+		            }
+		            },
+	            error:function(data){            	
+	            alert("wrong")
+	            }
+        	});				
+			return false;
+		});
+		$("#regRePassword").blur(function(){
+			if($(this).val() !== $("#regPassword").val()){
+				$("#regRePassword_cue").text("两次输入密码不一致");
+				$("#regRePassword_cue").css("color","red");
+				$("#regSubmit").attr("disabled","disabled")
+			}
+			else{
+				$("#regRePassword_cue").text("");
+				$("#regSubmit").attr("disabled",false)
+			}
+		})
+		
 	});
 		</script>
 	</body>

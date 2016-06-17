@@ -4,7 +4,7 @@
   Time: 15:59
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<div class="mywrapper indexbg" style="height:699px;clear:both;">
+<div class="mywrapper indexbg" style="height:694px;clear:both;">
 	<div class="out_box">
 		<!-- 轻松估价 -->
 		<div class="title">
@@ -14,48 +14,48 @@
 			<!--新的主页回收模块-->
 			<div class="reclaim-box">
 				<div class="pure-g">
-					<div class="pure-u-1-1">
-						<div class="pure-u-1-4 img-box" style="position: relative;height:267px;width: 283px;line-height: 267px;">
+					<div class="pure-u-1-1" style="padding-left: 5px;">
+						<div class="pure-u-1-4 img-box" style="position: relative;height:266px;width: 283px;line-height: 266px;">
 							<a class="" style="display: block; position: absolute;" href="">名包回收</a>
 							<a href="${mybaseurl}/category/08d2d4cbf3974d8i8d56b26ba29266aa/0"><img class="pure-img" style="position: absolute;" src="${mybaseurl}/res/images/new/category/newreclaim_03.png" /></a>
 						</div>
-						<div class="pure-u-1-4 img-box" style="position: relative;height:267px;width: 283px;line-height: 267px;">
+						<div class="pure-u-1-4 img-box" style="position: relative;height:266px;width: 282px;line-height: 266px;">
 							<a class="" style="display: block; position: absolute;" href="">钻石回收</a>
 							<a href="${mybaseurl}/product/diamond"><img class="pure-img" style="position: absolute;" src="${mybaseurl}/res/images/new/category/newreclaim_05.png" /></a>
 						</div>
-						<div class="pure-u-1-4 img-box" style="position: relative;height:267px;width: 283px;line-height: 267px;">
+						<div class="pure-u-1-4 img-box" style="position: relative;height:266px;width: 283px;line-height: 266px;">
 							<a class="" style="display: block; position: absolute;" href="">黄金回收</a>
 							<a href="${mybaseurl}/product/8fa078e445184f1f9041ea1be763a5e8?ptype=gjs&goldType=gold"><img class="pure-img" style="position: absolute;" src="${mybaseurl}/res/images/new/category/newreclaim_07.png" /></a>
 						</div>
-						<div class="pure-u-1-4 img-box" style="position: relative;height:267px;width: 283px;line-height: 267px;">
+						<div class="pure-u-1-4 img-box" style="position: relative;height:266px;width: 283px;line-height: 266px;">
 							<a class="" style="display: block; position: absolute;" href="">手机/数码回收</a>
 							<a href="${mybaseurl}/category/08d2d4cbf39748f08d56b26ba29266aa/0"><img class="pure-img" style="position: absolute;" src="${mybaseurl}/res/images/new/category/newreclaim_09.png" /></a>
 						</div>					
 					</div>
 					<div class="pure-u-1-3">						
-						<div class="pure-u-1  img-box" style="position: relative;height:144px;width: 387px; line-height: 144px;">
+						<div class="pure-u-1  img-box" style="position: relative;height:143px;width: 387px; line-height: 143px;">
 							<a class="" style="display: block; position: absolute;" href="">铂金回收</a>
-							<a href="${mybaseurl}/product/21577fd8a5324e62a416978d15367515?ptype=gjs&goldType=pt"><img class="pure-img" style="position: absolute;" src="${mybaseurl}/res/images/new/category/reclaim_12.jpg" /></a>
+							<a href="${mybaseurl}/product/21577fd8a5324e62a416978d15367515?ptype=gjs&goldType=pt"><img class="pure-img" style="position: absolute;" src="${mybaseurl}/res/images/new/category/reclaim_12.png" /></a>
 						</div>
-						<div class="pure-u-1  img-box" style="position: relative;height:144px;width: 387px; line-height: 144px;">
+						<div class="pure-u-1  img-box" style="position: relative;height:139px;width: 387px; line-height: 139px;">
 							<a class="" style="display: block; position: absolute;" href="">钯金回收</a>
-							<a href="${mybaseurl}/product/094c2f5308514105a862c6299f9d320b?ptype=gjs&goldType=palau"><img class="pure-img" style="position: absolute;" src="${mybaseurl}/res/images/new/category/reclaim_20.jpg" /></a>
+							<a href="${mybaseurl}/product/094c2f5308514105a862c6299f9d320b?ptype=gjs&goldType=palau"><img class="pure-img" style="position: absolute;" src="${mybaseurl}/res/images/new/category/reclaim_20.png" /></a>
 						</div>					
 					</div>
 					<div class="pure-u-1-3">
-						<div class="pure-u-1 img-box"style="position: relative;height:304px;width: 388px;line-height: 304px;">
+						<div class="pure-u-1 img-box"style="position: relative;height:301px;width: 386px;line-height: 301px;">
 								<a class="" style="display: block; position: absolute;" href="">名表回收</a>
-								<a href="${mybaseurl}/category/08d2d4cbff6j48f08d56b26ba29266aa/0"><img class="pure-img" style="position: absolute;"  src="${mybaseurl}/res/images/new/category/newreclaim_16.jpg"/></a>
+								<a href="${mybaseurl}/category/08d2d4cbff6j48f08d56b26ba29266aa/0"><img class="pure-img" style="position: absolute;"  src="${mybaseurl}/res/images/new/category/newreclaim_16.png"/></a>
 						</div>							
 					</div>
 					<div class="pure-u-1-3">
-						<div class="pure-u-1  img-box" style="position: relative;height:144px;width: 389px; line-height: 144px;">
+						<div class="pure-u-1  img-box" style="position: relative;height:143px;width: 387px; line-height: 139px;margin-bottom: 7px;">
 							<a class="" style="display: block; position: absolute;" href="">白银回收</a>
-							<a href="${mybaseurl}/product/5f67c6baca4b4167a4b49b6df510a3f1?ptype=gjs&goldType=sliver"><img class="pure-img" style="position: absolute;" src="${mybaseurl}/res/images/new/category/reclaim_16.jpg" /></a>
+							<a href="${mybaseurl}/product/5f67c6baca4b4167a4b49b6df510a3f1?ptype=gjs&goldType=sliver"><img class="pure-img" style="position: absolute;" src="${mybaseurl}/res/images/new/category/reclaim_16.png" /></a>
 						</div>
-						<div class="pure-u-1  img-box" style="position: relative;height:144px;width: 389px; line-height: 144px;">
+						<div class="pure-u-1  img-box" style="position: relative;height:143px;width: 388px; line-height: 143px;">
 							<a class="" style="display: block; position: absolute;" href="">K金回收</a>
-							<a href="${mybaseurl}/product/bcf8086e4f4647fabcfc3409430baa60?ptype=gjs&goldType=k"><img class="pure-img" style="position: absolute;" src="${mybaseurl}/res/images/new/category/reclaim_21.jpg" /></a>
+							<a href="${mybaseurl}/product/bcf8086e4f4647fabcfc3409430baa60?ptype=gjs&goldType=k"><img class="pure-img" style="position: absolute;" src="${mybaseurl}/res/images/new/category/reclaim_21.png" /></a>
 						</div>
 					</div>
 				</div>

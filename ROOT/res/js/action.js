@@ -264,7 +264,7 @@ function reset(){
 	img[5].style.left = "-90px";
 }
 
-autoplay = setInterval("move('r')",2000);
+autoplay = setInterval("move('r')",3000);
 
 function openNewPage(){
 	window.open(ad[cur].url);
