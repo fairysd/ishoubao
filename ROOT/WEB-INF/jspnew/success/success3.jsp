@@ -25,14 +25,14 @@
         .succ_3_content{width:800px;height:300px;margin:auto;}
         .succ_3_cotop1{width:800px;height:50px;}
         .succ_3_cotop2{width:800px;height:250px;float:left;}
-        .succ_3_ctop2_1{width:245px;height:215px;float:left;background-color:#F6F6F6;}
-        .succ_3_ctop2_2{width:245px;height:215px;float:left;background-color: #FFF4D8;margin-left: 32.5px;}
+        .succ_3_ctop2_1{width:245px;height:200px;float:left;background-color:#F6F6F6;}
+        .succ_3_ctop2_2{width:245px;height:200px;float:left;background-color: #FFF4D8;margin-left: 32.5px;}
         .succ_3_ctop2_2 a{color:#fff;}
         .succ_3_ctop2_3{width:245px;height:215px;float:left;background-color: #F6F6F6;margin-left: 32.5px;}
-        .succ_3a{margin-top: 40px;text-align: center;padding-left: 20px;padding-right: 20px;height: 120px;}
+        .succ_3a{margin-top: 40px;text-align: center;padding-left: 20px;padding-right: 20px;height: 100px;}
         .succ_3a a{color:#000000;font-weight: bold;text-decoration: none;}
         .succ_3a_button1{margin-top:15px;border:none;background:#EC571D;width:100px;height:30px;color:#FFFFFF;border-radius: 9px;}
-        .succ_3a_button2{margin-top:15px;border:none;background:#EC571D;width:100px;height:30px;color:#FFFFFF;border-radius: 9px;}
+        .succ_3a_button2{border:none;background:#EC571D;width:100px;height:30px;color:#FFFFFF;border-radius: 9px;}
         .succ_3a_button3{margin-top:15px;border:none;background:#EC571D;width:100px;height:30px;color:#FFFFFF;border-radius: 9px;}
     </style>
 </head>
@@ -73,8 +73,7 @@
             <div class="succ_3_ctop2_2"<c:if test="${type == '1'}"> style="margin-left:278px;"</c:if>>
                 <div class="succ_3a">
                     <a>工作时间工作人员可解答您的任何问题</a><br/><br/>
-                    <a style="color:#DBDBDB;">WORKING TIME</a><br/>
-                    <a style="color:#DBDBDB;"> STAFF CAN ANSWER YOUR QUESTIONS</a>
+                    <a style="color:#000000;">8:30-17:30</a><br/>                    
                 </div >
                 <button id="onlineZx" class="succ_3a_button2" onmouseover="button_on(this);" onmouseout="button_out(this);"><a href="http://kefu.qycn.com/vclient/chat/?websiteid=113372" target="_blank">在线咨询</a></button>
             </div>

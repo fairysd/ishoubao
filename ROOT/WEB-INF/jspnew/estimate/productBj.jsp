@@ -243,12 +243,12 @@
                     <img src="${baseurl}res/images/new/estimate/asb9.jpg" alt="">
                 </div>
                 <div class="zlylef2_10" >
-                    <p>退货说明与流程：我们质检完成后，如果实际价格没有达到您的预期，可以取消交易免费将您的手表快递寄回</p>
+                    <p>退货说明与流程：我们质检完成后，如果实际价格没有达到您的预期，可以取消交易免费将您的宝贝快递寄回</p>
                     <ul>
                         <li><a>取消交易</a></li>
                         <li><a>客服确认寄回地址</a></li>
                         <li><a>爱收宝联系快递</a></li>
-                        <li><a>联系顺风上门取货</a></li>
+                        <li><a>联系顺丰上门取货</a></li>
                         <li><a>用户确认收货</a></li>
                     </ul>
                 </div>
@@ -312,8 +312,7 @@
                     <p style="margin-left:29px;">物流交易：请在24小时内选择顺丰到付，把您的手表快递给我们，在订单中心填入您的快递单号。我们收到您的物件</p>
                     <p style="margin-left:29px;">后会进行质检，质检完成会给您放款。</p>
                     <p style="margin-top:30px;"><span class="radio">Q</span><span class="radio_con">快递费是谁承担，标准是什么？</span></p>
-                    <p style="margin-top:10px;"><span class="radio1">A</span><span class="radio_con1">手表：爱收宝江浙沪承担12元，除江浙沪以外承担22元；高仿的、山寨的、保价费等其他费用用户自费
-。</span></p>
+                    <p style="margin-top:10px;"><span class="radio1">A</span><span class="radio_con1">手表：爱收宝江浙沪承担12元，除江浙沪以外承担22元；非正品的其他费用，用户自理，详情请咨询客服。</span></p>
                     <p style="margin-top:30px;"><span class="radio">Q</span><span class="radio_con">订单提交后我从哪里可以查看到交易进度？</span></p>
                     <p style="margin-top:10px;"><span class="radio1">A</span><span class="radio_con1">登录订单中心或者关注爱收宝微信账号，随时查看处理进度，我们会及时更新订单状态。</span></p>
                     <c:if test="${ptype=='phone'}"><p style="margin-top:40px;"><a href="${baseurl}estimate/moreHelp" target="_blank" style="color:#000000;text-decoration:none;">查看更多帮助说明>></a></p></c:if>
@@ -375,37 +374,39 @@
 </script>
 <script type="text/javascript">
 			$(document).ready(function(){
-				  $("#estimate").click(function(){				  	
-	    	if(userinfo.userId){
-        		$("#productBjForm").submit();
-        	}
-            else{
-            alert("请您先登录或注册");
-            	layer.open({
-		      			type:2,
-		      			area:["491px","591px"],
-		      			content:[this.href,"no"],
-		      			shadeClose:true,
-		      			title:false
-      				})
-            }
+				  $("#estimate").click(function(){		
+				  	$("#productBjForm").submit();
+//	    	if(userinfo.userId){
+//      		$("#productBjForm").submit();
+//      	}
+//          else{
+//          alert("请您先登录或注册");
+//          	layer.open({
+//		      			type:2,
+//		      			area:["491px","591px"],
+//		      			content:[this.href,"no"],
+//		      			shadeClose:true,
+//		      			title:false
+//    				})
+//          }
              return false;
 	    	});
 	    	$("#goMortgage").click(function(){
 	    		$("#isMortgage").attr("value", "1");
-		       	if(userinfo.userId){
-		        		$("#productBjForm").submit();
-		        	}
-		        else{
-		            	alert("请您先登录或注册");
-			            layer.open({
-			      			type:2,
-			      			area:["491px","591px"],
-			      			content:[this.href,"no"],
-			      			shadeClose:true,
-			      			title:false
-			      			})
-		            }
+	    		$("#productBjForm").submit();
+//		       	if(userinfo.userId){
+//		        		$("#productBjForm").submit();
+//		        	}
+//		        else{
+//		            	alert("请您先登录或注册");
+//			            layer.open({
+//			      			type:2,
+//			      			area:["491px","591px"],
+//			      			content:[this.href,"no"],
+//			      			shadeClose:true,
+//			      			title:false
+//			      			})
+//		            }
 		        return false;
 	    	});  
 //       $("#isMortgage").attr("value", "1");

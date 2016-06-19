@@ -64,7 +64,7 @@
 				padding-top: 26px;
 			}
 			.login_container .p.user_password{
-				margin-bottom: 60px;
+				margin-bottom: 20px;
 			}
 			.login_container .p{
 				width: 330px;
@@ -114,6 +114,8 @@
 				height: 26px;
 				padding-left: 110px;
 				line-height: 26px;
+				font-size: 14px;
+				color: #535353;
 			}
 			.reg_container p input{
 				display: block;
@@ -159,6 +161,14 @@
 				top: 40px;
     			left: 180px;
 			}
+			.forgetpassword a{
+				text-decoration: none;
+				color: #8D8D8D;
+				font-size: 20px;
+				display: block;
+				text-align: right;
+				text-indent: -20px;
+			}
 		</style>
 	</head>
 	<body>
@@ -178,6 +188,9 @@
 				<form action="http://shop.aishoubao.com/user.php" method="post">
 					<div class="p user_name"><div><img src="${baseurl}res/images/new/login/icon_03.png"/></div><input type="text" name="" id="username" value="" /></div>
 					<div class="p user_password"><div><img src="${baseurl}res/images/new/login/icon_06.png"/></div><input type="password" name="" id="password" value="" /></div>
+					<div class="p forgetpassword">
+						<a target="_blank" href="http://shop.aishoubao.com/user.php?act=get_password">忘记密码</a>
+					</div>
 					<input class="login_submit" type="submit" name="" id="" value="登录" />
 				</form>
 			</div>
@@ -196,9 +209,8 @@
 					<p class="input_char"><span>验证码:</span><input class="verify_code" type="text" name="" id="regVeryCode" value="" /><img src="http://shop.aishoubao.com/captcha.php?+Math.random()" style="cursor: pointer;width: 110px; height: 30px;padding-left: 15px;" onclick="this.src='http://shop.aishoubao.com/'+'captcha.php?'+Math.random()"/></p>
 					<input id="regSubmit" class="reg_submit" type="submit" name="" id="" value="同意以下协议并注册" />
 					<div class="agreement_box">
-						<input type="checkbox" name="agreement" id="regAgreement" value="1" checked="checked"/><a href="">我已阅读并同意《用户注册协议》</a>
+						<input type="checkbox" name="agreement" id="regAgreement" value="1" checked="checked"/><a target="_blank" href="http://www.aishoubao.com:8888/asb-web/help/zcxy">我已阅读并同意《用户注册协议》</a>
 					</div>
-					
 				</form>
 			</div>
 		</div>
@@ -266,8 +278,7 @@
 						email:$("#regEmail").val(),
 						extend_field5:$("#regPhoneNumber").val(),
 						captcha:$("#regVeryCode").val(),
-//						agreement:$("#regAgreement").val(),
-						agreement:"1",
+						agreement:$("#regAgreement").val(),						
 						ajax:1,
 						act:"act_register",
 					},

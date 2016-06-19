@@ -147,7 +147,7 @@
                     </div>
                 </div>
                 <!-- 收款 -->
-                <h3>收款&抵押周期</h3>
+                <h3>收款&寄卖周期</h3>
                 <div class="pickup-ondoor-map pickup-ondoor-only">
                     <div class = "map"></div>
                 </div>
@@ -169,7 +169,7 @@
                         </ul>
                     </li>
                     <li>
-                        <label>抵押周期</label>
+                        <label>寄卖周期</label>
                         <ul class = "item-wrap clearfix">
                             <li class = "verify-username">
                                 <div class = "item">
@@ -311,7 +311,7 @@
             <thead>
             <tr>
                 <th>物品名称</th>
-                <th>抵押报价</th>
+                <th>寄卖报价</th>
             </tr>
             </thead>
             <tbody>
@@ -323,8 +323,8 @@
         </table>
         <div class = "summary">
             <div class = "footer">
-                <p>点击“确认抵押”即表示您同意<a href = "${baseurl}estimate/service" target = "_blank">爱收宝服务条款</a></p>
-                <span class = "submit" id = "js-submit">确认抵押</span>
+                <p>点击“确认寄卖”即表示您同意<a href = "${baseurl}estimate/service" target = "_blank">爱收宝服务条款</a></p>
+                <span class = "submit" id = "js-submit">确认寄卖</span>
             </div>
         </div>
     </div>
@@ -340,7 +340,7 @@
 <script>
     function popDateSel() {
         if (!$("#mortgageStarttimeInput").val()) {
-            alert("请先选择抵押开始时间!");
+            alert("请先选择寄卖开始时间!");
             $("#mortgageStarttimeInput").focus();
             return false;
         }
@@ -370,9 +370,6 @@
         var days = GetDateDiff(starttime, endtime);
         $("#expertEarnings").html(toDecimal(${userEstimate.estimatePrice}*days*(${mortgageDayInterest}/100))+'元');
     }
-
-
-
     var longitude = "";
     var latitude = "";
     function getShopsByArea(areaId) {

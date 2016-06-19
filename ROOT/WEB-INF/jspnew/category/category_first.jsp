@@ -14,7 +14,7 @@
     <meta content="zh-cn" http-equiv="content-language" />
     <meta name="keywords" content="" />
     <meta name="description" content=""/>
-    <title>产品分类 - 爱收宝</title>
+    <title>爱收宝回收</title>
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/style.css">
     
     <style type="text/css">

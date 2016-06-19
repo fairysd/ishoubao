@@ -4,8 +4,8 @@
     <div class = "out_box footer_nav">
         <ul>
             <li>关于我们</li>
-            <li><a href = "${baseurl}help/gsjj">公司简介</a></li>
-            <li><a href = "${baseurl}help/fzlc">发展历程</a></li>
+            <li><a href = "${baseurl}help/gsjj">走进爱收宝</a></li>
+            <li><a href = "${baseurl}help/fzlc">我们一路走来</a></li>
             <li><a href = "${baseurl}help/lxwm">诚聘精英</a></li>
             <li><a href = "${baseurl}help/lxwm">联系我们</a></li>
         </ul>
@@ -24,7 +24,7 @@
         </ul>
         <ul>
             <li>售后服务</li>
-            <li><a href = "${baseurl}help/wlth">七天无理由退换</a></li>
+            <li><a href = "${baseurl}help/wlth">48小时退货</a></li>
             <li><a href = "${baseurl}help/sqtk">如何申请退款</a></li>
             <li><a href = "${baseurl}help/bjsm">维修补件说明</a></li>
         </ul>

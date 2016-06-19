@@ -164,7 +164,6 @@
 												<input id="expectPrice" name="productPrice" class="pure-u-24-24" type="text" maxlength="8" required>
 											</div>
 										</div>
-
 										<button type="submit" id="save" class="pure-u-1-1 pure-button pure-button-primary mybutton">提交</button>
 									</fieldset>
 								</form>

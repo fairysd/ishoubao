@@ -14,7 +14,7 @@
     <meta content="zh-cn" http-equiv="content-language" />
     <meta name="keywords" content="" />
     <meta name="description" content=""/>
-    <title>奢侈品频道 - 爱收宝</title>
+    <title>爱收宝护理</title>
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/style.css">
     <style>
         .zly_top{width: 100%;height:30px; background-color: #000000;}
@@ -131,17 +131,17 @@
                     <b></b>
                 </li>
                 <li class="">
-                    <div class="Jicon fl"><em class="Jicon05"></em>货品质检<br/>消毒 调拨出厂</div>
+                    <div class="Jicon fl"><em class="Jicon05"></em>质检消毒</div>
                     <div class="JText fr">
-                        <p>5、货品质检，消毒、调拨出厂</p>
+                        <p>5、质检消毒</p>
                         货品养护后由专业质检人员进行严格质量检查，再次消毒、包装后由专业物流送出工厂
                     </div>
                     <b></b>
                 </li>
                 <li class="">
-                    <div class="Jicon fl"><em class="Jicon06"></em>完成养护<br/>顾客取货</div>
+                    <div class="Jicon fl"><em class="Jicon06"></em>顾客取货</div>
                     <div class="JText fr">
-                        <p>6、完成养护，顾客取货</p>
+                        <p>6、顾客取货</p>
                         完成养护后，养护服务系统会自动发送物品养护完成的通知短信，顾客可选择到就近的养护中心提取自己的货品或者拨打养护中心服务电话选择快递送货上门（快递费用顾客自行支付）。
                     </div>
                     <b></b>

@@ -14,7 +14,7 @@
     <meta content="zh-cn" http-equiv="content-language" />
     <meta name="keywords" content="" />
     <meta name="description" content=""/>
-    <title>爱收宝</title>
+    <title>爱收宝代售</title>
     <link rel="canonical" href="http://www.aishoubao.com/" />
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/style.css">
     <style>

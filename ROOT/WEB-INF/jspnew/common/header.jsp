@@ -34,7 +34,7 @@
                    </ul>
                    <ul class = "region_list region_list2" style="display: none;">
                        <li><h6>上海市</h6><span><a href="${baseurl}selcity/795">上海</a></span></li>
-                       <li><h6>江苏省</h6><span><a href="${baseurl}selcity/856">苏州</a></span><span><a href="${baseurl}selcity/814">南京</a></span></li>
+                       <li><h6>江苏省</h6><span><a href="${baseurl}selcity/856">苏州</a></span><span><a href="${baseurl}selcity/814">南京</a></span><span><a href="${baseurl}selcity/892">盐城</a></span></li>
                        <li><h6>浙江省</h6><span><a href="${baseurl}selcity/930">杭州</a></span></li>
                        <li><h6>安徽省</h6><span><a href="${baseurl}selcity/1032">合肥</a></span><span><a href="${baseurl}selcity/1051">蚌埠</a></span></li>
                        <li><h6>江西省</h6><span><a href="${baseurl}selcity/1249">南昌</a></span></li>

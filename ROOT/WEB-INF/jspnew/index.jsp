@@ -195,7 +195,7 @@
             <img src="${mybaseurl}/res/images/v2/huanbao.gif"/>
             <div>
                 <p>环保</p>
-                <span>全面利用&nbsp;避免污染</span>
+                <span>循环利用&nbsp;绿色环保</span>
             </div>
         </li>
         <li>
@@ -209,14 +209,14 @@
             <img src="${mybaseurl}/res/images/v2/gongdao.gif"/>
             <div>
                 <p>公道</p>
-                <span>百家竞价&nbsp;价格公道</span>
+                <span>隐私保护&nbsp;价格公道</span>
             </div>
         </li>
         <li>
             <img src="${mybaseurl}/res/images/v2/jianding.gif"/>
             <div>
                 <p>鉴定</p>
-                <span>免费鉴定&nbsp;帮你到底</span>
+                <span>免费服务&nbsp;专业鉴定</span>
             </div>
         </li>
     </ul>
@@ -348,7 +348,7 @@
     </div>
     <div class = "man_content main_content_js" style="padding-bottom:0;">
         <div class="pure-g">
-            <div class="pure-u-1-1"><img class="lazy" data-original="${mybaseurl}/res/images/v2/nursing_1.jpg"/></div>
+            <div class="pure-u-1-1"><a href="${mybaseurl}/luxury"><img class="lazy" data-original="${mybaseurl}/res/images/v2/nursing_1.jpg"/></a></div>
         </div>
         <div class="pure-g">
             <div class="pure-u-1-1">
@@ -389,17 +389,17 @@
                             <b></b>
                         </li>
                         <li class="">
-                            <div class="Jicon fl"><em class="Jicon05"></em>货品质检<br/>消毒 调拨出厂</div>
+                            <div class="Jicon fl"><em class="Jicon05"></em>质检消毒</div>
                             <div class="JText fr">
-                                <p>5、货品质检，消毒、调拨出厂</p>
+                                <p>5、质检消毒</p>
                                 货品养护后由专业质检人员进行严格质量检查，再次消毒、包装后由专业物流送出工厂
                             </div>
                             <b></b>
                         </li>
                         <li class="">
-                            <div class="Jicon fl"><em class="Jicon06"></em>完成养护<br/>顾客取货</div>
+                            <div class="Jicon fl"><em class="Jicon06"></em>顾客取货</div>
                             <div class="JText fr">
-                                <p>6、完成养护，顾客取货</p>
+                                <p>6、顾客取货</p>
                                 完成养护后，养护服务系统会自动发送物品养护完成的通知短信，顾客可选择到就近的养护中心提取自己的货品或者拨打养护中心服务电话选择快递送货上门（快递费用顾客自行支付）。
                             </div>
                             <b></b>
@@ -451,8 +451,8 @@
     <div class = "man_content main_content_js" style="padding-bottom:0;">
         <div class="pure-g">
             <div class="pure-u-3-5 hotnews">
-                <p class="news_title">观前直营店开业啦</p>
-                <p class="news_desc">热烈庆祝位于观前大井巷15号的爱收宝开业！爱收宝是一家回收、寄卖：黄金珠宝，名包名表，手机数码等互联网+回收O2O的公司！全国服务热线：400-086-1131。《爱收宝》打造二手名品交易平台！</p>
+                <p class="news_title">观前直营店开业啦！</p>
+                <p class="news_desc">热烈庆祝爱收宝观前店开业！店铺位于观前街大井巷15号。爱收宝是一家回收寄卖黄金珠宝、名包名表、手机数码的互联网+回收的O2O公司，爱收宝致力于打造二手名品交易第一平台！</p>
                 <div class="newsmarquee">
                 <ul class="newslist">
                     <li><a href="${mybaseurl}/news/1"><span>></span>3D硬金与千足金的区别</a></li>
