@@ -110,28 +110,28 @@
             <div><img class="lazy" data-original="${mybaseurl}/res/images/v2/ds_zj00.jpg"/><br><br><span class="">梁群</span></div>
             <div style="display: none;height: 321px;">
                 <p>梁群</p>
-                <p>从事黄金珠宝行业二十余年, 奢侈品领域领军人物。</p>
+                <p>爱收宝创始人<br>20年以上鉴定经验</p>
             </div>
         </div>
         <div class="pure-u-1-4 jdzj">
             <div><img class="lazy" data-original="${mybaseurl}/res/images/v2/ds_zj01.jpg"/><br><br><span class="">孙绍超</span></div>
             <div style="display: none;height: 321px;">
                 <p>孙绍超</p>
-                <p>专业的珠宝鉴定师，从事珠宝行业8年</p>
+                <p>资深珠宝鉴定师<br>8年以上鉴定经验<br>擅长黄金贵金属领域</p>
             </div>
         </div>
         <div class="pure-u-1-4 jdzj">
             <div><img class="lazy" data-original="${mybaseurl}/res/images/v2/ds_zj02.jpg"/><br><br><span class="">单禹浩</span></div>
             <div style="display: none;height: 321px;">
                 <p>单禹浩</p>
-                <p>专业的珠宝鉴定师，从事珠宝行业8年</p>
+                <p>资深珠宝鉴定师<br>8年以上鉴定经验<br>擅长钻石珠宝领域</p>
             </div>
         </div>
         <div class="pure-u-1-4 jdzj">
             <div><img class="lazy" data-original="${mybaseurl}/res/images/v2/ds_zj03.jpg"/><br><br><span class="">林明明</span></div>
             <div style="display: none;height: 321px;">
                 <p>林明明</p>
-                <p>专业的珠宝鉴定师，从事珠宝行业8年</p>
+                <p>资深珠宝鉴定师<br>8年以上鉴定经验</p>
             </div>
         </div>
     </div>

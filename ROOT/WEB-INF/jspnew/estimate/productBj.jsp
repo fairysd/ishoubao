@@ -231,7 +231,7 @@
                         <a>第一步：机器智能入库</a>
                     </div>
                     <div class="zlylef8_1">
-                        <a>第二步：全程摄像头拍摄检测</a>
+                        <a>第二步：全程拍摄监控</a>
                     </div>
                     <div class="zlylef8_1">
                         <a>第三步：保护隐私数据</a>
@@ -309,10 +309,10 @@
                     <p style="margin-top:30px;"><span class="radio">Q</span><span class="radio_con">提交订单后我该做什么？</span></p>
                     <p style="margin-top:10px;"><span class="radio1">A</span><span class="radio_con1">上门回收：请保持电话畅通，携带好本人身份证，等待爱收宝小哥上门回收。</span></p>
                     <p style="margin-left:29px;">门店交易：手机保持正常开机携带好本人身份证，3天内去门店质检完成交易。</p>
-                    <p style="margin-left:29px;">物流交易：请在24小时内选择顺丰到付，把您的手表快递给我们，在订单中心填入您的快递单号。我们收到您的物件</p>
+                    <p style="margin-left:29px;">物流交易：请在24小时内选择顺丰到付，把您的宝贝快递给我们，在订单中心填入您的快递单号。我们收到您的物件</p>
                     <p style="margin-left:29px;">后会进行质检，质检完成会给您放款。</p>
                     <p style="margin-top:30px;"><span class="radio">Q</span><span class="radio_con">快递费是谁承担，标准是什么？</span></p>
-                    <p style="margin-top:10px;"><span class="radio1">A</span><span class="radio_con1">手表：爱收宝江浙沪承担12元，除江浙沪以外承担22元；非正品的其他费用，用户自理，详情请咨询客服。</span></p>
+                    <p style="margin-top:10px;"><span class="radio1">A</span><span class="radio_con1">爱收宝江浙沪承担12元，除江浙沪以外承担22元；非正品的其他费用，用户自理，详情请咨询客服。</span></p>
                     <p style="margin-top:30px;"><span class="radio">Q</span><span class="radio_con">订单提交后我从哪里可以查看到交易进度？</span></p>
                     <p style="margin-top:10px;"><span class="radio1">A</span><span class="radio_con1">登录订单中心或者关注爱收宝微信账号，随时查看处理进度，我们会及时更新订单状态。</span></p>
                     <c:if test="${ptype=='phone'}"><p style="margin-top:40px;"><a href="${baseurl}estimate/moreHelp" target="_blank" style="color:#000000;text-decoration:none;">查看更多帮助说明>></a></p></c:if>

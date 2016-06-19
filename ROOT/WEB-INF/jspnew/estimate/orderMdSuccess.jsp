@@ -46,7 +46,7 @@
             <li style="margin-top:30px;">订单号：${estimate.tradeNo}</li>
             <li>交易方式：爱收宝<c:if test="${empty isMortgage}">${estimate.orgName} ( ${estimate.orgAddress} )</c:if><c:if test="${not empty isMortgage}">${shopInfo.name} ( ${shopInfo.address} )</c:if><sapn style="margin-left:20px;color:#996600;" ><a href="${baseurl}store/${ordercityId}/${shopId}">查看地址</a></sapn></li>
             <li>交易金额：<span style="color:red;">￥${estimate.estimatePrice}</span></li>
-            <li>接下来您可以：<a href="${baseurl}">继续<c:if test="${empty isMortgage}">回收</c:if><c:if test="${not empty isMortgage}">抵押</c:if></a><span style="color:#BCBCBC;">丨</span><a href="http://shop.aishoubao.com/user.php?act=<c:if test="${empty isMortgage}">estimate_list</c:if><c:if test="${not empty isMortgage}">mortgage_list</c:if>">查看我的订单</a></li>
+            <li>接下来您可以：<a href="${baseurl}">继续<c:if test="${empty isMortgage}">回收</c:if><c:if test="${not empty isMortgage}">寄卖</c:if></a><span style="color:#BCBCBC;">丨</span><a href="http://shop.aishoubao.com/user.php?act=<c:if test="${empty isMortgage}">estimate_list</c:if><c:if test="${not empty isMortgage}">mortgage_list</c:if>">查看我的订单</a></li>
         </ul>
     </div>
     <%----%>

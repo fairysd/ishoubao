@@ -294,7 +294,6 @@
                     },
 
                     success: function () {
-
                         //var a = [];
                         var sum = 0;
                         //console.log(jsondata);

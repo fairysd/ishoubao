@@ -525,15 +525,15 @@
 				this.time = time;
 			}
 			var ad = new Array();
-			ad[0] = new AdItem('黄金寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/1.png', '专业寄卖值得信赖', '', '${mybaseurl}/product/8fa078e445184f1f9041ea1be763a5e8?ptype=gjs&goldType=gold');
-			ad[1] = new AdItem('名包寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/2.png', '专业的鉴定团队鉴定人', '', '${mybaseurl}/category/08d2d4cbf3974d8i8d56b26ba29266aa/0');
-			ad[2] = new AdItem('名表寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/3.png', '保证客户利益有效实行', '', '${mybaseurl}/category/08d2d4cbff6j48f08d56b26ba29266aa/0');
-			ad[3] = new AdItem('手机/数码寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/4.png', '资深的推广运营团队', '', '${mybaseurl}/category/08d2d4cbf39748f08d56b26ba29266aa/0');
-			ad[4] = new AdItem('铂金寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/5.png', '线上线下整合营销推广', '', '${mybaseurl}/product/21577fd8a5324e62a416978d15367515?ptype=gjs&goldType=pt');
-			ad[5] = new AdItem('钯金寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/6.png', '量身定制品牌营销方案', '', '${mybaseurl}/product/094c2f5308514105a862c6299f9d320b?ptype=gjs&goldType=palau');
-			ad[6] = new AdItem('K金寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/7.png', '量身定制品牌营销方案', '', '${mybaseurl}/product/bcf8086e4f4647fabcfc3409430baa60?ptype=gjs&goldType=k');
-			ad[7] = new AdItem('白银寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/8.png', '量身定制品牌营销方案', '', '${mybaseurl}/product/5f67c6baca4b4167a4b49b6df510a3f1?ptype=gjs&goldType=sliver');
-			ad[8] = new AdItem('钻石寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/9.png', '量身定制品牌营销方案', '', '${mybaseurl}/product/diamond');
+			ad[0] = new AdItem('黄金寄卖：高价诚信', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/1.png', '专业寄卖值得信赖', '', '${mybaseurl}/product/8fa078e445184f1f9041ea1be763a5e8?ptype=gjs&goldType=gold');
+			ad[1] = new AdItem('名包寄卖：正规安全', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/2.png', '专业的鉴定团队鉴定人', '', '${mybaseurl}/category/08d2d4cbf3974d8i8d56b26ba29266aa/0');
+			ad[2] = new AdItem('名表寄卖：灵活高效 ', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/3.png', '保证客户利益有效实行', '', '${mybaseurl}/category/08d2d4cbff6j48f08d56b26ba29266aa/0');
+			ad[3] = new AdItem('手机寄卖：方便快捷', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/4.png', '资深的推广运营团队', '', '${mybaseurl}/category/08d2d4cbf39748f08d56b26ba29266aa/0');
+			ad[4] = new AdItem('铂金寄卖：专业鉴定', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/5.png', '线上线下整合营销推广', '', '${mybaseurl}/product/21577fd8a5324e62a416978d15367515?ptype=gjs&goldType=pt');
+			ad[5] = new AdItem('钯金寄卖：低息放心', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/6.png', '量身定制品牌营销方案', '', '${mybaseurl}/product/094c2f5308514105a862c6299f9d320b?ptype=gjs&goldType=palau');
+			ad[6] = new AdItem('K金寄卖： 闲置换新', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/7.png', '量身定制品牌营销方案', '', '${mybaseurl}/product/bcf8086e4f4647fabcfc3409430baa60?ptype=gjs&goldType=k');
+			ad[7] = new AdItem('白银寄卖：便捷省心', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/8.png', '量身定制品牌营销方案', '', '${mybaseurl}/product/5f67c6baca4b4167a4b49b6df510a3f1?ptype=gjs&goldType=sliver');
+			ad[8] = new AdItem('钻石寄卖：贴心服务', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/9.png', '量身定制品牌营销方案', '', '${mybaseurl}/product/diamond');
 			var img = new Array();
 			img[0] = document.getElementById("imgSmallLeft");
 			img[1] = document.getElementById("imgMiddleLeft");

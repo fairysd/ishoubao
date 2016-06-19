@@ -32,7 +32,7 @@
                 </div>
                 <div class="content_2co2">
                     <div class="co2_content">
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本协议是您与aishoubao.com(简称"本站"，网址：www.aishoubao.com)所有者(以下简称为"爱收宝")之间就爱收宝网站的商品、服务销售等相关事宜所订立的契约，请您仔细阅读本注册协议，您选择注册成为爱收宝会员时，或者选择从本站购买任何商品或服务，或使用本站的任何服务本协议，即构成对双方有约束力的法律文件。</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本协议是您与aishoubao.com(简称"本站"，网址：www.aishoubao.com)所有者(以下简称为"爱收宝")之间就爱收宝网站的商品、服务销售等相关事宜所订立的契约，请您仔细阅读本注册协议，您选择注册成为爱收宝会员时，或者选择从本站购买任何商品或服务，或使用本站的任何服务,本协议即构成对双方有约束力的法律文件。</p>
                         <p style="font-weight:bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第1条 本站服务条款的确认和接纳</p>
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1如果您在18周岁以下，您只能在父母或监护人的监护参与下才能使用本站。</p>
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.2用户点击同意本协议的，即视为用户确认自己具有享受本站服务、下单购物等相应的权利能力和行为能力，能够独立承担法律责任。</p>
