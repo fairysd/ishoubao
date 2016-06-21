@@ -37,7 +37,7 @@
         </ul>
         <div class = "serviceRx">
             <p><span class="vip">VIP</span>服务热线:<span class = "red1">400-086-1131</span>
-            <img src = "${baseurl}res/images/v2/qrcode.jpg">
+                <img src = "${baseurl}res/images/v2/qrcode.jpg">
             </p>
         </div>
     </div>
@@ -57,7 +57,7 @@
     </div>
     <div class = "footer_fix_2">
         <div class="out_box">
-        <div><img src = "${baseurl}res/images/new/down1.jpg"><img src = "${baseurl}res/images/new/down2.jpg"><img src = "${baseurl}res/images/new/down3.jpg"><img src = "${baseurl}res/images/new/down4.jpg"></div>
+            <div><img src = "${baseurl}res/images/new/down1.jpg"><img src = "${baseurl}res/images/new/down2.jpg"><img src = "${baseurl}res/images/new/down3.jpg"><img src = "${baseurl}res/images/new/down4.jpg"></div>
         </div>
         <div class="footer_copy">统一社会信用代码91320506MA1M96GQ9G ICP备案苏ICP备15052824号-1 Copyright ©2016 苏州爱收宝网络科技有限公司 版权所有</div>
     </div>
@@ -70,7 +70,7 @@
 <script type="text/javascript" src="${baseurl}res/js/main.js"></script>
 
 <script type="text/javascript">
-	var userinfo;
+    var userinfo;
     if (!$.support.leadingWhitespace) {
         $("#ietip").show();
     }
@@ -83,9 +83,9 @@
             $('#gotop').hide();
         }
     }
-//    document.domain = 'aishoubao.com';
-$(document).ready(function(){			 
-	$.ajax({
+    //    document.domain = 'aishoubao.com';
+    $(document).ready(function(){
+        $.ajax({
             url: "http://shop.aishoubao.com/userheader.php?ajax=1",
             dataType: "jsonp",
             jsonp:'callback',
@@ -93,11 +93,11 @@ $(document).ready(function(){
             data: { },
             type: "GET",
             success: function(data) {
-			userinfo = data;
-            userinfo = JSON.stringify(userinfo);             	
-			userinfo = $.parseJSON(userinfo);
-			console.log(userinfo); 
-			console.log(userinfo.userId);	                
+                userinfo = data;
+                userinfo = JSON.stringify(userinfo);
+                userinfo = $.parseJSON(userinfo);
+                console.log(userinfo);
+                console.log(userinfo.userId);
                 if(data.userId) {
                     $('#loginUserInfo').html('<a href="http://shop.aishoubao.com/user.php" target="_top">'+data.userInfo.username+'</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://shop.aishoubao.com/user.php?act=logout&backurl=http://www.aishoubao.com" target="_top">退出</a>');
                 } else {
@@ -105,19 +105,20 @@ $(document).ready(function(){
                 }
             },
         });
-       
-});
-    $(document).ready(function(e) {    	
+
+    });
+    $(document).ready(function(e) {
         b();
         $('#gotopBtn').click(function(){
             $(document).scrollTop(0);
         });
 
-              
+
     });
-  
+
     $(window).scroll(function(e){
         b();
     });
 </script>
 <script src="http://kefu.qycn.com/vclient/state.php?webid=113372" language="javascript" type="text/javascript"></script>
+<script language="javascript">var qykf_userinfo_url='http://shop.aishoubao.com/userheader.php?kf=1&callback=?'</script><script>(function(){var c=document.createElement("script"),s=document.getElementsByTagName("script")[0];c.src="//kefu.qycn.com/vclient/state.php?webid=113372";s.parentNode.insertBefore(c,s);})();</script>
