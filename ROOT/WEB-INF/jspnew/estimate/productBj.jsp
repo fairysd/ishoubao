@@ -98,7 +98,7 @@
         .zlyri_f2{width:290px;margin:auto;height:122px;border-top: 1px solid #DCDCDC;}
         .zlyri_f2 p{margin-top: 0;margin-bottom: 0;color:#9A9A9A;font-size: 12px;}
         .zly_lj{width:250px;height:50px;background-color: #ED3F3F;margin:auto;text-align: center;margin-bottom: 20px;}
-        .zly_lj a{color:#FFFFFF;line-height: 50px;font-weight: bold;text-decoration:none;}
+        .zly_lj a{color:#FFFFFF;line-height: 50px;font-weight: bold;text-decoration:none;display: block;}
         .zlt_rido{width:100%;height:70px;margin-top: 50px;background-color: #FFFFFF;overflow:hidden;border: 1px solid #DCDCDC;}
         .zlt_rido1{width:40px;height:40px;background-color: #e1882a;text-align: center;margin-top: 15px;margin-left: 15px;float:left;}
         .zlt_rido1 a{line-height: 40px;font-size: 30px;color:#FFFFFF;}

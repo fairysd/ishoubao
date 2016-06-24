@@ -24,15 +24,35 @@
         .pure-form legend small{color:#969696;font-size:14px;}
         .pure-form legend { padding: 0; margin-bottom: 0; }
         .mybutton{margin-top:15px;background-color: #e1882a;}
-        .ds_jdzj{margin-top:40px;padding:80px 35px;border:1px solid #F8F8F8;}
-        .ds_jdzj div div:last-child{background-color: #E18729;}
-        .ds_jdzj div div:last-child p{font-size:18px;color:#fff;padding-top:86px;}
-        .ds_jdzj div div:last-child p:first-child{font-size:28px;font-weight: bold;}
-        .ds_jdzj div div:last-child p:last-child{width:180px;margin:0 auto;color:#E2D0BE;padding-bottom:40px;}
+        .ds_jdzj{margin-top:40px;padding:80px 35px  0  35px;border:1px solid #F8F8F8;}
+        .ds_jdzj div div:last-child p{font-size:18px;color:#323232;}
+        .ds_jdzj div div:last-child p:first-child{font-size:18px;font-weight: bold;}
+        .ds_jdzj div div:last-child p:last-child{width:180px;margin:0 auto;}
         .ds_left{float:left;width: 750px;}
         .ds_right{float:left;width:450px;}
         .dsnav{background-color: #FAFAFA;height:524px;}
-    </style>
+        .eventblock{
+        	position: relative;
+        }
+        .eventblock span{
+        	font-size: 18px;
+        	font-weight: bold;
+        	color: #323232;
+        }
+        .eventword{
+        	background-color: rgb(255,255,204);
+        	position: relative;
+        	width: 250px;
+        	top: -80px;
+        	left: 16px;
+        	opacity: 0;
+        	height: 96px;
+        	transition: opacity 1s;
+        }
+        .eventword:hover{
+        	opacity: 1;
+        }
+       </style>
 </head>
 <body>
 <%@ include file="../common/header.jsp"%>
@@ -107,29 +127,29 @@
     </div>
     <div class="pure-g tac ds_jdzj">
         <div class="pure-u-1-4 jdzj">
-            <div><img class="lazy" data-original="${mybaseurl}/res/images/v2/ds_zj00.jpg"/><br><br><span class="">梁群</span></div>
-            <div style="display: none;height: 321px;">
+            <div class="eventblock"><img class="lazy" data-original="${mybaseurl}/res/images/v2/ds_zj00.jpg"/><br><br><span class="">梁群</span></div>
+            <div class="eventword">
                 <p>梁群</p>
                 <p>爱收宝创始人<br>20年以上鉴定经验</p>
             </div>
         </div>
         <div class="pure-u-1-4 jdzj">
-            <div><img class="lazy" data-original="${mybaseurl}/res/images/v2/ds_zj01.jpg"/><br><br><span class="">孙绍超</span></div>
-            <div style="display: none;height: 321px;">
+            <div class="eventblock"><img class="lazy" data-original="${mybaseurl}/res/images/v2/ds_zj01.jpg"/><br><br><span class="">孙绍超</span></div>
+            <div class="eventword">
                 <p>孙绍超</p>
                 <p>资深珠宝鉴定师<br>8年以上鉴定经验<br>擅长黄金贵金属领域</p>
             </div>
         </div>
         <div class="pure-u-1-4 jdzj">
-            <div><img class="lazy" data-original="${mybaseurl}/res/images/v2/ds_zj02.jpg"/><br><br><span class="">单禹浩</span></div>
-            <div style="display: none;height: 321px;">
+            <div class="eventblock"><img class="lazy" data-original="${mybaseurl}/res/images/v2/ds_zj02.jpg"/><br><br><span class="">单禹浩</span></div>
+            <div class="eventword">
                 <p>单禹浩</p>
                 <p>资深珠宝鉴定师<br>8年以上鉴定经验<br>擅长钻石珠宝领域</p>
             </div>
         </div>
         <div class="pure-u-1-4 jdzj">
-            <div><img class="lazy" data-original="${mybaseurl}/res/images/v2/ds_zj03.jpg"/><br><br><span class="">林明明</span></div>
-            <div style="display: none;height: 321px;">
+            <div class="eventblock"><img class="lazy" data-original="${mybaseurl}/res/images/v2/ds_zj03.jpg"/><br><br><span class="">林明明</span></div>
+            <div class="eventword">
                 <p>林明明</p>
                 <p>资深珠宝鉴定师<br>8年以上鉴定经验</p>
             </div>
@@ -148,17 +168,20 @@
 <script>
     $(document).ready(function(){
         $("img.lazy").lazyload({skip_invisible: false, effect: "fadeIn"});
-        $('.jdzj').on({
-            mouseover:function () {
-                $(this).children().first().hide();
-                $(this).children().last().show();
-            },
-            mouseout:function () {
-                $(this).children().first().show();
-                $(this).children().last().hide();
-            }
-        })
-
+        var eventword = $(".eventword");
+        var eventblock= $(".eventblock");        
+        for(i = 0;i<eventword.length;i++){
+        		eventblock.each(function(){
+	        		$(this).mouseenter(function(){
+	        				 $(this).parent().find(".eventword").css("opacity",1)       			
+	        		})	
+	        		$(this).mouseleave(function(){
+	        			$(this).parent().find(".eventword").css("opacity",0)    
+	        		})
+        		})
+        }
+        
+				
         $("#save").click(function(){
                 var flag=true;
                 var  goodsType=$("#goodsType").val();

@@ -95,7 +95,8 @@
 				<div style="margin-top: 100px;" class="container">
 					<div class="leftbody">
 						<div class="lefttop">
-							<div class="ptblock">
+							<a id="ptmove" href="${mybaseurl}/product/21577fd8a5324e62a416978d15367515?ptype=gjs&goldType=pt">
+								<div class="ptblock">
 								<div class="wordblock platinum">
 									<h3>铂金回收</h3>
 									<p>铂金，是少有的白色贵金属，铂金比黄金稀有三十倍，具有纯净性、稀有性、永恒性，素有“爱情金属”之称。爱收宝回收铂金首饰、铂金丝、铂金片等，我们回收您的铂金感伤，还您一段纯净的爱情。</p>
@@ -104,9 +105,11 @@
 								<a href="${mybaseurl}/product/21577fd8a5324e62a416978d15367515?ptype=gjs&goldType=pt"><img src="${mybaseurl}/res/images/new/category/animate_10.png" /></a>	
 								</div>
 							</div>
+							</a>
 						</div>
 						<div class="leftbottom">
-							<div class="pdblock">
+							<a id="plmove" href="${mybaseurl}/product/094c2f5308514105a862c6299f9d320b?ptype=gjs&goldType=palau">
+								<div class="pdblock">
 								<div class="wordblock platinum">
 									<h3>钯金回收</h3>
 									<p>钯金，比铂金还稀有，但钯金质量比铂金质量轻不少，钯金的纯度还十分适合肌肤。爱收宝回收各类钯金饰品、钯金原料。</p>
@@ -115,6 +118,7 @@
 								<a href="${mybaseurl}/product/094c2f5308514105a862c6299f9d320b?ptype=gjs&goldType=palau"><img src="${mybaseurl}/res/images/new/category/animate_22.png" /></a>	
 								</div>
 							</div>
+							</a>							
 						</div>
 					</div>
 					<div class="midbody">
@@ -135,26 +139,30 @@
 					</div>
 					<div class="rightbody">
 						<div class="righttop">
-							<div class="kgblock">
+							<a id="kgmove" href="${mybaseurl}/product/bcf8086e4f4647fabcfc3409430baa60?ptype=gjs&goldType=k">
+								<div class="kgblock">
 								<div class="wordblock platinum">
 									<h3>K金回收</h3>
 									<p>K金饰品的特点是金量少、颜色多，俗话说“金无赤足，人无完人”，指的是黄金饰品中都含有其他金属，这里的“金”便是K金。爱收宝回收各类K金，还您一个更高的含金量。</p>
 								</div>
 								<div class="imgblock">
-							<a href="${mybaseurl}/product/bcf8086e4f4647fabcfc3409430baa60?ptype=gjs&goldType=k"><img src="${mybaseurl}/res/images/new/category/animate_07.png" /></a>		
-								</div>
+									<a href="${mybaseurl}/product/bcf8086e4f4647fabcfc3409430baa60?ptype=gjs&goldType=k"><img src="${mybaseurl}/res/images/new/category/animate_07.png" /></a>		
+								</div>								
 							</div>
+							</a>		
 						</div>
 						<div class="rightbottom">
-							<div class="slblock">
-								<div class="wordblock platinum">
-									<h3>白银回收</h3>
-									<p>白银，是一种历史悠久的贵金属，至今已有4000多年的历史。爱收宝回收银饰、银元、银条、银砖等，我们回收您的白银历史，还您一个崭新的未来。</p>
-								</div>
-								<div class="imgblock">
-								<a href="${mybaseurl}/product/5f67c6baca4b4167a4b49b6df510a3f1?ptype=gjs&goldType=sliver"><img src="${mybaseurl}/res/images/new/category/slpic_03.png" /></a>	
-								</div>
+							<a id="slmove" href="${mybaseurl}/product/5f67c6baca4b4167a4b49b6df510a3f1?ptype=gjs&goldType=sliver">
+								<div class="slblock">
+									<div class="wordblock platinum">
+										<h3>白银回收</h3>
+										<p>白银，是一种历史悠久的贵金属，至今已有4000多年的历史。爱收宝回收银饰、银元、银条、银砖等，我们回收您的白银历史，还您一个崭新的未来。</p>
+									</div>
+									<div class="imgblock">
+										<a href="${mybaseurl}/product/5f67c6baca4b4167a4b49b6df510a3f1?ptype=gjs&goldType=sliver"><img src="${mybaseurl}/res/images/new/category/slpic_03.png" /></a>	
+									</div>
 							</div>
+						</a>							
 						</div>
 					</div>
 				</div>
@@ -228,6 +236,41 @@
 		</div>-->
 		<%@ include file="../common/footer.jsp"%>
 		<script src="${mybaseurl}/res/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		$(function(){
+			$(".ptblock").mouseenter(function(){
+				$(".ptblock img").css("top","-35px");
+			})
+			$(".ptblock").mouseleave(function(){
+				$(".ptblock img").css("top","-30px");
+			})
+			$(".pdblock").mouseenter(function(){
+				$(".pdblock img").css("top","55px");
+			})
+			$(".pdblock").mouseleave(function(){
+				$(".pdblock img").css("top","60px");
+			})
+			$(".kgblock").mouseenter(function(){
+				$(".kgblock img").css("top","-50px");
+			})
+			$(".kgblock").mouseleave(function(){
+				$(".kgblock img").css("top","-45px");
+			})
+			$(".slblock").mouseenter(function(){
+				$(".slblock img").css("top","35px");
+			})
+			$(".slblock").mouseleave(function(){
+				$(".slblock img").css("top","40px");
+			})
+			$(".premetalblock").mouseenter(function(){
+				$(".premetalblock .imgblock").css("top","-140px");
+			})
+			$(".premetalblock").mouseleave(function(){
+				$(".premetalblock .imgblock").css("top","-135px");
+			})
+		})
+			
+		</script>
 	</body>
 
 </html>

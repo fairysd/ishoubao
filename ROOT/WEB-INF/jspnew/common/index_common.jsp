@@ -109,16 +109,17 @@
 <div class="out_box">
 	<div class="title">
 		<h6>BOOKING<br>代售</h6>
-		<small><a href = "${mybaseurl}/consignment/">详情</a></small>
+		<!--<small><a href = "${mybaseurl}/consignment/">详情</a></small>-->
 	</div>
 	<div class="man_content main_content_js">
-		<div class="t_nav t_nav_js" align="center">
+		<!--<div class="t_nav t_nav_js" align="center">
 			<ul class="t_nav_right tac">
 				<li class="active"><a href="${mybaseurl}/consignment/"><span>平台代售</span></a></li>
 			</ul>
-		</div>
+		</div>-->
 		<div class="t_content">
-			<ul class="t_c_left" style="padding-left:20px;">
+			<a href="${mybaseurl}/consignment/"><img src="${mybaseurl}/res/images/new/consignment/dspic_03.jpg" alt="" /></a>
+			<!--<ul class="t_c_left" style="padding-left:20px;">
 				<li class="active">
 					<div class="pure-g mdjs">
 						<div class="pure-u-1-2" style="width:694px;"><img class="lazy liu4" data-original="${mybaseurl}/res/images/v2/liu4.gif" /></div>
@@ -171,7 +172,7 @@
 						</div>
 					</div>
 				</li>
-			</ul>
+			</ul> -->
 		</div>
 	</div>
 </div>

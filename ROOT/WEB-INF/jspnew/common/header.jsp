@@ -80,6 +80,7 @@
                                    <li>基础服务</li>
                                    <li><a href="${mybaseurl}/category/first">回收</a></li>
                                    <li><a href="${mybaseurl}/mortgage/">寄卖</a></li>
+                                   <li><a href="${mybaseurl}/luxury/">护理</a></li>
                                    <li><a href="http://shop.aishoubao.com" target="_blank">商城</a></li>
                                </ul>
                                <ul>

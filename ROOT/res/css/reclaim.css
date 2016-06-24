@@ -1,3 +1,7 @@
+a, a:hover{
+	text-decoration: none;
+	font-family: '微软雅黑', 'Microsoft YaHei', Arial, Helvetica, sans-serif;
+}
 .clear_padding .col-sm-12{
 	padding: 0;
 }

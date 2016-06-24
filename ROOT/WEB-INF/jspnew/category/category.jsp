@@ -44,6 +44,9 @@
         .gjs ul li:hover{background-color:#e1882a;color:#FFFFFF;}
         .gjs ul li a:hover{color:#FFFFFF;background-color: #e1882a;}
         .co2_content{height:140px; border:1px solid #EAEAEA;text-align: center;}
+        .co2_content a{
+        	display: block;
+        }
         .content3{width:100%; background-color: #FAFAFA;float:left;margin-top:30px;}
         .co2_content ul{padding-left: 0; width:1000px;margin-top: 20px;margin-left: 20px;}
         .co2_content li{height:50px;line-height: 50px;width:130px;float:left;border:1px solid #EAEAEA;}

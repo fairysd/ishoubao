@@ -36,7 +36,7 @@
             <li><a href = "${baseurl}help/mzsm">免责声明</a></li>
         </ul>
         <div class = "serviceRx">
-            <p><span class="vip">VIP</span>服务热线:<span class = "red1">400-086-1131</span>
+            <p><span class="vip">服务热线:</span><span class = "red1">400-086-1131</span>
                 <img src = "${baseurl}res/images/v2/qrcode.jpg">
             </p>
         </div>
@@ -122,3 +122,4 @@
 </script>
 <script src="http://kefu.qycn.com/vclient/state.php?webid=113372" language="javascript" type="text/javascript"></script>
 <script language="javascript">var qykf_userinfo_url='http://shop.aishoubao.com/userheader.php?kf=1&callback=?'</script><script>(function(){var c=document.createElement("script"),s=document.getElementsByTagName("script")[0];c.src="//kefu.qycn.com/vclient/state.php?webid=113372";s.parentNode.insertBefore(c,s);})();</script>
+<script>(function(){var c=document.createElement("script"),s=document.getElementsByTagName("script")[0];c.src="//kefu.qycn.com/vclient/state.php?webid=113372";s.parentNode.insertBefore(c,s);})();</script>

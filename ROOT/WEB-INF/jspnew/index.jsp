@@ -83,6 +83,12 @@
 				top: 17px;
 				width: 28px;
 			}
+			.ssindex{
+				background-color: #FFFFFF;
+				    height: 200px;
+    padding-top: 50px;
+    box-shadow:#999999 1px 1px 1px 1px;
+			}
     </style>
 </head>
 <body>
@@ -132,10 +138,10 @@
                         <li data-value="贵金属寄卖">贵金属寄卖</li>
                         <li data-value="珠宝寄卖">珠宝寄卖</li>
                         <li data-value="名表寄卖">名表寄卖</li>                        
-                        <li data-value="名包寄卖">名宝寄卖</li>
+                        <li data-value="名包寄卖">名包寄卖</li>
                     </ul>
                 </label>
-                    <label class = "select"><span>寄卖金额</span><b class = "no"><input type = "text" name="rzJe" id="quickrzJe">万元</b></label>
+                    <label class = "select"><span>寄卖金额</span><b class = "no"><input type = "text" name="rzJe" id="quickrzJe">元</b></label>
                     <label class = "select"><span>联系手机</span><b class = "no"><input type = "text" name="phone" id="quickPhone"></b></label>
                     <label>
                         <button id="indexKsdydksqBtn">快速寄卖申请</button>
@@ -223,15 +229,18 @@
 </div>
 <%@include file="common/index_common.jsp"%>
 <!-- shop -->
-<div class="mywrapper indexbg" style="clear: both;height: 792px;">
+<div class="mywrapper indexbg" style="clear: both;">
     <div class = "out_box">
         <div class = "title">
-            <h6>SALE<br>限时优惠</h6>
-        </div>
-        <div class = "man_content myshop" style="padding-bottom:30px;">
+            <h6>Love collecting treasure mall<br>爱收宝商城</h6>
+        </div>        
             <div class="pure-g">
-                <div class="pure-u-1-5">
-                    <div class = "t_nav">
+                <div class="pure-u-1-4 shoptitle">
+                	<h3>限时优惠</h3>
+                	<div class="shoppic">
+                		<a href="http://shop.aishoubao.com"><img src="${mybaseurl}/res/images/new/shop/shoppic_10.jpg" alt="" /></a>
+                	</div>
+                    <!--<div class = "t_nav">
                         <ul class = "t_nav_right" style="padding-top:45px;">
                             <li class = "active"><i class="iconfont f24">&#xe604;</i> <span>大牌名包</span></li>
                             <li><i class="iconfont f24">&#xe617;</i> <span>大牌名表</span></li>
@@ -239,10 +248,20 @@
                             <li><i class="iconfont f24">&#xe601;</i> <span>钻石珠宝</span></li>
                             <li><i class="iconfont f24">&#xe605;</i> <span>手机数码</span></li>
                         </ul>
-                    </div>
+                    </div>-->
                 </div>
-                <div class="pure-u-4-5">
-                    <div class = "t_content">
+                <div class="pure-u-3-4 xinshang">
+                	<h3>名品欣赏</h3>
+                	<div class="pure-u-1-3">
+                		<a href="http://shop.aishoubao.com/category.php?id=18"><img src="${mybaseurl}/res/images/new/shop/shoppic_03.jpg" alt="" /></a>
+                	</div>
+                	<div class="pure-u-1-3">
+                		<a href="http://shop.aishoubao.com/category.php?id=352"><img src="${mybaseurl}/res/images/new/shop/shoppic_05.jpg" alt="" /></a>
+                	</div>
+                	<div class="pure-u-1-3">
+                		<a href="http://shop.aishoubao.com/category.php?id=272"><img src="${mybaseurl}/res/images/new/shop/shoppic_07.jpg" alt="" /></a>
+                	</div>
+                    <!--<div class = "t_content">
                         <ul class = "t_c_left">
                             <li class = "active">
                                 <div class="pure-g mt20">
@@ -335,22 +354,21 @@
                                 </div>
                             </li>
                         </ul>
-                    </div>
+                    </div>-->
                 </div>
-            </div>
-        </div>
+            </div>        
     </div>
 </div>
 <!-- 护理 -->
 <div class = "out_box">
-    <div class = "title">
+    <div class = "title nursingtitle">
         <h6>NURSING<br>护理</h6>
     </div>
     <div class = "man_content main_content_js" style="padding-bottom:0;">
         <div class="pure-g">
             <div class="pure-u-1-1"><a href="${mybaseurl}/luxury"><img class="lazy" data-original="${mybaseurl}/res/images/v2/nursing_1.jpg"/></a></div>
         </div>
-        <div class="pure-g">
+        <!--<div class="pure-g">
             <div class="pure-u-1-1">
                 <div class="pro-slide">
                     <ul class="clearfix">
@@ -408,7 +426,7 @@
                     <div class="border-dash"></div>
                 </div>
             </div>
-        </div>
+        </div>-->
     </div>
 </div>
 <!-- 区域店推荐 -->
@@ -446,30 +464,29 @@
 <!-- 新闻 -->
 <div class = "out_box">
     <div class = "title">
-        <h6>LASTEST NEWS<br>最新资讯</h6>
-    </div>
-    <div class = "man_content main_content_js" style="padding-bottom:0;">
-        <div class="pure-g">
-            <div class="pure-u-3-5 hotnews">
-                <p class="news_title">观前直营店开业啦！</p>
-                <p class="news_desc">热烈庆祝爱收宝观前店开业！店铺位于观前街大井巷15号。爱收宝是一家回收寄卖黄金珠宝、名包名表、手机数码的互联网+回收的O2O公司，爱收宝致力于打造二手名品交易第一平台！</p>
+        <h6>Love to receive Po information<br>爱收宝资讯</h6>
+    </div>    
+        <div class="pure-g zixunbl">
+        	<div class="pure-u-1-5">
+        		<img src="${mybaseurl}/res/images/new/zinxunpic_03.jpg" alt="" />
+        	</div>
+            <div class="pure-u-4-5 hotnews">                
                 <div class="newsmarquee">
-                <ul class="newslist">
-                    <li><a href="${mybaseurl}/news/1"><span>></span>3D硬金与千足金的区别</a></li>
-                    <li><a href="${mybaseurl}/news/2"><span>></span>穿的好不如戴的对 想做职场白骨精你得来块表</a></li>
-                    <li><a href="${mybaseurl}/news/3"><span>></span>金价收盘创逾一周新高 蓄势决战千三之巅</a></li>
-                    <li><a href="${mybaseurl}/news/4"><span>></span>细节控戛纳红毯上的这些珠宝你看到了吗？</a></li>
-                </ul>
+	                <ul class="newslist">
+	                    <li><a href="${mybaseurl}/news/1"><span>></span>3D硬金与千足金的区别<span style="text-align: right;display: block;float: right; color: #000000;">2016-05-23</span></a></li>
+	                    <li><a href="${mybaseurl}/news/2"><span>></span>穿的好不如戴的对 想做职场白骨精你得来块表<span style="text-align: right;display: block;float: right;color: #000000;">2016-04-13</span></a></li>
+	                    <li><a href="${mybaseurl}/news/3"><span>></span>金价收盘创逾一周新高 蓄势决战千三之巅<span style="text-align: right;display: block;float: right;color: #000000;">2016-03-20</span></a></li>
+	                    <li><a href="${mybaseurl}/news/4"><span>></span>细节控戛纳红毯上的这些珠宝你看到了吗？<span style="text-align: right;display: block;float: right;color: #000000;">2016-01-06</span></a></li>	                    
+	                </ul>
                 </div>
             </div>
-            <div class="pure-u-2-5" style="text-align:right;"><img class="lazy" style="padding-left:175px;" data-original="${mybaseurl}/res/images/v2/news.jpg"/></div>
+            <!--<div class="pure-u-2-5" style="text-align:right;"><img class="lazy" style="padding-left:175px;" data-original="${mybaseurl}/res/images/v2/news.jpg"/></div>-->
         </div>
-    </div>
 </div>
 <!-- 实时指数 -->
 <div class="mywrapper indexbg" style="clear: both;height: 320px;">
     <div class = "out_box">
-        <div class = "title">
+        <div class = "title zhishu">
             <h6>REAL-TIME INDEX<br>实时指数</h6>
         </div>
         <div class = "man_content ssindex">

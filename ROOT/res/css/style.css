@@ -56,18 +56,16 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
 	position: relative;
 	overflow: hidden;
 }
-		.img_out_box img{
-		width:1920px;
-		height:500px;
-		 width: 1920px;
-		position: relative;
-		left: 50%;
-		margin-left: -960px;
-		height: 500px;
-		overflow: hidden;
-		}
-.w150{width:140px;}
-.w275{width:275px;}
+.img_out_box img{
+	width: 1920px;
+	position: relative;
+	left: 50%;
+	margin-left: -960px;
+	height: 500px;
+	overflow: hidden;
+}
+.w150{width:110px;}
+.w275{width:420px;}
 .mymenu > ul > li{padding-top:5px;padding-bottom:5px;color:#000;font-size:16px;}
 .tar{text-align: right;}
 .tac{text-align: center;}
@@ -486,12 +484,12 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
 	vertical-align: top;
 	width: 312px;
 	padding-top: 20px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 .rightRow > div {
 	width: 286px;
 	padding: 0 13px 20px 13px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 /* 鍟嗗搧婊氬姩 */
 .pro_info {
@@ -723,14 +721,12 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
 		transform: rotate(45deg);
 	}
 }
-
-
 .mt10{margin-top:10px;}
 .mt20{margin-top:20px;}
 .nav_send a{cursor: default;}
 .sale_list a:hover{color:#9A6700;}
-.vip{font-size:18px;color:red;font-style: italic;}
-.red1{font-size:18px;padding-left:50px;}
+.vip{font-size:18px;color:#323232;font-style: italic;}
+.red1{font-size:18px;padding-left:20px;padding-right: 20px;}
 .serviceRx{text-align:right;padding-right:20px;}
 .serviceRx img{padding:20px;}
 .friendlink ul{padding-left:15px;padding-top:30px;padding-bottom:30px;}

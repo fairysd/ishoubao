@@ -63,7 +63,7 @@
                 <%--</div>--%>
             <%--</li>--%>
             <li style="margin-top:25px;">订单号：${estimate.tradeNo}</li>
-            <li>快递信息: 苏州市平江区园林路5号5-2 林先生 400-086-1131</li>
+            <li>快递信息: 江苏省苏州市姑苏区园林路5-2号 爱收宝（收） 400-086-1131</li>
             <li>交易金额：<span style="color:red;">￥${estimate.estimatePrice}</span></li>
             <li>接下来您可以：<a href="${baseurl}">继续回收</a><span style="color:#BCBCBC;">丨</span><a href="http://shop.aishoubao.com/user.php?act=estimate_list">查看我的订单</a></li>
         </ul>

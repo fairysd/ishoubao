@@ -19,6 +19,20 @@
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/style.css">
     <style>
         .clockRound{height: 25px; line-height: 25px; border: 1px solid #aaa; width:auto;padding-left:0;padding-right:8px;border-radius: 5px;}
+        .price_img img{
+        	width: 100%;
+        	transition: width 1s;
+        	transition: height 1s;
+        	position: relative;
+        }
+        .price_img{
+        	position: relative;
+        }
+        .price_img img:hover{
+        	width: 110%;
+        	height: 220px;
+        	left: -20px; 
+        }
     </style>
 </head>
 <body>
@@ -209,7 +223,7 @@
         <c:if test="${ptype=='gjs'}">
         <div class = "price_now">
             <h4>${gjsName}实时价格</h4>
-            <div class = "price_img"><img src = "${gjs24Pic}" width="290" alt = ""></div>
+            <div class = "price_img"><img src = "${gjs24Pic}" alt=""></div>
         </div>
         </c:if>
         <%--<div class = "price_img"><img src = "${baseurl}res/images/4c.gif" alt = ""></div>--%>
