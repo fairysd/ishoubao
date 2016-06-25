@@ -34,7 +34,9 @@
         .swiper-container {
             width: 100%;
         }
-
+		.row{
+			width: 100%;
+		}
         .swiper-container img {
             width: 100%;
         }
@@ -72,10 +74,10 @@
         .help .row{line-height:2.1em;font-size: 0.8em;}
         .help a{color:#808080;}
         .bar-tab .tab-item.active, .bar-tab .tab-item:active {
-            color: #00958C;
+            color: #e1882a;
         }
         .swiper-pagination-bullet-active {
-            background: #00958C;
+            background: #e1882a;
         }
         .category{font-size: 0.7em;color: #FFFFFF;}
         .gold{background-color: #EDB146;}
@@ -119,6 +121,52 @@
         }
         .myicon{height:70px;}
         .nexticon{padding-right:10px;}
+        .sangetu a{
+        	display: block;
+        	width: 32%;
+        	float: left;
+        }
+        .sangetu img{
+        	display: block;
+        	width: 100%;
+        	        }
+        .pagetop{
+        	/*height: 220px;*/
+        	width: 100%;
+        	float: left;
+        }
+        .sangetu{
+        	height: 110px;
+        }
+        .pagemid{
+        	margin: 10px 0;
+        	height: 160px;
+        	width: 100%;
+        	float: left;
+        }
+        .pagemid > div {
+        	width: 50%;
+        	float: left;
+        }
+        /*.pagemid a{
+        	display: block;
+        	position: relative;
+        	z-index: 2;
+        	width: 50%;
+        	margin: 0 auto;
+        	height: 60px;
+        	top: -120px;
+        	text-align: center;
+        	line-height: 60px;
+        	background-color: rgba(255,255,255,0.85);
+        	font-size: 16px;
+        	color: #000000;
+        	font-family: "微软雅黑";
+        }*/
+        .pagemid  img{
+        	position: relative;
+        	z-index: 1;
+        }      
     </style>
 </head>
 <body>
@@ -135,96 +183,33 @@
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
         </div>
-        <!-- category -->
-        <div class="content-padded stamp-entrance category mt10">
-            <ul class="stamp-list">
-                <li class="gold" style="width:74%">
-                    <span>黄金/白银回收</span><br>
-                    <a href="http://m.aishoubao.com/aishoubao/category/new/47f288756f1a4c5ebac0a2baf1f5ee80" class="stamp external">
-                    <div class="myicon" align="center"><i class="iconfont big">&#xe602;</i></div>
-                    <%--<div class="nexticon" align="right"><i class="iconfont small">&#xe603;</i></div>--%>
-                    </a>
-                </li>
-                <li style="width:1%"></li>
-                <li class="bag" style="width:25%">
-                    <span>名包回收</span><br>
-                    <a href="http://m.aishoubao.com/aishoubao/category/new/08d2d4cbf3974d8i8d56b26ba29266aa" class="stamp external">
-                    <div class="myicon" align="center"><i class="iconfont big">&#xe604;</i></div>
-                    <%--<div class="nexticon" align="right"><i class="iconfont small">&#xe603;</i></div>--%>
-                    </a>
-                </li>
-            </ul>
+      <div class="col pagetop">
+        	<div class="huishou">
+        		<div class="sangetu">
+        		<a href="http://m.aishoubao.com/aishoubao/category/new/47f288756f1a4c5ebac0a2baf1f5ee80"><img src="${mybaseurl}/res/images/wap/waptop_02.jpg" alt="" /></a>		
+        		<a href="http://m.aishoubao.com/aishoubao/category/new/47f288756f1a4c5ebac0a2baf1f5ee80"><img src="${mybaseurl}/res/images/wap/waptop_04.jpg" alt="" /></a>
+        		<a href="http://m.aishoubao.com/aishoubao/category/new/08d2d4cbf3974d8i8d56b26ba29266aa"><img src="${mybaseurl}/res/images/wap/waptop_06.jpg" alt="" /></a>      				  		
+        		</div>
+        		<div class="sangetu">
+        		<a href="http://m.aishoubao.com/aishoubao/category/new/08d2d4cbff6j48f08d56b26ba29266aa"><img src="${mybaseurl}/res/images/wap/waptop_10.jpg" alt="" /></a>		
+        		<a href="http://m.aishoubao.com/aishoubao/diamond/"><img src="${mybaseurl}/res/images/wap/waptop_11.jpg" alt="" /></a>
+        		<a href="http://m.aishoubao.com/aishoubao/category/new/08d2d4cbf39748f08d56b26ba29266aa"><img src="${mybaseurl}/res/images/wap/waptop_12.jpg" alt="" /></a>      				  		
+        		</div>
+        	</div>
         </div>
-        <div class="content-padded stamp-entrance category mt10">
-            <ul class="stamp-list">
-                <li class="clock" style="width:29%">
-                    <span>名表回收</span><br>
-                    <a href="http://m.aishoubao.com/aishoubao/category/new/08d2d4cbff6j48f08d56b26ba29266aa" class="stamp external">
-                        <div class="myicon" align="center"><i class="iconfont big">&#xe606;</i></div>
-                        <%--<div class="nexticon" align="right"><i class="iconfont small">&#xe603;</i></div>--%>
-                    </a>
-                </li>
-                <li style="width:1%"></li>
-                <li class="diamond" style="width:29%">
-                    <span>钻石回收</span><br>
-                    <a href="http://m.aishoubao.com/aishoubao/diamond/" class="stamp external">
-                        <div class="myicon" align="center"><i class="iconfont big">&#xe601;</i></div>
-                        <%--<div class="nexticon" align="right"><i class="iconfont small">&#xe603;</i></div>--%>
-                    </a>
-                </li>
-                <li style="width:1%"></li>
-                <li class="phone" style="width:40%">
-                    <span>手机回收</span><br>
-                    <a href="http://m.aishoubao.com/aishoubao/category/new/08d2d4cbf39748f08d56b26ba29266aa" class="stamp external">
-                        <div class="myicon" align="center"><i class="iconfont big">&#xe605;</i></div>
-                        <%--<div class="nexticon" align="right"><i class="iconfont small">&#xe603;</i></div>--%>
-                    </a>
-                </li>
-            </ul>
+        <div class="col pagemid">
+        	<div class="jimai">
+        		<a href="${mybaseurl}/wap/jimai"><img src="${mybaseurl}/res/images/wap/wapmid_02.jpg" alt="" /></a>
+        		<!--<a href="">寄卖 >></a>-->
+        	</div>
+        	<div class="shangcheng">
+        		<a href="http://shop.aishoubao.com/mobile/"><img src="${mybaseurl}/res/images/wap/wapmid_04.jpg" alt="" /></a>
+        		<!--<a href="">商城 >></a>-->
+        	</div>
         </div>
-        <!-- ads2 -->
-        <div class="row">
-            <div class="col-100"><img src="${ads2[0].picurl}"/></div>
+        <div class="servicenum">
+        	<img src="${mybaseurl}/res/images/wap/pagebottom_02.jpg" alt="" />
         </div>
-
-        <div class="row mt10">
-            <div class="col-100"><img src="${mybaseurl}/res/images/wap/nav_jmhj.jpg"></div>
-        </div>
-        <!-- ad3 -->
-        <div class="row mt10">
-            <div class="col-100"><img src="${ads3[0].picurl}"/></div>
-        </div>
-
-        <div class="row mt10">
-            <div class="col-33"><img src="${mybaseurl}/res/images/wap/icon_jggs.jpg" width="60" height="60"></div>
-            <div class="col-33"><img src="${mybaseurl}/res/images/wap/icon_jmsq.jpg" width="60" height="60"></div>
-            <div class="col-33"><img src="${mybaseurl}/res/images/wap/icon_mdfw.jpg" width="60" height="60"></div>
-        </div>
-        <div class="row mt10">
-            <div class="col-100"><a href="${mybaseurl}/wap/jimai" class="external"><img src="${mybaseurl}/res/images/wap/icon_more.jpg" width="150" height="25"></a></div>
-        </div>
-        <div class="row mt10">
-            <div class="col-100"><img src="${mybaseurl}/res/images/wap/nav_shop.jpg"></div>
-        </div>
-        <!-- ad4 -->
-        <div class="row">
-            <div class="col-100"><a href="${ads4[0].url}" class="external"><img src="${ads4[0].picurl}"/></a></div>
-        </div>
-
-        <!-- ads5 -->
-        <div class="content-padded mt10">
-            <div class="row">
-                <div class="col-33"><a href="${ads5[0].url}" class="external"><img src="${ads5[0].picurl}"/></a></div>
-                <div class="col-33"><a href="${ads5[1].url}" class="external"><img src="${ads5[1].picurl}"/></a></div>
-                <div class="col-33"><a href="${ads5[2].url}" class="external"><img src="${ads5[2].picurl}"/></a></div>
-            </div>
-        </div>
-
-        <!-- ads6 -->
-        <div class="row mt10">
-            <div class="col-100"><a href="${ads6[0].url}" class="external"><img src="${ads6[0].picurl}"/></a></div>
-        </div>
-
         <div class="content-padded mt10">
             <div class="row" style="text-align: center;">
                 <div class="col-100"><img src="${mybaseurl}/res/images/wap/chooseUs.jpg"></div>
@@ -249,11 +234,11 @@
                     <div class="col-33"><a href="http://shop.aishoubao.com/mobile/user.php?act=estimate_list" class="external">订单</a></div>
                     <div class="col-33"><a href="http://shop.aishoubao.com/mobile/flow.php?step=cart" class="external">购物车</a></div>
                 </div>
-                <div class="row">
+                <!--<div class="row">
                     <div class="col-33"><a href="http://www.aishoubao.com" class="external">电脑版</a></div>
                     <div class="col-33"><a href="http://kefu.qycn.com/vclient/chat/?websiteid=113372" class="external">在线客服</a></div>
                     <div class="col-33"><a href="#" class="external">投诉建议</a></div>
-                </div>
+                </div>-->
             </div>
         </div>
     </div>

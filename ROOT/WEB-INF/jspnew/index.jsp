@@ -20,6 +20,7 @@
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/main.css">
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/root.css">
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/idangerous.swiper.css"> 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
  <!--寄卖轮转图-->
     <style type="text/css">
     	#dHomePageCarousel {
@@ -581,9 +582,9 @@
 			} else {
 				adname.innerText = ad[2].name;
 				adtel.innerText = ad[2].phone;
-				adaddr.innerText = ad[2].address;
-				adprice.innerText = ad[2].price;
-				adtime.innerText = ad[2].time;
+//				adaddr.innerText = ad[2].address;
+//				adprice.innerText = ad[2].price;
+//				adtime.innerText = ad[2].time;
 			}		
 </script>
 <script>
