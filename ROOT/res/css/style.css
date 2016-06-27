@@ -362,12 +362,14 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
 	height: 20px;
 	padding: 5px;
 	line-height: 20px;
+	box-sizing: content-box;
 	}
 .search_box button {
 	width: 88px;
 	color: #000;
 	font-size:14px;
 	background-color: transparent;
+	padding: 0;
 	}
 #searchInput{background: url("../images/v2/sc.png") no-repeat scroll left center #FFFFFF;background-position-x: 6px;padding-left:30px;}
 /* footer */

@@ -23,7 +23,7 @@
 			.huishou{
 		
 		background: url(${mybaseurl}/res/images/new/category/wordbgrow1_07.jpg);
-	}
+	
 		</style>
 	</head>
 

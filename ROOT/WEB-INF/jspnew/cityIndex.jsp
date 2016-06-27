@@ -132,13 +132,33 @@
 <div class="myrow citybanner">
     <div class="pure-g">
         <div class="pure-u-3-4" style="width:800px;">
-            <div class="my-slider">
+        	<div class = "swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class = "swiper-slide">
+	                <div class = "img_out_box"><img src = "${baseurl}res/images/banner1.jpg"></div>
+	            </div>
+	            <div class = "swiper-slide" >
+	                <div class = "img_out_box"><img src = "${baseurl}res/images/banner2.jpg"></div>
+	            </div >
+	            <div class = "swiper-slide">
+	                <div class = "img_out_box"><img src = "${baseurl}res/images/banner3.jpg"></div>
+	            </div>
+	            <div class = "swiper-slide">
+	                <div class = "img_out_box"><img src = "${baseurl}res/images/banner4.jpg"></div>
+	            </div>
+	            <div class = "swiper-slide">
+	                <div class = "img_out_box"><img src = "${baseurl}res/images/banner5.jpg"></div>
+	            </div>
+	        </div>
+	        <div class="pagination"></div>  
+	    </div>
+            <!--<div class="my-slider">
                 <ul>
                     <c:forEach items="${ads1}" var="ad">
                         <li data-nav="${ad.name}"><a href="${ad.url}"><img src="${ad.picurl}"/></a></li>
                     </c:forEach>
                 </ul>
-            </div>
+            </div>-->
         </div>
         <div class="pure-u-1-4 banner-right">
             <div class="pure-g floor1 tac">

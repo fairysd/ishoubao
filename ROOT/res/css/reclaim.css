@@ -366,3 +366,12 @@ a, a:hover{
 .midbody{
 	margin-right: 22px;
 }
+img{
+	vertical-align: baseline;
+}
+.search_box input{
+	padding: 3px;
+}
+.search_box button{
+	width: 86px;
+}

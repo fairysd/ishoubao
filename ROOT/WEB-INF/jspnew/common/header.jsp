@@ -118,7 +118,7 @@
     </div>
 
     <div class = "out_box header_nav">
-        <h1 class = "logo"><a href="${baseurl}"><img src = "${baseurl}res/images/v2/logo.png" alt = "爱收宝"></a><img class="smp" src="${mybaseurl}/res/images/new/2smpjypt.png"/></h1>
+        <h1 class = "logo"><a href="${baseurl}selcity/856"><img src = "${baseurl}res/images/v2/logo.png" alt = "爱收宝"></a><img class="smp" src="${mybaseurl}/res/images/new/2smpjypt.png"/></h1>
         <div class = "search_box">
             <form action = "${baseurl}product/searchq" method = "post"><input type = "text" name = "q" id = "searchInput" placeholder="回收的宝贝">
                 <button type = "submit" onclick="return validateSearchForm(this.form)">搜索</button>

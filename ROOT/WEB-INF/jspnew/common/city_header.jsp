@@ -20,7 +20,7 @@
         </div>
     </div>
     <div class = "out_box header_nav">
-        <h1 class = "logo"><a href="${baseurl}"><img src = "${baseurl}res/images/new/logo.png" alt = "爱收宝"></a></h1>
+        <h1 class = "logo"><a href="http://www.aishoubao.com?curpage=page_index&cityId=2"><img src = "${baseurl}res/images/new/logo.png" alt = "爱收宝"></a></h1>
         <div class = "city_box">
             <div class = "city_select">门店 [<span>全国</span>]</div>
             <div class = "region_pop">

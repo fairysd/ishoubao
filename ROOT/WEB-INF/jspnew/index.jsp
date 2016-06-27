@@ -433,9 +433,26 @@
 <!-- 区域店推荐 -->
 <div class = "out_box">
     <div class = "title">
-        <h6>REGIONAC STRORE IMAGE DISPLAY<br>区域店推荐</h6>
+        <h6>THE PREMIUM STORE<br>门店服务</h6>
     </div>
-    <div class = "man_content main_content_js" style="padding-bottom:0;">
+ 
+	    <div class="store-img">
+	    	<img src="${mybaseurl}/res/images/new/homepage/storeimg_03.jpg" alt="" />
+	    </div>
+	    <div class="store-title">
+	    	<ul>
+	    		<li>全部门店（）</li>
+	    		<li>姑苏区（）</li>
+	    		<li>新区（）</li>
+	    		<li>吴中区（）</li>
+	    		<li>工业园区（）</li>
+	    		<li>吴江（）</li>
+	    		<li>平江区（）</li>
+	    	</ul>
+	    </div>
+
+    
+    <!--<div class = "man_content main_content_js" style="padding-bottom:0;">
         <div class="pure-g store_js_1">
             <div class="pure-u-1-2"><img class="lazy" data-original="${mybaseurl}/res/images/v2/store_1_1.jpg"/><img class="lazy storeimg" data-original="${mybaseurl}/res/images/v2/store_1_2.jpg"/></div>
             <div class="pure-u-1-2 store-content">
@@ -460,7 +477,7 @@
             </div>
             <div class="pure-u-1-2"><img class="lazy" data-original="${mybaseurl}/res/images/v2/store_2_1.jpg"/><img class="lazy storeimg" data-original="${mybaseurl}/res/images/v2/store_2_2.jpg"/></div>
         </div>
-    </div>
+    </div>-->
 </div>
 <!-- 新闻 -->
 <div class = "out_box">

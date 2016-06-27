@@ -312,7 +312,7 @@
                     <p style="margin-left:29px;">物流交易：请在24小时内选择顺丰到付，把您的宝贝快递给我们，在订单中心填入您的快递单号。我们收到您的物件</p>
                     <p style="margin-left:29px;">后会进行质检，质检完成会给您放款。</p>
                     <p style="margin-top:30px;"><span class="radio">Q</span><span class="radio_con">快递费是谁承担，标准是什么？</span></p>
-                    <p style="margin-top:10px;"><span class="radio1">A</span><span class="radio_con1">爱收宝江浙沪承担12元，除江浙沪以外承担22元；非正品的其他费用，用户自理，详情请咨询客服。</span></p>
+                    <p style="margin-top:10px;"><span class="radio1">A</span><span class="radio_con1">所有寄至爱收宝的物品，由用户承担运费；非正品的其他费用，用户自理，详情请咨询客服。</span></p>
                     <p style="margin-top:30px;"><span class="radio">Q</span><span class="radio_con">订单提交后我从哪里可以查看到交易进度？</span></p>
                     <p style="margin-top:10px;"><span class="radio1">A</span><span class="radio_con1">登录订单中心或者关注爱收宝微信账号，随时查看处理进度，我们会及时更新订单状态。</span></p>
                     <c:if test="${ptype=='phone'}"><p style="margin-top:40px;"><a href="${baseurl}estimate/moreHelp" target="_blank" style="color:#000000;text-decoration:none;">查看更多帮助说明>></a></p></c:if>
@@ -326,9 +326,11 @@
                 </div>
                 <div class="zlyri_f2">
                     <p style="margin-top:16px;margin-bottom:16px;"><span style="color:#FF6700;font-size:35px;">￥${quote}</span><span style="float: right;margin-top:25px;"><a href="javascript:window.location.href = document.referrer;">重新询价</a></span></p>
-                    <p>服务承诺：<span id="areaname"></span>&nbsp;&nbsp;最快明天可以完成交易</p>
-                    <p>交易方式：门店回收&nbsp;&nbsp;上门回收&nbsp;&nbsp;快递回收</p>
+                    <p>服务承诺：便捷，安全，高效，正规</p>
+                    <p>交易方式：<span id="areaname"></span><span id="areaservice"></span></p>
                 </div>
+                <!--<span id="areaname"></span>&nbsp;&nbsp;最快明天可以完成交易
+                门店回收&nbsp;&nbsp;上门回收&nbsp;&nbsp;快递回收-->
                 <div class="zly_lj">
                     <a href="${baseurl}login.jsp" id="estimate">立即回收</a>
                 </div>
@@ -454,7 +456,12 @@ $(document).ready(function() {
             var res ="";
             var className = "";
             if(data.success) {
-                $("#areaname").html(u.name);
+                $("#areaname").html(u.name);              
+                if ( $("#areaname").html() === "苏州市") {                	
+                	$("#areaservice").html("&nbsp;&nbsp;门店回收&nbsp;&nbsp;上门回收&nbsp;&nbsp;快递回收")
+                } else{                	
+                	$("#areaservice").html("&nbsp;&nbsp;快递回收")
+                }
             } else {
             }
         }
