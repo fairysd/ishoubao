@@ -377,38 +377,42 @@
 <script type="text/javascript">
 			$(document).ready(function(){
 				  $("#estimate").click(function(){		
-				  	$("#productBjForm").submit();
-//	    	if(userinfo.userId){
-//      		$("#productBjForm").submit();
-//      	}
-//          else{
-//          alert("请您先登录或注册");
-//          	layer.open({
-//		      			type:2,
-//		      			area:["491px","591px"],
-//		      			content:[this.href,"no"],
-//		      			shadeClose:true,
-//		      			title:false
-//    				})
-//          }
+//				  	$("#productBjForm").submit();
+	    	if(userinfo.userId){
+        		$("#productBjForm").submit();
+        	}
+            else{
+            alert("请您先登录或注册");
+            	layer.open({
+		      			type:2,
+		      			area:["491px","591px"],
+		      			content:[this.href,"no"],
+		      			shadeClose:true,
+		      			title:false
+      				})
+            }
              return false;
 	    	});
 	    	$("#goMortgage").click(function(){
 	    		$("#isMortgage").attr("value", "1");
-	    		$("#productBjForm").submit();
-//		       	if(userinfo.userId){
-//		        		$("#productBjForm").submit();
-//		        	}
-//		        else{
+//	    		$("#productBjForm").submit();
+		       	if(userinfo.userId){
+		        		$("#productBjForm").submit();
+		        	}
+		        else{
+		        			layer.open({
+		        				type:1,
+		        				content:"请您先登录或注册"
+		        			});
 //		            	alert("请您先登录或注册");
-//			            layer.open({
-//			      			type:2,
-//			      			area:["491px","591px"],
-//			      			content:[this.href,"no"],
-//			      			shadeClose:true,
-//			      			title:false
-//			      			})
-//		            }
+			            layer.open({
+			      			type:2,
+			      			area:["491px","591px"],
+			      			content:[this.href,"no"],
+			      			shadeClose:true,
+			      			title:false
+			      			})
+		            }
 		        return false;
 	    	});  
 //       $("#isMortgage").attr("value", "1");
