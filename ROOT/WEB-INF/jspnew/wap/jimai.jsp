@@ -71,20 +71,34 @@
             padding-left:0.4em;
         }
 
-        .bar-header-secondary {top: 4.5em;}
+        .bar-header-secondary {top: .5em;}
         .jmcategory ul{list-style: none;}
         .jmcategory ul,li{margin:0;padding:0;list-style-type:none;line-height: 0;}
         .jmcategory > .col-50 { width: 50%; margin-left: 0;}
         .jimai07{height:5.5em;}
+        .content .bar .searchbar .search-input input, .searchbar .search-input{
+        	background-color: rgba(0,0,0,0);
+        }
+        .content .bar{
+        	margin: 0 1rem;
+        	border-radius: 1rem;
+        	background-color: rgba(0,0,0,0.3);
+        	border: none;
+        	
+        }
+        .content .bar .searchbar{
+        	border-radius: 1rem;
+        	background-color: rgba(0,0,0,0);
+        }
+        .content .bar:after{
+        	background-color:rgba(0,0,0,0);
+        }
     </style>
 </head>
 <body>
 <div class="page">
     <%@include file="common/toolbar.jsp"%>
-    <div class="content">
-        <div class="row">
-            <div class="col-100"><img src="${mybaseurl}/res/images/wap/jimai_02.jpg"/></div>
-        </div>
+    <div class="content">        
         <!-- search -->
         <div class="bar bar-header-secondary">
             <div class="searchbar">
@@ -95,7 +109,7 @@
                 </div>
             </div>
         </div>
-        <div class="row" style="margin-top:2.5em;">
+        <div class="row" style="">
             <div class="col-100"><img src="${mybaseurl}/res/images/wap/jimai_04.jpg"/></div>
         </div>
         <!-- form -->
@@ -117,7 +131,7 @@
             <div class="col-50">
                 <ul>
                     <li><a href="http://m.aishoubao.com/aishoubao/diamond/?isMortgage=1" class="external"><img src="${mybaseurl}/res/images/wap/jimai_09.jpg"/></a></li>
-                    <li><a href="http://m.aishoubao.com/aishoubao/category/new/08d2d4cbf39748f08d56b26ba29266aa?isMortgage=1" class="external"><img src="${mybaseurl}/res/images/wap/jimai_11.jpg"/></a></li>
+                    <li><a href="http://m.aishoubao.com/aishoubao/product/8fa078e445184f1f9041ea1be763a5e8/detail?type=gjs&isMortgage=1" class="external"><img src="${mybaseurl}/res/images/wap/jimai_11.jpg"/></a></li>
                     <li><a href="http://m.aishoubao.com/aishoubao/category/new/08d2d4cbff6j48f08d56b26ba29266aa?isMortgage=1" class="external"><img src="${mybaseurl}/res/images/wap/jimai_12.jpg"/></a></li>
                 </ul>
             </div>

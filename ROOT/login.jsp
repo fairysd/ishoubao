@@ -276,7 +276,7 @@
 		            type: "get",
 			        success: function(data) {
 			            if(data.success){
-			            	alert("登录成功")
+//			            	alert("登录成功")
 			            	$('#productBjForm', parent.document).submit();
 			            }else{
 			            	alert("帐号或密码错误")
@@ -340,12 +340,12 @@
 		            async: false,
 		            data:  {
 							phone:$("#regPhoneNumber").val(),							
-//							ajax:1,
+							ajax:1,
 							act:"is_registered_byphone"
 						},
 		            type: "get",		            
 			        success: function(data) {
-			            if(data==="true"){
+			            if(data === "true"){
 			            	alert("未注册的手机号");
 			            }else{
 			            	alert("已经注册过的手机号");

@@ -71,11 +71,11 @@
                         <div class="pure-g">
                             <div class="pure-u-1-2">
                                 <label for="goodsType">商品类别</label>
-                                <select id="goodsType" name="productType" class="pure-u-23-24" style="height: 35px;">
+                                <select id="goodsType" name="productType" class="pure-u-23-24" style="height: 35px;width:150px;margin-right: 20px;">
                                     <option value="名包">名包</option>
                                     <option value="名表">名表</option>
-                                    <option value="珠宝">珠宝</option>
-                                    <option value="手机">手机</option>
+                                    <option value="珠宝">黄金</option>
+                                    <option value="贵金属">贵金属</option>
                                     <option value="玉石">玉石</option>
                                     <option value="其它">其它</option>
                                 </select>
@@ -83,7 +83,7 @@
 
                             <div class="pure-u-1-2">
                                 <label for="productBrand">品牌</label>
-                                <input id="productBrand" name="productBrand" class="pure-u-24-24" type="text">
+                                <input id="productBrand" name="productBrand" class="pure-u-24-24" type="text"style="width: 250px;">
                             </div>
 
                             <div class="pure-u-1-1">

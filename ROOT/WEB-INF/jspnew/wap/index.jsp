@@ -123,12 +123,14 @@
         .nexticon{padding-right:10px;}
         .sangetu a{
         	display: block;
-        	width: 32%;
+        	width: 33.33%;
         	float: left;
         }
         .sangetu img{
         	display: block;
         	width: 100%;
+        	border-left: 1px solid #DDDDDD;
+        	border-bottom: 1px solid #DDDDDD;
         	        }
         .pagetop{
         	/*height: 220px;*/
@@ -136,11 +138,12 @@
         	float: left;
         }
         .sangetu{
-        	height: 110px;
+        	/*height: 110px;*/
+        	/*border-bottom: 1px solid #DDDDDD;*/
         }
         .pagemid{
         	margin: 10px 0;
-        	height: 160px;
+        	/*height: 160px;*/
         	width: 100%;
         	float: left;
         }
@@ -188,13 +191,11 @@
         		<div class="sangetu">
         		<a href="http://m.aishoubao.com/aishoubao/category/new/47f288756f1a4c5ebac0a2baf1f5ee80"><img src="${mybaseurl}/res/images/wap/waptop_02.jpg" alt="" /></a>		
         		<a href="http://m.aishoubao.com/aishoubao/category/new/47f288756f1a4c5ebac0a2baf1f5ee80"><img src="${mybaseurl}/res/images/wap/waptop_04.jpg" alt="" /></a>
-        		<a href="http://m.aishoubao.com/aishoubao/category/new/08d2d4cbf3974d8i8d56b26ba29266aa"><img src="${mybaseurl}/res/images/wap/waptop_06.jpg" alt="" /></a>      				  		
-        		</div>
-        		<div class="sangetu">
+        		<a href="http://m.aishoubao.com/aishoubao/category/new/08d2d4cbf3974d8i8d56b26ba29266aa"><img src="${mybaseurl}/res/images/wap/waptop_06.jpg" alt="" /></a>    
         		<a href="http://m.aishoubao.com/aishoubao/category/new/08d2d4cbff6j48f08d56b26ba29266aa"><img src="${mybaseurl}/res/images/wap/waptop_10.jpg" alt="" /></a>		
         		<a href="http://m.aishoubao.com/aishoubao/diamond/"><img src="${mybaseurl}/res/images/wap/waptop_11.jpg" alt="" /></a>
-        		<a href="http://m.aishoubao.com/aishoubao/category/new/08d2d4cbf39748f08d56b26ba29266aa"><img src="${mybaseurl}/res/images/wap/waptop_12.jpg" alt="" /></a>      				  		
-        		</div>
+        		<a href="http://m.aishoubao.com/aishoubao/category/new/08d2d4cbf39748f08d56b26ba29266aa"><img src="${mybaseurl}/res/images/wap/waptop_12.jpg" alt="" /></a>  
+        		</div>        		
         	</div>
         </div>
         <div class="col pagemid">
@@ -259,6 +260,7 @@
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: 2500,
+        loop:true,
         autoplayDisableOnInteraction: false
     });
     $(".mytopimg").on({
@@ -267,7 +269,9 @@
             window.location.href = link;
         }
     });
+    
 </script>
+
 
 </body>
 </html>
