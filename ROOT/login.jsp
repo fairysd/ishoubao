@@ -191,6 +191,13 @@
 					height: 18px;
 					line-height: 18px;
 				}
+				.input_char img.vue{
+					display: block;
+					/*width: 12px;*/
+					padding: 9px 0;
+					position: relative;
+   					left: -20px;
+				}
 			</style>
 		</head>
 		<body>
@@ -218,13 +225,13 @@
 				</div>
 				<div class="reg_container" style="display: none;">
 					<form action="http://shop.aishoubao.com/user.php" method="post">
-						<p class="input_char"><span>手机:</span><input class="user_id" type="text" name="" id="regPhoneNumber" value="" placeholder="请输入您的手机号"/></p>
+						<p class="input_char"><span>手机:</span><input class="user_id" type="text" name="" id="regPhoneNumber" value="" placeholder="请输入您的手机号"/><img class="vue" id="regUsername_img" src="" alt="" /></p>
 						<p id="regUsername_cue" class="cue_char"></p>
-						<p class="input_char"><span>Email:</span><input class="user_email" type="email" name="" id="regEmail" value="" placeholder="请输入您的邮箱地址"/></p>
+						<p class="input_char"><span>Email:</span><input class="user_email" type="email" name="" id="regEmail" value="" placeholder="请输入您的邮箱地址"/><img class="vue" id="regEmail_img" src="" alt="" /></p>
 						<p id="regEmail_cue" class="cue_char"></p>
-						<p class="input_char"><span>密码:</span><input class="user_psword" type="password" name="" id="regPassword" value="" placeholder="请输入密码"/></p>
+						<p class="input_char"><span>密码:</span><input class="user_psword" type="password" name="" id="regPassword" value="" placeholder="请输入密码"/><img class="vue" id="regPassword_img" src="" alt="" /></p>
 						<p id="regPassword_cue" class="cue_char"></p>
-						<p class="input_char"><span>确认密码:</span><input class="user_rpsword" type="password" name="" id="regRePassword" value="" placeholder="请再次输入密码"/></p>
+						<p class="input_char"><span>确认密码:</span><input class="user_rpsword" type="password" name="" id="regRePassword" value="" placeholder="请再次输入密码"/><img class="vue" id="regRePassword_img" src="" alt="" /></p>
 						<p id="regRePassword_cue" class="cue_char"></p>
 						<!--<p class="input_char"><span>手机:</span><input class="user_phone" type="text" name="" id="regPhoneNumber" value="" /></p>
 						<p id="regPhoneNumber_cue" class="cue_char">请输入大陆手机号</p>-->
@@ -238,6 +245,9 @@
 			</div>
 			<script type="text/javascript" src="${baseurl}res/js/jquery-1.12.1.min.js"></script>
 			<script type="text/javascript">
+				var isPhoneNumber = /^1\d{10}$/;
+				var isEmail =  /^(\w-*\.*)+@(\w-?)+(\.\w{2,})+$/;
+				var isPassword =  /[\w\W]{6,22}/;
 			    
 				$(".change_state .login").click(function(){
 					$(this).addClass("active");
@@ -279,7 +289,7 @@
 //			            	alert("登录成功")
 			            	$('#productBjForm', parent.document).submit();
 			            }else{
-			            	alert("帐号或密码错误")
+			            	alert("帐号或密码错误");
 			            }
 			            },
 		            error:function(data){            	
@@ -324,10 +334,12 @@
 				if($(this).val() !== $("#regPassword").val()){
 					$("#regRePassword_cue").html('<img src="${baseurl}res/images/new/login/error.png" alt="" /> 两次输入密码不一致');
 					$("#regRePassword_cue").css("color","red");
-					$("#regSubmit").attr("disabled","disabled")
+					$("#regSubmit").attr("disabled","disabled");
+					$("#regRePassword_img").attr("src","");
 				}
 				else{
 					$("#regRePassword_cue").text("");
+					$("#regRePassword_img").attr("src","${baseurl}res/images/new/login/right.png");
 					$("#regSubmit").attr("disabled",false)
 				}
 			})
@@ -345,10 +357,13 @@
 						},
 		            type: "get",		            
 			        success: function(data) {
-			            if(data === "true"){
-			            	alert("未注册的手机号");
+			            if(data.success && isPhoneNumber.test($("#regPhoneNumber").val())){      	
+			            	$("#regUsername_img").attr("src","${baseurl}res/images/new/login/right.png");
+			            	$("#regUsername_cue").html('');
+//			            	alert("未注册的手机号");
 			            }else{
-			            	alert("已经注册过的手机号");
+			            	$("#regUsername_cue").html('<img src="${baseurl}res/images/new/login/error.png" alt="" /> 已注册过的手机号或手机号不可用');
+			            	$("#regUsername_img").attr("src","");			            	
 			            }
 			           },
 		            error:function(data){
@@ -357,6 +372,45 @@
 	        	});				
 //				return false;
 			});
+			// check email wrong or right
+				$("#regEmail").blur(function(){			
+			    $.ajax({
+		            url: "http://shop.aishoubao.com/user.php",
+		            dataType: "jsonp",
+		            jsonp:'callback',
+		            async: false,
+		            data:  {
+							phone:$("#regEmail").val(),							
+							ajax:1,
+							act:"check_email"
+						},
+		            type: "get",		            
+			        success: function(data) {
+			            if(data.success && isEmail.test($("#regEmail").val())){			            	
+			            		$("#regEmail_img").attr("src","${baseurl}res/images/new/login/right.png");
+			            		$("#regEmail_cue").html('');
+			            	}else{
+			            	$("#regEmail_cue").html('<img src="${baseurl}res/images/new/login/error.png" alt="" /> 已注册过的邮箱或邮箱格式不正确');
+			            	$("#regEmail_img").attr("src","");
+			            	}
+			            },			           
+		            error:function(data){
+		            alert("wrong")
+		            }
+		            });
+	        	});				
+//				return false;
+//			});
+			// check password 
+			$("#regPassword").blur(function(){
+			        if(isPassword.test($("#regPassword").val())){			            	
+			           $("#regPassword_img").attr("src","${baseurl}res/images/new/login/right.png");
+			           $("#regPassword_cue").html('');
+			        }else{
+			           $("#regPassword_cue").html('<img src="${baseurl}res/images/new/login/error.png" alt="" /> 密码必须大于等于6位');
+			           $("#regPassword_img").attr("src","");
+			        }
+	        	});	
 		});
 			</script>
 		</body>

@@ -435,21 +435,37 @@
     <div class = "title">
         <h6>THE PREMIUM STORE<br>门店服务</h6>
     </div>
+    <div class="store-title">
+	    	<ul>
+	    		<li>全部门店（12）</li>
+	    		<li>姑苏区（5）</li>
+	    		<li>新区（3）</li>
+	    		<li>吴中区（2）</li>
+	    		<li>工业园区（1）</li>
+	    		<li>吴江（1）</li>
+	    		<li>平江区（）</li>
+	    	</ul>
+	    </div>
+	    <div class="stroe-cont">
+	    	<ul >
+	    		<li><a href="">门店1</a></li>
+	    		<li><a href="">门店2</a></li>
+	    		<li><a href="">门店3</a></li>
+	    		<li><a href="">门店4</a></li>
+	    		<li><a href="">门店5</a></li>
+	    		<li><a href="">门店6</a></li>
+	    		<li><a href="">门店7</a></li>
+	    		<li><a href="">门店8</a></li>
+	    		<li><a href="">门店9</a></li>
+	    		<li><a href="">门店10</a></li>
+	    		<li><a href="">门店11</a></li>
+	    	</ul>
+	    </div>
  
 	    <div class="store-img">
 	    	<img src="${mybaseurl}/res/images/new/homepage/storeimg_03.jpg" alt="" />
 	    </div>
-	    <div class="store-title">
-	    	<ul>
-	    		<li>全部门店（）</li>
-	    		<li>姑苏区（）</li>
-	    		<li>新区（）</li>
-	    		<li>吴中区（）</li>
-	    		<li>工业园区（）</li>
-	    		<li>吴江（）</li>
-	    		<li>平江区（）</li>
-	    	</ul>
-	    </div>
+	    
 
     
     <!--<div class = "man_content main_content_js" style="padding-bottom:0;">

@@ -195,7 +195,7 @@
         		<a href="http://m.aishoubao.com/aishoubao/category/new/08d2d4cbff6j48f08d56b26ba29266aa"><img src="${mybaseurl}/res/images/wap/waptop_10.jpg" alt="" /></a>		
         		<a href="http://m.aishoubao.com/aishoubao/diamond/"><img src="${mybaseurl}/res/images/wap/waptop_11.jpg" alt="" /></a>
         		<a href="http://m.aishoubao.com/aishoubao/category/new/08d2d4cbf39748f08d56b26ba29266aa"><img src="${mybaseurl}/res/images/wap/waptop_12.jpg" alt="" /></a>  
-        		</div>        		
+        		</div>
         	</div>
         </div>
         <div class="col pagemid">
