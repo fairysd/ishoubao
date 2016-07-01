@@ -1,1 +1,44 @@
 .zhi ul li{list-style: none;float:left;width:240px;text-align:center;}
+.store-title{
+	height: 26px;
+}
+.store-title ul{
+	text-align: right;
+}
+.store-title ul li{
+	display: inline-block;	
+}
+.store-img{
+	width: 342px;
+	float: left;
+    margin-right: 12px;
+}
+.stroe-cont{
+	width: 846px;
+	float: left;
+	height: 356px;
+	overflow: hidden;
+	position: relative;
+}
+.stroe-cont li{
+	/*display: inline-block;*/
+	width: 270px;
+	height: 168px;
+	float: left;
+	border: 1px solid #cacaca;
+	margin-bottom: 16px;
+	margin-left: 10px;
+}
+.page_store{
+	    width: 270px;
+    height: 168px;
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    line-height: 168px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+.page_store .num{
+	display: inline-block;
+}

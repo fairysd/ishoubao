@@ -26,7 +26,7 @@
         .zly_floor1{width:100%;margin:auto;}
         .zly_f1_left{width:680px;float:left;margin-top: 40px;}
         .zly_f1_right{width:480px;float:left;}
-        .zly_f1_left p{margin-top: 5px;margin-bottom: 5px;line-height: 25px;font-size:12px;}
+        .zly_f1_left p{margin-top: 5px;margin-bottom: 5px;line-height: 25px;font-size:14px;}
         .zly_f1_img{width:416px; background-color: #FFFFFF;text-align: center;margin-left: 40px;margin-top: 90px;margin-bottom: 60px; border: 1px solid #E0E0E0;}
         .zly_f1_img img{width:400px;margin-top: 8px;margin-bottom: 4px;}
         .zly_line1{width:100%;height:1px;background-color: #DFDFDF;}

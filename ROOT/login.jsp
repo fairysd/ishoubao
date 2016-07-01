@@ -215,7 +215,7 @@
 				</div>
 				<div class="login_container">
 					<form action="http://shop.aishoubao.com/user.php" method="post">
-						<div class="p user_name"><div><img src="${baseurl}res/images/new/login/icon_03.png"/></div><input placeholder="请输入用户名" type="text" name="" id="username" value="" /></div>
+						<div class="p user_name"><div><img src="${baseurl}res/images/new/login/icon_03.png"/></div><input placeholder="请输入手机号码" type="text" name="" id="username" value="" /></div>
 						<div class="p user_password"><div><img src="${baseurl}res/images/new/login/icon_06.png"/></div><input placeholder="请输入密码" type="password" name="" id="password" value="" /></div>
 						<div class="p forgetpassword">
 							<a target="_blank" href="http://shop.aishoubao.com/user.php?act=get_password">忘记密码</a>
@@ -357,7 +357,7 @@
 						},
 		            type: "get",		            
 			        success: function(data) {
-			            if(data.success && isPhoneNumber.test($("#regPhoneNumber").val())){      	
+			            if(!data.success && isPhoneNumber.test($("#regPhoneNumber").val())){      	
 			            	$("#regUsername_img").attr("src","${baseurl}res/images/new/login/right.png");
 			            	$("#regUsername_cue").html('');
 //			            	alert("未注册的手机号");

@@ -40,6 +40,7 @@
 			.zly_topcon ul li a {
 				color: #FFFFFF;
 				text-decoration: none;
+				font-size: 14px;
 			}
 			
 			.zly_floor1 {
@@ -262,7 +263,7 @@
 				<ul>
 					<li><a style="color:#e1882a;font-size:14px;">奢侈品养护频道</a></li>
 					<li style="margin-left:10px;"><a style="color:#e1882a;">Luxury maintenance</a></li>
-					<li style="margin-left:500px;"><a href="${baseurl}luxury">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;养护首页</a></li>
+					<li style="margin-left:450px;"><a href="${baseurl}luxury">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;养护首页</a></li>
 					<li style="margin-left:15px;"><a href="${baseurl}luxury/maintenance">丨&nbsp;&nbsp;&nbsp;&nbsp;爱收宝奢护</a></li>
 					<li style="margin-left:15px;"><a href="#wyyh">丨&nbsp;&nbsp;&nbsp;&nbsp;我要养护</a></li>
 					<li style="margin-left:15px;"><a href="#yhlc">丨&nbsp;&nbsp;&nbsp;&nbsp;养护流程</a></li>

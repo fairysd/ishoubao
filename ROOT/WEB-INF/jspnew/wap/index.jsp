@@ -148,7 +148,7 @@
         	float: left;
         }
         .pagemid > div {
-        	width: 50%;
+        	width: 100%;
         	float: left;
         }
         /*.pagemid a{

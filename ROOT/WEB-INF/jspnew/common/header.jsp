@@ -84,7 +84,7 @@
                                    <li><a href="http://shop.aishoubao.com" target="_blank">商城</a></li>
                                </ul>
                                <ul>
-                                   <li>回收的宝贝</li>
+                                   <li>回收宝贝</li>
                                    <li><a href="${mybaseurl}/product/8fa078e445184f1f9041ea1be763a5e8?ptype=gjs&goldType=gold">黄金</a> <a href="${mybaseurl}/product/diamond">珠宝</a></li>
                                    <li><a href="${mybaseurl}/product/diamond">钻石</a></li>
                                    <li><a href="${mybaseurl}/category/08d2d4cbf3974d8i8d56b26ba29266aa/0">名包</a> <a href="${mybaseurl}/category/08d2d4cbff6j48f08d56b26ba29266aa/0">名表</a></li>

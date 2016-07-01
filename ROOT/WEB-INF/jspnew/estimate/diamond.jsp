@@ -157,7 +157,7 @@
             </div>
         </div>
 
-        <div class = "price_img"><img src = "${baseurl}res/images/4c.gif" alt = ""></div>
+        <div class = "price_img"><img style="width: 100%;" src = "${baseurl}res/images/4c.gif" alt = ""></div>
     </div>
 </div>
 <form name="product" id="product" method="post" action="${baseurl}product/diamond/bj">
