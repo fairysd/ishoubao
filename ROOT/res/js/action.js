@@ -269,3 +269,54 @@ autoplay = setInterval("move('r')",3000);
 function openNewPage(){
 	window.open(ad[cur].url);
 }
+$(function(){	
+	var storeAll = $(".stroe-cont ul li")
+	var storeNum = storeAll.length;	
+	var sCurNum = $(".page_store .num .cur-num");	
+	sCurNum.text(1)
+	if (storeNum > 0) {
+		 sPNum = Math.ceil(storeNum/5);
+		 
+		 $(".page_store .num .total-num").html(sPNum);
+		$('.page_store .pre').bind('click',function(){
+			curNum = sCurNum.text();
+					if(curNum >1 && sPNum!==1){						
+						$(storeAll).css('display','none');
+						--curNum;
+						for(var i=0;i<5;i++){
+							$(storeAll[5*(curNum-1)+i]).css('display','block');
+						}
+						sCurNum.text(curNum);
+						return;
+					}
+		
+	});  //pre click
+	$('.page_store .next').bind('click',function(){
+					CurNum = $(".page_store .num .cur-num").text();
+					sPNum = $('.page_store .total-num').html();
+					if(CurNum < sPNum && sPNum >1  ){
+						$(storeAll).css('display','none');
+						CurNum = parseInt(CurNum) + 1 ;
+						for(var i=0;i<5;i++){
+							$(storeAll[5*(CurNum-1)+i]).css('display','block');
+						}
+						sCurNum.text(CurNum);
+						return;
+					}else{
+						return;
+					}
+				});
+				// next click
+	}
+	var storeAdd = $(".stroe-cont ul li a");
+	storeAdd.click(function(){
+		layer.open({
+		      			type:2,
+		      			area:["554px","455px"],
+		      			content:[this.href,"no"],
+		      			shadeClose:true,
+		      			title:false
+      				})
+		return false;
+	});
+});

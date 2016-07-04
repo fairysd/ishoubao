@@ -29,16 +29,30 @@
 	margin-bottom: 16px;
 	margin-left: 10px;
 }
+.stroe-cont ul li a{
+	display: block;
+	font-size: 18px;
+	font-family: "微软雅黑";
+	height: 168px;
+	line-height: 168px;
+	text-align: center;
+	
+}
+
 .page_store{
 	    width: 270px;
     height: 168px;
     position: absolute;
-    right: 1px;
-    bottom: 1px;
+    right: 0;
+    bottom: 0;
     line-height: 168px;
     text-align: center;
     background-color: #FFFFFF;
+    border: 1px solid #cacaca;
 }
 .page_store .num{
 	display: inline-block;
+}
+.page_store span:hover{
+	cursor: pointer;
 }

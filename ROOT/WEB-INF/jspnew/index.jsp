@@ -20,6 +20,8 @@
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/main.css">
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/root.css">
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/idangerous.swiper.css"> 
+    <link type="text/css" rel="stylesheet" href="${baseurl}res/css/style.css">
+    <link type="text/css" rel="stylesheet" href="${baseurl}res/js/layer/skin/layer.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
  <!--寄卖轮转图-->
     <style type="text/css">
@@ -451,59 +453,7 @@
 	    </div>
 			<div class="stroe-cont">
 	    	<ul style="">
-	    		<li><a href="">门店1</a></li>
-	    		<li><a href="">门店2</a></li>
-	    		<li><a href="">门店3</a></li>
-	    		<li><a href="">门店4</a></li>
-	    		<li><a href="">门店5</a></li>
-	    		<li><a href="">门店6</a></li>
-	    		<li><a href="">门店7</a></li>
-	    		<li><a href="">门店8</a></li>
-	    		<li><a href="">门店9</a></li>
-	    		<li><a href="">门店10</a></li>
-	    		<li><a href="">门店11</a></li>
-	    	</ul>
-	    	<ul style="display: none;">
-	    		<li><a href="">门店1</a></li>
-	    		<li><a href="">门店2</a></li>
-	    		<li><a href="">门店3</a></li>
-	    		<li><a href="">门店4</a></li>
-	    		<li><a href="">门店5</a></li>	    		
-	    	</ul>
-	    	<ul style="display: none;">	    		
-	    		<li><a href="">门店8</a></li>
-	    		<li><a href="">门店9</a></li>
-	    		<li><a href="">门店10</a></li>
-	    		<li><a href="">门店11</a></li>
-	    	</ul>
-	    	<ul style="display: none;">
-	    		<li><a href="">门店1</a></li>
-	    		<li><a href="">门店2</a></li>
-	    		<li><a href="">门店3</a></li>
-	    		<li><a href="">门店4</a></li>
-	    		<li><a href="">门店5</a></li>
-	    		<li><a href="">门店6</a></li>
-	    		<li><a href="">门店7</a></li>
-	    		<li><a href="">门店8</a></li>
-	    		<li><a href="">门店9</a></li>
-	    		<li><a href="">门店10</a></li>
-	    		<li><a href="">门店11</a></li>
-	    	</ul>
-	    	<ul style="display: none;">
-	    		<li><a href="">门店1</a></li>
-	    		<li><a href="">门店2</a></li>
-	    		<li><a href="">门店3</a></li>
-	    		<li><a href="">门店4</a></li>
-	    		<li><a href="">门店5</a></li>
-	    		<li><a href="">门店6</a></li>
-	    		<li><a href="">门店7</a></li>
-	    		<li><a href="">门店8</a></li>
-	    		<li><a href="">门店9</a></li>
-	    		<li><a href="">门店10</a></li>
-	    		<li><a href="">门店11</a></li>
-	    	</ul>
-	    	<ul style="display: none;">
-	    		<li><a href="">门店1</a></li>
+	    		<li><a href="${baseurl}yuanlinglu.jsp">园林路店</a></li>
 	    		<li><a href="">门店2</a></li>
 	    		<li><a href="">门店3</a></li>
 	    		<li><a href="">门店4</a></li>
