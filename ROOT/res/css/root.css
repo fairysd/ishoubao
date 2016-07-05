@@ -1,10 +1,30 @@
 .zhi ul li{list-style: none;float:left;width:240px;text-align:center;}
 .store-title{
 	height: 26px;
+	    margin-bottom: 25px;
 }
 .store-title ul{
 	text-align: right;
+	float: right;
+	text-align: right;
+    float: right;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    padding-right: 40px;
 }
+.store-title .title_page{
+	float: right;
+	padding-top: 4px;	
+}
+.store-title .title_page span{
+	float: right;
+	height: 14px;
+	width: 38px;
+	border:solid #8C8C8C 1px ;
+	    text-align: center;
+    line-height: 14px;
+    cursor: pointer;
+} 
 .store-title ul li{
 	display: inline-block;	
 }

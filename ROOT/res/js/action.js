@@ -269,8 +269,12 @@ autoplay = setInterval("move('r')",3000);
 function openNewPage(){
 	window.open(ad[cur].url);
 }
-$(function(){	
-	var storeAll = $(".stroe-cont ul li")
+$(function(){
+	store_page();
+	store_title();
+	// 根据店面数量分页
+	function store_page(){
+			var storeAll = $(".stroe-cont ul li")
 	var storeNum = storeAll.length;	
 	var sCurNum = $(".page_store .num .cur-num");	
 	sCurNum.text(1)
@@ -319,4 +323,42 @@ $(function(){
       				})
 		return false;
 	});
+	};
+	// 根据城市区域多少分页
+		function store_title(){
+			var $tabs = $('.store-title ul li');
+			var tabTotal = $tabs.length;
+			if(tabTotal>0){
+				
+				var pNum = Math.ceil(tabTotal/6);
+				var curNum = 1;
+				$($tabs).css('display','none');
+				for(var i=0;i<6;i++){
+							$($tabs[6*(curNum-1)+i]).css('display','inline-block');
+						}
+				$('.title_page .pre').bind('click',function(){
+					if(curNum > 1){
+						$($tabs).css('display','none');
+						--curNum;
+						for(var i=0;i<6;i++){
+							$($tabs[6*(curNum-1)+i]).css('display','inline-block');
+						}
+					}else{
+						return;
+					}
+				});
+				$('.title_page .next').bind('click',function(){
+					if(curNum < pNum){
+						$($tabs).css('display','none');
+						++curNum;
+						for(var i=0;i<6;i++){
+							$($tabs[6*(curNum-1)+i]).css('display','inline-block');
+						}
+					}else{
+						return;
+					}
+				});
+			}
+		};
+
 });

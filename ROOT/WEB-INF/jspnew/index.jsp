@@ -438,6 +438,10 @@
         <h6>THE PREMIUM STORE<br>门店服务</h6>
     </div>
     	<div class="store-title">
+    		<div class="title_page">
+    				<span class="next">&gt;</span>
+	    			<span class="pre">&lt;</span>
+	    </div>
 	    	<ul>
 	    		<li>全部门店（12）</li>
 	    		<li>姑苏区（5）</li>
@@ -447,6 +451,7 @@
 	    		<li>吴江（1）</li>
 	    		<li>平江区（）</li>
 	    	</ul>
+	    	
 	    </div>
 	    <div class="store-img">
 	    	<img src="${mybaseurl}/res/images/new/homepage/storeimg_03.jpg" alt="" />

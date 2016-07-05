@@ -132,33 +132,13 @@
 <div class="myrow citybanner">
     <div class="pure-g">
         <div class="pure-u-3-4" style="width:800px;">
-        	<div class = "swiper-container">
-	        <div class="swiper-wrapper">
-	            <div class = "swiper-slide">
-	                <div class = "img_out_box"><img src = "${baseurl}res/images/banner1.jpg"></div>
-	            </div>
-	            <div class = "swiper-slide" >
-	                <div class = "img_out_box"><img src = "${baseurl}res/images/banner2.jpg"></div>
-	            </div >
-	            <div class = "swiper-slide">
-	                <div class = "img_out_box"><img src = "${baseurl}res/images/banner3.jpg"></div>
-	            </div>
-	            <div class = "swiper-slide">
-	                <div class = "img_out_box"><img src = "${baseurl}res/images/banner4.jpg"></div>
-	            </div>
-	            <div class = "swiper-slide">
-	                <div class = "img_out_box"><img src = "${baseurl}res/images/banner5.jpg"></div>
-	            </div>
-	        </div>
-	        <div class="pagination"></div>  
-	    </div>
-            <!--<div class="my-slider">
+            <div class="my-slider">
                 <ul>
                     <c:forEach items="${ads1}" var="ad">
                         <li data-nav="${ad.name}"><a href="${ad.url}"><img src="${ad.picurl}"/></a></li>
                     </c:forEach>
                 </ul>
-            </div>-->
+            </div>
         </div>
         <div class="pure-u-1-4 banner-right">
             <div class="pure-g floor1 tac">
@@ -174,7 +154,7 @@
             </div>
             <div class="pure-g floor3 tac citybtn">
                 <div class="pure-u-1-2"><a href="${mybaseurl}/category/first"><img src="${mybaseurl}/res/images/v2/ban_1.gif"/></a></div>
-                <div class="pure-u-1-2"><a href="${mybaseurl}/mortgage/"><img src="${mybaseurl}/res/images/v2/ban_2.gif"/></a></div>
+                <div class="pure-u-1-2" style="margin-left: 25px;"> <a href="${mybaseurl}/mortgage/"><img src="${mybaseurl}/res/images/v2/ban_2.gif"/></a></div>
             </div>
             <div class="pure-g floor4 tac">
                 <div class="pure-u-1-4"><img src="${mybaseurl}/res/images/v2/huanbao.gif"/><p>环保</p></div>
