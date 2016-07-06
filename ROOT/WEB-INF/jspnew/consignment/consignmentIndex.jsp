@@ -74,9 +74,13 @@
                                 <select id="goodsType" name="productType" class="pure-u-23-24" style="height: 35px;width:150px;margin-right: 20px;">
                                     <option value="名包">名包</option>
                                     <option value="名表">名表</option>
+                                    <option value="钻石">钻石</option>
                                     <option value="珠宝">黄金</option>
-                                    <option value="贵金属">贵金属</option>
-                                    <option value="玉石">玉石</option>
+                                    <option value="K金">K金</option>
+                                    <option value="钯金">钯金</option>
+                                    <option value="铂金">铂金</option>
+                                    <option value="白银">白银</option>
+                                    <option value="玉石">玉石</option>                                    
                                     <option value="其它">其它</option>
                                 </select>
                             </div>

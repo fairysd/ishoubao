@@ -268,8 +268,8 @@
                                 <div class = "item ">现金收款</div>
                             </li>
                             <li class = "myPayment wechat-payment" data-payment-type = "4">
-                                <div class = "item">微信收款</div>
-                                <p class="weixinTip" style="display:none;">请填写正确的手机号码,用于微信收款!</p>
+                                <div class = "item">支付宝收款</div>
+                                <p class="weixinTip" style="display:none;">请填写正确的手机号或支付宝账号,用于支付宝收款!</p>
                             </li>
                         </ul>
                     </li>
