@@ -139,7 +139,7 @@
                     <label class = "select"><span>寄卖宝贝</span><b>贵金属寄卖</b>
                     <ul class="quickProductTypeSelect">
                         <li data-value="贵金属寄卖">贵金属寄卖</li>
-                        <li data-value="珠宝寄卖">珠宝寄卖</li>
+                        <li data-value="珠宝寄卖">钻石寄卖</li>
                         <li data-value="名表寄卖">名表寄卖</li>                        
                         <li data-value="名包寄卖">名包寄卖</li>
                     </ul>
@@ -176,19 +176,19 @@
     <div class = "swiper-container">
 	        <div class="swiper-wrapper">
 	            <div class = "swiper-slide">
-	                <div class = "img_out_box"><img src = "${baseurl}res/images/banner1.jpg"></div>
+	                <div class = "img_out_box"><a href="${mybaseurl}/category/first"><img src = "${baseurl}res/images/banner1.jpg"></a></div>
 	            </div>
 	            <div class = "swiper-slide" >
-	                <div class = "img_out_box"><img src = "${baseurl}res/images/banner2.jpg"></div>
+	                <div class = "img_out_box"><a href="${mybaseurl}/mortgage"><img src = "${baseurl}res/images/banner2.jpg"></a></div>
 	            </div >
 	            <div class = "swiper-slide">
-	                <div class = "img_out_box"><img src = "${baseurl}res/images/banner3.jpg"></div>
+	                <div class = "img_out_box"><a href="${mybaseurl}/luxury"><img src = "${baseurl}res/images/banner3.jpg"></a></div>
 	            </div>
 	            <div class = "swiper-slide">
-	                <div class = "img_out_box"><img src = "${baseurl}res/images/banner4.jpg"></div>
+	                <div class = "img_out_box"><a href="${mybaseurl}/consignment"><img src = "${baseurl}res/images/banner4.jpg"></a></div>
 	            </div>
 	            <div class = "swiper-slide">
-	                <div class = "img_out_box"><img src = "${baseurl}res/images/banner5.jpg"></div>
+	                <div class = "img_out_box"><a href="http://shop.aishoubao.com"><img src = "${baseurl}res/images/banner5.jpg"></a></div>
 	            </div>
 	        </div>
 	        <div class="pagination"></div>  

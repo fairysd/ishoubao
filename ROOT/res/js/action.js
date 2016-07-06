@@ -177,12 +177,12 @@ function move(direction){
 	//alert(isRunning);
 	if(isRunning != 'udefined' && isRunning == 'true')
 		return;
-	frequency = 20;
+	frequency = 40;
 	if(navigator.userAgent.indexOf("MSIE")>0) {
-		frequency = 15;
+		frequency = 30;
    	}
    	if(isFirefox=navigator.userAgent.indexOf("Firefox")>0){
-   		frequency = 20;
+   		frequency = 40;
    	} 
 	i = 0;
 	if(direction == 'r'){
@@ -316,7 +316,7 @@ $(function(){
 	storeAdd.click(function(){
 		layer.open({
 		      			type:2,
-		      			area:["554px","455px"],
+		      			area:["994px","511px"],
 		      			content:[this.href,"no"],
 		      			shadeClose:true,
 		      			title:false

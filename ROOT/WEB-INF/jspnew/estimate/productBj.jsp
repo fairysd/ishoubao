@@ -13,6 +13,7 @@
     <meta name="renderer" content="webkit" />
     <meta content="zh-cn" http-equiv="content-language" />
     <meta name="keywords" content="" />
+    
     <meta name="description" content=""/>
     <title>爱收宝</title>
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/style.css">
@@ -206,6 +207,7 @@
                 <div class="zlylef2_5" >
                     <img src="${baseurl}res/images/new/estimate/sp_4.png" alt="">
                 </div>
+                <a name="zly_ysbh"></a>
                 <div class="zlylef2_6" >
                     <div class="zlylef6_1">
                         <div class="zly_shop">
