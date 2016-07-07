@@ -380,7 +380,7 @@
 		            jsonp:'callback',
 		            async: false,
 		            data:  {
-							phone:$("#regEmail").val(),							
+							email:$("#regEmail").val(),							
 							ajax:1,
 							act:"check_email"
 						},

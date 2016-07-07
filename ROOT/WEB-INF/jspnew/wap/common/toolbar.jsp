@@ -19,4 +19,5 @@
         <span class="tab-label">个人中心</span>
     </a>
 </nav>
+<script language="javascript">var qykf_userinfo_url='http://shop.aishoubao.com/mobile/userheader.php?kf=1&callback=?'</script><script>(function(){var c=document.createElement("script"),s=document.getElementsByTagName("script")[0];c.src="//kefu.qycn.com/vclient/state.php?webid=113372";s.parentNode.insertBefore(c,s);})();</script>
 <script>(function(){var c=document.createElement("script"),s=document.getElementsByTagName("script")[0];c.src="//kefu.qycn.com/vclient/state.php?webid=113372";s.parentNode.insertBefore(c,s);})();</script>

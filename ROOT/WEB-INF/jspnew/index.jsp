@@ -437,7 +437,7 @@
     <div class = "title">
         <h6>THE PREMIUM STORE<br>门店服务</h6>
     </div>
-    	<div class="store-title">
+   <!--  	<div class="store-title">
     		<div class="title_page">
     				<span class="next">&gt;</span>
 	    			<span class="pre">&lt;</span>
@@ -480,12 +480,12 @@
 	    		<span class="next">&gt;</span>
 	    	</div>
 	    </div>
- 
+  -->
 	    
 	    
 
     
-    <!--<div class = "man_content main_content_js" style="padding-bottom:0;">
+    <div class = "man_content main_content_js" style="padding-bottom:0;">
         <div class="pure-g store_js_1">
             <div class="pure-u-1-2"><img class="lazy" data-original="${mybaseurl}/res/images/v2/store_1_1.jpg"/><img class="lazy storeimg" data-original="${mybaseurl}/res/images/v2/store_1_2.jpg"/></div>
             <div class="pure-u-1-2 store-content">
@@ -510,7 +510,7 @@
             </div>
             <div class="pure-u-1-2"><img class="lazy" data-original="${mybaseurl}/res/images/v2/store_2_1.jpg"/><img class="lazy storeimg" data-original="${mybaseurl}/res/images/v2/store_2_2.jpg"/></div>
         </div>
-    </div>-->
+    </div>
 </div>
 <!-- 新闻 -->
 <div class = "out_box">

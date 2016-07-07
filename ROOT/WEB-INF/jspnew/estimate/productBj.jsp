@@ -311,7 +311,7 @@
                     <p style="margin-top:30px;"><span class="radio">Q</span><span class="radio_con">提交订单后我该做什么？</span></p>
                     <p style="margin-top:10px;"><span class="radio1">A</span><span class="radio_con1">上门回收：请保持电话畅通，携带好本人身份证，等待爱收宝小哥上门回收。</span></p>
                     <p style="margin-left:29px;">门店交易：手机保持正常开机携带好本人身份证，3天内去门店质检完成交易。</p>
-                    <p style="margin-left:29px;">物流交易：请在24小时内选择顺丰到付，把您的宝贝快递给我们，在订单中心填入您的快递单号。我们收到您的物件</p>
+                    <p style="margin-left:29px;">物流交易：请在24小时内选择顺丰快递，把您的宝贝快递给我们，在订单中心填入您的快递单号。我们收到您的物件</p>
                     <p style="margin-left:29px;">后会进行质检，质检完成会给您放款。</p>
                     <p style="margin-top:30px;"><span class="radio">Q</span><span class="radio_con">快递费是谁承担，标准是什么？</span></p>
                     <p style="margin-top:10px;"><span class="radio1">A</span><span class="radio_con1">所有寄至爱收宝的物品，由用户承担运费；非正品的其他费用，用户自理，详情请咨询客服。</span></p>

@@ -189,7 +189,7 @@
       <div class="col pagetop">
         	<div class="huishou">
         		<div class="sangetu">
-        		<a href="http://m.aishoubao.com/aishoubao/category/new/47f288756f1a4c5ebac0a2baf1f5ee80"><img src="${mybaseurl}/res/images/wap/waptop_02.jpg" alt="" /></a>		
+        		<a href="http://m.aishoubao.com/aishoubao/product/8fa078e445184f1f9041ea1be763a5e8/detail?type=gjs&isMortgage="><img src="${mybaseurl}/res/images/wap/waptop_02.jpg" alt="" /></a>		
         		<a href="http://m.aishoubao.com/aishoubao/category/new/47f288756f1a4c5ebac0a2baf1f5ee80"><img src="${mybaseurl}/res/images/wap/waptop_04.jpg" alt="" /></a>
         		<a href="http://m.aishoubao.com/aishoubao/category/new/08d2d4cbf3974d8i8d56b26ba29266aa"><img src="${mybaseurl}/res/images/wap/waptop_06.jpg" alt="" /></a>    
         		<a href="http://m.aishoubao.com/aishoubao/category/new/08d2d4cbff6j48f08d56b26ba29266aa"><img src="${mybaseurl}/res/images/wap/waptop_10.jpg" alt="" /></a>		

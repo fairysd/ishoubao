@@ -267,10 +267,10 @@
                             <li class = "myPayment cash-payment pickup-outlets-only pickup-ondoor-only active" data-payment-type = "1">
                                 <div class = "item ">现金收款</div>
                             </li>
-                            <li class = "myPayment wechat-payment" data-payment-type = "4">
+                           <!--  <li class = "myPayment wechat-payment" data-payment-type = "3">
                                 <div class = "item">支付宝收款</div>
                                 <p class="weixinTip" style="display:none;">请填写正确的手机号或支付宝账号,用于支付宝收款!</p>
-                            </li>
+                            </li> -->
                         </ul>
                     </li>
                     <%--<li class = "pickup-ondoor-only" id = "js-trade-time-wrap">--%>
