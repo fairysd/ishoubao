@@ -304,10 +304,10 @@
                 <div class="zlylef2_12" >
                     <p><span class="radio">Q</span><span class="radio_con">提交订单的价格是不是成交价?</span></p>
                     <p style="margin-top:10px;"><span class="radio1">A</span><span class="radio_con1">物件实际情况和提交信息一致，则会按照订单提交价格和您交易，目前我们97%的订单都是原价交易。</span></p>
-                    <p style="margin-left:29px;">如果检测结果有差异，价格会有一定浮动，我们会主动联系您确认价格，若您不接受价格，爱收宝会为您退回物件，</p>
-                    <p style="margin-left:29px;">并承担所有的快递费用。</p>
-                    <p style="margin-left:29px;">同时网站为用户提供了一项贴心的服务：退回的物件网站免费提供顺丰保价。请您当着快递的面进行物品签收，若由</p>
-                    <p style="margin-left:29px;">于运输途中导致物件损坏请及时拍照拒收此包裹并联系顺丰客服和爱收宝客服。</p>
+                    <p style="margin-left:29px;">如果检测结果有差异，价格会有一定浮动，我们会主动联系您确认价格，若您不接受价格，爱收宝会为您退回物件。</p>
+                    <!-- <p style="margin-left:29px;">并承担所有的快递费用。</p> -->
+                    <p style="margin-left:29px;">同时网站规定：若退回的物件是真品，我们提供顺丰包邮服务。请您当着快递的面进行物品签收，若由于运输途中导致物件损坏请及时拍照拒收此包裹并联系顺丰客服和爱收宝客服；若退回的物件是赝品，则由用户自行承担运费。</p>
+                    <!-- <p style="margin-left:29px;">于运输途中导致物件损坏请及时拍照拒收此包裹并联系顺丰客服和爱收宝客服。</p> -->
                     <p style="margin-top:30px;"><span class="radio">Q</span><span class="radio_con">提交订单后我该做什么？</span></p>
                     <p style="margin-top:10px;"><span class="radio1">A</span><span class="radio_con1">上门回收：请保持电话畅通，携带好本人身份证，等待爱收宝小哥上门回收。</span></p>
                     <p style="margin-left:29px;">门店交易：手机保持正常开机携带好本人身份证，3天内去门店质检完成交易。</p>
@@ -316,7 +316,7 @@
                     <p style="margin-top:30px;"><span class="radio">Q</span><span class="radio_con">快递费是谁承担，标准是什么？</span></p>
                     <p style="margin-top:10px;"><span class="radio1">A</span><span class="radio_con1">所有寄至爱收宝的物品，由用户承担运费；非正品的其他费用，用户自理，详情请咨询客服。</span></p>
                     <p style="margin-top:30px;"><span class="radio">Q</span><span class="radio_con">订单提交后我从哪里可以查看到交易进度？</span></p>
-                    <p style="margin-top:10px;"><span class="radio1">A</span><span class="radio_con1">登录订单中心或者关注爱收宝微信账号，随时查看处理进度，我们会及时更新订单状态。</span></p>
+                    <p style="margin-top:10px;"><span class="radio1">A</span><span class="radio_con1">登录个人中心查看订单信息或者关注爱收宝微信账号，随时查看处理进度，我们会及时更新订单状态。</span></p>
                     <c:if test="${ptype=='phone'}"><p style="margin-top:40px;"><a href="${baseurl}estimate/moreHelp" target="_blank" style="color:#000000;text-decoration:none;">查看更多帮助说明>></a></p></c:if>
                 </div>
             </div>
@@ -377,46 +377,46 @@
     });
 </script>
 <script type="text/javascript">
-			$(document).ready(function(){
-				  $("#estimate").click(function(){		
-//				  	$("#productBjForm").submit();
-	    	if(userinfo.userId){
-        		$("#productBjForm").submit();
-        	}
+            $(document).ready(function(){
+                  $("#estimate").click(function(){      
+//                  $("#productBjForm").submit();
+            if(userinfo.userId){
+                $("#productBjForm").submit();
+            }
             else{
             alert("请您先登录或注册");
-            	layer.open({
-		      			type:2,
-		      			area:["491px","591px"],
-		      			content:[this.href,"no"],
-		      			shadeClose:true,
-		      			title:false
-      				})
+                layer.open({
+                        type:2,
+                        area:["491px","591px"],
+                        content:[this.href,"no"],
+                        shadeClose:true,
+                        title:false
+                    })
             }
              return false;
-	    	});
-	    	$("#goMortgage").click(function(){
-	    		$("#isMortgage").attr("value", "1");
-//	    		$("#productBjForm").submit();
-		       	if(userinfo.userId){
-		        		$("#productBjForm").submit();
-		        	}
-		        else{
-		        			layer.open({
-		        				type:1,
-		        				content:"请您先登录或注册"
-		        			});
-//		            	alert("请您先登录或注册");
-			            layer.open({
-			      			type:2,
-			      			area:["491px","591px"],
-			      			content:[this.href,"no"],
-			      			shadeClose:true,
-			      			title:false
-			      			})
-		            }
-		        return false;
-	    	});  
+            });
+            $("#goMortgage").click(function(){
+                $("#isMortgage").attr("value", "1");
+//              $("#productBjForm").submit();
+                if(userinfo.userId){
+                        $("#productBjForm").submit();
+                    }
+                else{
+                            layer.open({
+                                type:1,
+                                content:"请您先登录或注册"
+                            });
+//                      alert("请您先登录或注册");
+                        layer.open({
+                            type:2,
+                            area:["491px","591px"],
+                            content:[this.href,"no"],
+                            shadeClose:true,
+                            title:false
+                            })
+                    }
+                return false;
+            });  
 //       $("#isMortgage").attr("value", "1");
 //       $("#productBjForm").submit();
        
@@ -463,10 +463,10 @@ $(document).ready(function() {
             var className = "";
             if(data.success) {
                 $("#areaname").html(u.name);              
-                if ( $("#areaname").html() === "苏州市") {                	
-                	$("#areaservice").html("&nbsp;&nbsp;门店回收&nbsp;&nbsp;上门回收&nbsp;&nbsp;快递回收")
-                } else{                	
-                	$("#areaservice").html("&nbsp;&nbsp;快递回收")
+                if ( $("#areaname").html() === "苏州市") {                 
+                    $("#areaservice").html("&nbsp;&nbsp;门店回收&nbsp;&nbsp;上门回收&nbsp;&nbsp;快递回收")
+                } else{                 
+                    $("#areaservice").html("&nbsp;&nbsp;快递回收")
                 }
             } else {
             }
