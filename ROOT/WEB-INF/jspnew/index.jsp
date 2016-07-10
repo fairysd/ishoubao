@@ -25,73 +25,73 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
  <!--寄卖轮转图-->
     <style type="text/css">
-    	#dHomePageCarousel {
-				background: url("${mybaseurl}/res/images/new/mortage/mortagebg1_03.jpg") no-repeat scroll 0 0 transparent;
-				height: 364px;
-				width: 1200px;
-				position: relative;
-				margin: 0 auto;
-				padding-left: 15px;
-			}
-			
-			#dLocalHomesCarousel {
-				height:268px;
-				margin: 0px 2px 3px 1px;
-				overflow: hidden;
-				position: relative;
-			}
-			
-			.divCarouselInfo {
-				color: #3C404E;
-				font-size: 24px;				
-				letter-spacing: 1px;
-				width: 1200px;
-				height: 80px;
-				line-height: 32px;
-				margin-right: 15px;
-				padding-top: 20px;
-				position: relative;
-			}
-			
-			.imgBorder {
-				border: 3px solid #fff;
-				position: absolute;
-				cursor: pointer;
-			}
-			
-			.imgBorder:hover {
-				border: 2px solid #FFAA55;
-				cursor: pointer;
-				position: absolute;
-			}
-			
-			.btnCarouselLT {
-				background: url("${mybaseurl}/res/images/new/mortage/arrow_09.jpg") no-repeat scroll left top transparent;
-				display: block;
-				height: 46px;
-				overflow: hidden;
-				position: absolute;
-				cursor: pointer;
-				top: 17px;
-				width: 28px;
-			}
-			
-			.btnCarouselRT {
-				background: url("${mybaseurl}/res/images/new/mortage/arrow_06.jpg") no-repeat scroll right top transparent;
-				display: block;
-				height: 115px;
-				overflow: hidden;
-				position: absolute;
-				cursor: pointer;
-				top: 17px;
-				width: 28px;
-			}
-			.ssindex{
-				background-color: #FFFFFF;
-				    height: 200px;
+        #dHomePageCarousel {
+                background: url("${mybaseurl}/res/images/new/mortage/mortagebg1_03.jpg") no-repeat scroll 0 0 transparent;
+                height: 364px;
+                width: 1200px;
+                position: relative;
+                margin: 0 auto;
+                padding-left: 15px;
+            }
+            
+            #dLocalHomesCarousel {
+                height:268px;
+                margin: 0px 2px 3px 1px;
+                overflow: hidden;
+                position: relative;
+            }
+            
+            .divCarouselInfo {
+                color: #3C404E;
+                font-size: 24px;                
+                letter-spacing: 1px;
+                width: 1200px;
+                height: 80px;
+                line-height: 32px;
+                margin-right: 15px;
+                padding-top: 20px;
+                position: relative;
+            }
+            
+            .imgBorder {
+                border: 3px solid #fff;
+                position: absolute;
+                cursor: pointer;
+            }
+            
+            .imgBorder:hover {
+                border: 2px solid #FFAA55;
+                cursor: pointer;
+                position: absolute;
+            }
+            
+            .btnCarouselLT {
+                background: url("${mybaseurl}/res/images/new/mortage/arrow_09.jpg") no-repeat scroll left top transparent;
+                display: block;
+                height: 46px;
+                overflow: hidden;
+                position: absolute;
+                cursor: pointer;
+                top: 17px;
+                width: 28px;
+            }
+            
+            .btnCarouselRT {
+                background: url("${mybaseurl}/res/images/new/mortage/arrow_06.jpg") no-repeat scroll right top transparent;
+                display: block;
+                height: 115px;
+                overflow: hidden;
+                position: absolute;
+                cursor: pointer;
+                top: 17px;
+                width: 28px;
+            }
+            .ssindex{
+                background-color: #FFFFFF;
+                    height: 200px;
     padding-top: 50px;
     box-shadow:#999999 1px 1px 1px 1px;
-			}
+            }
     </style>
 </head>
 <body>
@@ -139,7 +139,7 @@
                     <label class = "select"><span>寄卖宝贝</span><b>贵金属寄卖</b>
                     <ul class="quickProductTypeSelect">
                         <li data-value="贵金属寄卖">贵金属寄卖</li>
-                        <li data-value="珠宝寄卖">钻石寄卖</li>
+                        <li data-value="珠宝寄卖">珠宝寄卖</li>
                         <li data-value="名表寄卖">名表寄卖</li>                        
                         <li data-value="名包寄卖">名包寄卖</li>
                     </ul>
@@ -174,25 +174,25 @@
         </ul>
     </div>-->
     <div class = "swiper-container">
-	        <div class="swiper-wrapper">
-	            <div class = "swiper-slide">
-	                <div class = "img_out_box"><a href="${mybaseurl}/category/first"><img src = "${baseurl}res/images/banner1.jpg"></a></div>
-	            </div>
-	            <div class = "swiper-slide" >
-	                <div class = "img_out_box"><a href="${mybaseurl}/mortgage"><img src = "${baseurl}res/images/banner2.jpg"></a></div>
-	            </div >
-	            <div class = "swiper-slide">
-	                <div class = "img_out_box"><a href="${mybaseurl}/luxury"><img src = "${baseurl}res/images/banner3.jpg"></a></div>
-	            </div>
-	            <div class = "swiper-slide">
-	                <div class = "img_out_box"><a href="${mybaseurl}/consignment"><img src = "${baseurl}res/images/banner4.jpg"></a></div>
-	            </div>
-	            <div class = "swiper-slide">
-	                <div class = "img_out_box"><a href="http://shop.aishoubao.com"><img src = "${baseurl}res/images/banner5.jpg"></a></div>
-	            </div>
-	        </div>
-	        <div class="pagination"></div>  
-	    </div>
+            <div class="swiper-wrapper">
+                <div class = "swiper-slide">
+                    <div class = "img_out_box"><a href="${mybaseurl}/category/first"><img src = "${baseurl}res/images/banner1.jpg"></a></div>
+                </div>
+                <div class = "swiper-slide" >
+                    <div class = "img_out_box"><a href="${mybaseurl}/mortgage"><img src = "${baseurl}res/images/banner2.jpg"></a></div>
+                </div >
+                <div class = "swiper-slide">
+                    <div class = "img_out_box"><a href="${mybaseurl}/luxury"><img src = "${baseurl}res/images/banner3.jpg"></a></div>
+                </div>
+                <div class = "swiper-slide">
+                    <div class = "img_out_box"><a href="${mybaseurl}/consignment"><img src = "${baseurl}res/images/banner4.jpg"></a></div>
+                </div>
+                <div class = "swiper-slide">
+                    <div class = "img_out_box"><a href="http://shop.aishoubao.com"><img src = "${baseurl}res/images/banner5.jpg"></a></div>
+                </div>
+            </div>
+            <div class="pagination"></div>  
+        </div>
     <div class = "banner_nav_button">
         <img id="estimateBtn" src="${mybaseurl}/res/images/v2/ban_1.gif">
         <img id="mortgageBtn" src="${mybaseurl}/res/images/v2/ban_2.gif">
@@ -239,10 +239,10 @@
         </div>        
             <div class="pure-g">
                 <div class="pure-u-1-4 shoptitle">
-                	<h3>限时优惠</h3>
-                	<div class="shoppic">
-                		<a href="http://shop.aishoubao.com"><img src="${mybaseurl}/res/images/new/shop/shoppic_10.jpg" alt="" /></a>
-                	</div>
+                    <h3>限时优惠</h3>
+                    <div class="shoppic">
+                        <a href="http://shop.aishoubao.com"><img src="${mybaseurl}/res/images/new/shop/shoppic_10.jpg" alt="" /></a>
+                    </div>
                     <!--<div class = "t_nav">
                         <ul class = "t_nav_right" style="padding-top:45px;">
                             <li class = "active"><i class="iconfont f24">&#xe604;</i> <span>大牌名包</span></li>
@@ -254,16 +254,16 @@
                     </div>-->
                 </div>
                 <div class="pure-u-3-4 xinshang">
-                	<h3>名品欣赏</h3>
-                	<div class="pure-u-1-3">
-                		<a href="http://shop.aishoubao.com/category.php?id=18"><img src="${mybaseurl}/res/images/new/shop/shoppic_03.jpg" alt="" /></a>
-                	</div>
-                	<div class="pure-u-1-3">
-                		<a href="http://shop.aishoubao.com/category.php?id=352"><img src="${mybaseurl}/res/images/new/shop/shoppic_05.jpg" alt="" /></a>
-                	</div>
-                	<div class="pure-u-1-3">
-                		<a href="http://shop.aishoubao.com/category.php?id=272"><img src="${mybaseurl}/res/images/new/shop/shoppic_07.jpg" alt="" /></a>
-                	</div>
+                    <h3>名品欣赏</h3>
+                    <div class="pure-u-1-3">
+                        <a href="http://shop.aishoubao.com/category.php?id=18"><img src="${mybaseurl}/res/images/new/shop/shoppic_03.jpg" alt="" /></a>
+                    </div>
+                    <div class="pure-u-1-3">
+                        <a href="http://shop.aishoubao.com/category.php?id=352"><img src="${mybaseurl}/res/images/new/shop/shoppic_05.jpg" alt="" /></a>
+                    </div>
+                    <div class="pure-u-1-3">
+                        <a href="http://shop.aishoubao.com/category.php?id=272"><img src="${mybaseurl}/res/images/new/shop/shoppic_07.jpg" alt="" /></a>
+                    </div>
                     <!--<div class = "t_content">
                         <ul class = "t_c_left">
                             <li class = "active">
@@ -370,66 +370,7 @@
     <div class = "man_content main_content_js" style="padding-bottom:0;">
         <div class="pure-g">
             <div class="pure-u-1-1"><a href="${mybaseurl}/luxury"><img class="lazy" data-original="${mybaseurl}/res/images/v2/nursing_1.jpg"/></a></div>
-        </div>
-        <!--<div class="pure-g">
-            <div class="pure-u-1-1">
-                <div class="pro-slide">
-                    <ul class="clearfix">
-                        <li class="" style="">
-                            <div class="Jicon fl">
-                                <em class="Jicon01"></em>
-                                前台接收
-                            </div>
-                            <div class="JText fr">
-                                <p>1、前台接收</p>
-                                北京、上海、苏州会所养护中心前台接收货品，接待人员对货品信息进行登记，并拍照上传至养护服务系统；初步制定养护服务方案，明确报价并收取费用。
-                            </div>
-                        </li>
-                        <li class="">
-                            <div class="Jicon fl"><em class="Jicon02"></em>调拨工厂</div>
-                            <div class="JText fr">
-                                <p>2、调拨工厂</p>
-                                养护中心前台将货品调拨养护工厂；专业物流运送货品至养护工厂。
-                            </div>
-                            <b></b>
-                        </li>
-                        <li class="">
-                            <div class="Jicon fl"><em class="Jicon03"></em>消毒分发</div>
-                            <div class="JText fr">
-                                <p>3、消毒分发</p>
-                                货品消毒，根据货品需要养护的不同项目分发给专长技师进行服务。
-                            </div>
-                            <b></b>
-                        </li>
-                        <li class="">
-                            <div class="Jicon fl"><em class="Jicon04"></em>技师养护</div>
-                            <div class="JText fr">
-                                <p>4、技师养护</p>
-                                技师出具详细养护方案，严格按照12道养护工序进行专业养护工作。
-                            </div>
-                            <b></b>
-                        </li>
-                        <li class="">
-                            <div class="Jicon fl"><em class="Jicon05"></em>质检消毒</div>
-                            <div class="JText fr">
-                                <p>5、质检消毒</p>
-                                货品养护后由专业质检人员进行严格质量检查，再次消毒、包装后由专业物流送出工厂
-                            </div>
-                            <b></b>
-                        </li>
-                        <li class="">
-                            <div class="Jicon fl"><em class="Jicon06"></em>顾客取货</div>
-                            <div class="JText fr">
-                                <p>6、顾客取货</p>
-                                完成养护后，养护服务系统会自动发送物品养护完成的通知短信，顾客可选择到就近的养护中心提取自己的货品或者拨打养护中心服务电话选择快递送货上门（快递费用顾客自行支付）。
-                            </div>
-                            <b></b>
-                        </li>
-                    </ul>
-                    <div class="border-dash"></div>
-                </div>
-            </div>
-        </div>-->
+        </div>       
     </div>
 </div>
 <!-- 区域店推荐 -->
@@ -437,98 +378,66 @@
     <div class = "title">
         <h6>THE PREMIUM STORE<br>门店服务</h6>
     </div>
-   <!--  	<div class="store-title">
-    		<div class="title_page">
-    				<span class="next">&gt;</span>
-	    			<span class="pre">&lt;</span>
-	    </div>
-	    	<ul>
-	    		<li>全部门店（12）</li>
-	    		<li>姑苏区（5）</li>
-	    		<li>新区（3）</li>
-	    		<li>吴中区（2）</li>
-	    		<li>工业园区（1）</li>
-	    		<li>吴江（1）</li>
-	    		<li>平江区（）</li>
-	    	</ul>
-	    	
-	    </div>
-	    <div class="store-img">
-	    	<img src="${mybaseurl}/res/images/new/homepage/storeimg_03.jpg" alt="" />
-	    </div>
-			<div class="stroe-cont">
-	    	<ul style="">
-	    		<li><a href="${baseurl}yuanlinglu.jsp">园林路店</a></li>
-	    		<li><a href="">门店2</a></li>
-	    		<li><a href="">门店3</a></li>
-	    		<li><a href="">门店4</a></li>
-	    		<li><a href="">门店5</a></li>
-	    		<li><a href="">门店6</a></li>
-	    		<li><a href="">门店7</a></li>
-	    		<li><a href="">门店8</a></li>
-	    		<li><a href="">门店9</a></li>
-	    		<li><a href="">门店10</a></li>
-	    		<li><a href="">门店11</a></li>
-	    	</ul>
-	    	<div class="page_store">
-	    		<span class="pre">&lt;</span>
-	    		<div class="num">
-	    			<span class="cur-num"></span>
-	    			<span class="split">/</span>
-	    			<span class="total-num"></span>
-	    		</div>
-	    		<span class="next">&gt;</span>
-	    	</div>
-	    </div>
-  -->
-	    
-	    
-
-    
-    <div class = "man_content main_content_js" style="padding-bottom:0;">
-        <div class="pure-g store_js_1">
-            <div class="pure-u-1-2"><img class="lazy" data-original="${mybaseurl}/res/images/v2/store_1_1.jpg"/><img class="lazy storeimg" data-original="${mybaseurl}/res/images/v2/store_1_2.jpg"/></div>
-            <div class="pure-u-1-2 store-content">
-                <p class="store_name">爱收宝网络科技-苏州甪直店</p>
-                <p class="store_subname">你身边的回收专家</p>
-                <p><span class="store_label">业务范围：</span><span class="store_ywfw">估价回收，寄卖，代售，护理，免费鉴定</span></p>
-                <p class="store_hsdbb"><span class="store_label">回收的宝贝：</span><span class="store_hsdbb_content">黄金，珠宝，名包，名表，手机，数码，贵金属等</span></p>
-                <p class="paddr"><span class="store_label">地址：</span><span class="store_addr">甪直镇晓市路62-5号</span></p>
-                <p><span class="store_label">贵宾专线：</span><span class="store_phone">0512-65046817</span></p>
-                <p><span class="store_label">营业时间：</span><span class="store_time">9:30 -- 21:30(节假日不休)</span></p>
+        <div class="store-title">
+            <div class="title_page">
+                    <span class="next">&gt;</span>
+                    <span class="pre">&lt;</span>
+        </div>
+            <ul id="allstore">
+                <li id="total">全部门店( <span></span> )</li>               
+            </ul>
+            
+        </div>
+        <div class="store-img">
+            <img src="${mybaseurl}/res/images/new/homepage/storeimg_03.jpg" alt="" />
+        </div>
+            <div class="stroe-cont">
+            <ul id="storedetail" style="">
+                
+            </ul>
+            <div class="page_store">
+                <span class="pre">&lt;</span>
+                <div class="num">
+                    <span class="cur-num"></span>
+                    <span class="split">/</span>
+                    <span class="total-num"></span>
+                </div>
+                <span class="next">&gt;</span>
             </div>
         </div>
-        <div class="pure-g store_js_2">
-            <div class="pure-u-1-2 store-content">
-                <p class="store_name">爱收宝网络科技-苏州吴江店</p>
-                <p class="store_subname">你身边的回收专家</p>
-                <p><span class="store_label">业务范围：</span><span class="store_ywfw">估价回收，寄卖，代售，护理，免费鉴定</span></p>
-                <p class="store_hsdbb"><span class="store_label">回收的宝贝：</span><span class="store_hsdbb_content">黄金，珠宝，名包，名表，手机，数码，贵金属等</span></p>
-                <p class="paddr"><span class="store_label">地址：</span><span class="store_addr">吴江区康路步行街199号万亚购物中心一楼</span></p>
-                <p><span class="store_label">贵宾专线：</span><span class="store_phone">0512-63108507</span></p>
-                <p><span class="store_label">营业时间：</span><span class="store_time">9:30 -- 21:30(节假日不休)</span></p>
-            </div>
-            <div class="pure-u-1-2"><img class="lazy" data-original="${mybaseurl}/res/images/v2/store_2_1.jpg"/><img class="lazy storeimg" data-original="${mybaseurl}/res/images/v2/store_2_2.jpg"/></div>
-        </div>
-    </div>
 </div>
+<div id="storelayer" class="storedetail" style="display:none">
+            <div class="storemap">
+                <div class="iframe">
+                    <div class = "map storemap" id="allmap"></div>
+                    <h3>这里是门店详细地址</h3>
+                </div>
+                <div class="picture">
+                    <img  id="picture" src="${baseurl}res/images/new/login/storepic.jpg" alt="" />
+                    <h3>门店照片</h3>
+                </div>
+            </div>
+            <div class="storestream">
+                <img src="${baseurl}res/images/new/login/storestream.jpg" alt="" />
+            </div>
+        </div>
 <!-- 新闻 -->
 <div class = "out_box">
     <div class = "title">
         <h6>Love to receive Po information<br>爱收宝资讯</h6>
     </div>    
         <div class="pure-g zixunbl">
-        	<div class="pure-u-1-5">
-        		<img src="${mybaseurl}/res/images/new/zinxunpic_03.jpg" alt="" />
-        	</div>
+            <div class="pure-u-1-5">
+                <img src="${mybaseurl}/res/images/new/zinxunpic_03.jpg" alt="" />
+            </div>
             <div class="pure-u-4-5 hotnews">                
                 <div class="newsmarquee">
-	                <ul class="newslist">
-	                    <li><a href="${mybaseurl}/news/1"><span>></span>3D硬金与千足金的区别<span style="text-align: right;display: block;float: right; color: #000000;">2016-05-23</span></a></li>
-	                    <li><a href="${mybaseurl}/news/2"><span>></span>穿的好不如戴的对 想做职场白骨精你得来块表<span style="text-align: right;display: block;float: right;color: #000000;">2016-04-13</span></a></li>
-	                    <li><a href="${mybaseurl}/news/3"><span>></span>金价收盘创逾一周新高 蓄势决战千三之巅<span style="text-align: right;display: block;float: right;color: #000000;">2016-03-20</span></a></li>
-	                    <li><a href="${mybaseurl}/news/4"><span>></span>细节控戛纳红毯上的这些珠宝你看到了吗？<span style="text-align: right;display: block;float: right;color: #000000;">2016-01-06</span></a></li>	                    
-	                </ul>
+                    <ul class="newslist">
+                        <li><a href="${mybaseurl}/news/1"><span>></span>3D硬金与千足金的区别<span style="text-align: right;display: block;float: right; color: #000000;">2016-05-23</span></a></li>
+                        <li><a href="${mybaseurl}/news/2"><span>></span>穿的好不如戴的对 想做职场白骨精你得来块表<span style="text-align: right;display: block;float: right;color: #000000;">2016-04-13</span></a></li>
+                        <li><a href="${mybaseurl}/news/3"><span>></span>金价收盘创逾一周新高 蓄势决战千三之巅<span style="text-align: right;display: block;float: right;color: #000000;">2016-03-20</span></a></li>
+                        <li><a href="${mybaseurl}/news/4"><span>></span>细节控戛纳红毯上的这些珠宝你看到了吗？<span style="text-align: right;display: block;float: right;color: #000000;">2016-01-06</span></a></li>                       
+                    </ul>
                 </div>
             </div>
             <!--<div class="pure-u-2-5" style="text-align:right;"><img class="lazy" style="padding-left:175px;" data-original="${mybaseurl}/res/images/v2/news.jpg"/></div>-->
@@ -581,72 +490,74 @@
 <script type="text/javascript" src="${baseurl}res/js/layer/layer.js"></script>
 <script type="text/javascript" src="${baseurl}res/js/idangerous.swiper.js"></script>
 <script type="text/javascript" src="${baseurl}res/js/scroll.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=DeQszKLbgZNzVKY4ZflHkDbX"></script>
 <script type="text/javascript" src="${baseurl}res/js/action.js"></script>
-<script type="text/javascript">	
-			function AdItem(name, phone, address, Photo, price, time, url) {
-				this.name = name;
-				this.phone = phone;
-				this.address = address;
-				this.Photo = Photo;
-				this.url = url;
-				this.price = price;
-				this.time = time;
-			}
-			var ad = new Array();
-			ad[0] = new AdItem('黄金寄卖：高价诚信', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/1.png', '专业寄卖值得信赖', '', '${mybaseurl}/product/8fa078e445184f1f9041ea1be763a5e8?ptype=gjs&goldType=gold');
-			ad[1] = new AdItem('名包寄卖：正规安全', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/2.png', '专业的鉴定团队鉴定人', '', '${mybaseurl}/category/08d2d4cbf3974d8i8d56b26ba29266aa/0');
-			ad[2] = new AdItem('名表寄卖：灵活高效 ', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/3.png', '保证客户利益有效实行', '', '${mybaseurl}/category/08d2d4cbff6j48f08d56b26ba29266aa/0');
-			ad[3] = new AdItem('手机寄卖：方便快捷', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/4.png', '资深的推广运营团队', '', '${mybaseurl}/category/08d2d4cbf39748f08d56b26ba29266aa/0');
-			ad[4] = new AdItem('铂金寄卖：专业鉴定', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/5.png', '线上线下整合营销推广', '', '${mybaseurl}/product/21577fd8a5324e62a416978d15367515?ptype=gjs&goldType=pt');
-			ad[5] = new AdItem('钯金寄卖：低息放心', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/6.png', '量身定制品牌营销方案', '', '${mybaseurl}/product/094c2f5308514105a862c6299f9d320b?ptype=gjs&goldType=palau');
-			ad[6] = new AdItem('K金寄卖： 闲置换新', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/7.png', '量身定制品牌营销方案', '', '${mybaseurl}/product/bcf8086e4f4647fabcfc3409430baa60?ptype=gjs&goldType=k');
-			ad[7] = new AdItem('白银寄卖：便捷省心', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/8.png', '量身定制品牌营销方案', '', '${mybaseurl}/product/5f67c6baca4b4167a4b49b6df510a3f1?ptype=gjs&goldType=sliver');
-			ad[8] = new AdItem('钻石寄卖：贴心服务', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/9.png', '量身定制品牌营销方案', '', '${mybaseurl}/product/diamond');
-			var img = new Array();
-			img[0] = document.getElementById("imgSmallLeft");
-			img[1] = document.getElementById("imgMiddleLeft");
-			img[2] = document.getElementById("imgBig");
-			img[3] = document.getElementById("imgMiddleRight");
-			img[4] = document.getElementById("imgSmallRight");
-			img[5] = document.getElementById("imgHidden");
-			img[6] = document.getElementById("imgHidden1");
-			img[7] = document.getElementById("imgHidden2");
-			img[8] = document.getElementById("imgHidden3");
-			var position = 0;
-			for (i = 0; i < img.length; i++) {
-				img[i].src = ad[i].Photo;
-			}
-			var adname = document.getElementById("adname");
-			var adtel = document.getElementById("adtel");
-			var adaddr = document.getElementById("adaddr");
-			var adprice = document.getElementById("adprice");
-			var adtime = document.getElementById("adtime");
-			var cur = 2;
-			adname.href = ad[2].url;
-			if (navigator.userAgent.indexOf("Firefox") > 0) {
-				adname.textContent = ad[2].name;
-				adtel.textContent = ad[2].phone;
-				adaddr.textContent = ad[2].address;
-				adprice.textContent = ad[2].price;
-				adtime.textContent = ad[2].time;
-			} else {
-				adname.innerText = ad[2].name;
-				adtel.innerText = ad[2].phone;
-//				adaddr.innerText = ad[2].address;
-//				adprice.innerText = ad[2].price;
-//				adtime.innerText = ad[2].time;
-			}		
+
+<script type="text/javascript"> 
+            function AdItem(name, phone, address, Photo, price, time, url) {
+                this.name = name;
+                this.phone = phone;
+                this.address = address;
+                this.Photo = Photo;
+                this.url = url;
+                this.price = price;
+                this.time = time;
+            }
+            var ad = new Array();
+            ad[0] = new AdItem('黄金寄卖：高价诚信', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/1.png', '专业寄卖值得信赖', '', '${mybaseurl}/product/8fa078e445184f1f9041ea1be763a5e8?ptype=gjs&goldType=gold');
+            ad[1] = new AdItem('名包寄卖：正规安全', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/2.png', '专业的鉴定团队鉴定人', '', '${mybaseurl}/category/08d2d4cbf3974d8i8d56b26ba29266aa/0');
+            ad[2] = new AdItem('名表寄卖：灵活高效 ', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/3.png', '保证客户利益有效实行', '', '${mybaseurl}/category/08d2d4cbff6j48f08d56b26ba29266aa/0');
+            ad[3] = new AdItem('手机寄卖：方便快捷', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/4.png', '资深的推广运营团队', '', '${mybaseurl}/category/08d2d4cbf39748f08d56b26ba29266aa/0');
+            ad[4] = new AdItem('铂金寄卖：专业鉴定', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/5.png', '线上线下整合营销推广', '', '${mybaseurl}/product/21577fd8a5324e62a416978d15367515?ptype=gjs&goldType=pt');
+            ad[5] = new AdItem('钯金寄卖：低息放心', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/6.png', '量身定制品牌营销方案', '', '${mybaseurl}/product/094c2f5308514105a862c6299f9d320b?ptype=gjs&goldType=palau');
+            ad[6] = new AdItem('K金寄卖： 闲置换新', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/7.png', '量身定制品牌营销方案', '', '${mybaseurl}/product/bcf8086e4f4647fabcfc3409430baa60?ptype=gjs&goldType=k');
+            ad[7] = new AdItem('白银寄卖：便捷省心', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/8.png', '量身定制品牌营销方案', '', '${mybaseurl}/product/5f67c6baca4b4167a4b49b6df510a3f1?ptype=gjs&goldType=sliver');
+            ad[8] = new AdItem('钻石寄卖：贴心服务', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/9.png', '量身定制品牌营销方案', '', '${mybaseurl}/product/diamond');
+            var img = new Array();
+            img[0] = document.getElementById("imgSmallLeft");
+            img[1] = document.getElementById("imgMiddleLeft");
+            img[2] = document.getElementById("imgBig");
+            img[3] = document.getElementById("imgMiddleRight");
+            img[4] = document.getElementById("imgSmallRight");
+            img[5] = document.getElementById("imgHidden");
+            img[6] = document.getElementById("imgHidden1");
+            img[7] = document.getElementById("imgHidden2");
+            img[8] = document.getElementById("imgHidden3");
+            var position = 0;
+            for (i = 0; i < img.length; i++) {
+                img[i].src = ad[i].Photo;
+            }
+            var adname = document.getElementById("adname");
+            var adtel = document.getElementById("adtel");
+            var adaddr = document.getElementById("adaddr");
+            var adprice = document.getElementById("adprice");
+            var adtime = document.getElementById("adtime");
+            var cur = 2;
+            adname.href = ad[2].url;
+            if (navigator.userAgent.indexOf("Firefox") > 0) {
+                adname.textContent = ad[2].name;
+                adtel.textContent = ad[2].phone;
+                adaddr.textContent = ad[2].address;
+                adprice.textContent = ad[2].price;
+                adtime.textContent = ad[2].time;
+            } else {
+                adname.innerText = ad[2].name;
+                adtel.innerText = ad[2].phone;
+//              adaddr.innerText = ad[2].address;
+//              adprice.innerText = ad[2].price;
+//              adtime.innerText = ad[2].time;
+            }       
 </script>
 <script>
-	  var mySwiper = new Swiper('.swiper-container',{
-		    pagination: '.pagination',
-		    autoplay:2000,
-		    loop:true,
-		    speed:1000,
-		    grabCursor: true,
-		    autoplayDisableOnInteraction : false,
-		    paginationClickable: true
-		  })
+      var mySwiper = new Swiper('.swiper-container',{
+            pagination: '.pagination',
+            autoplay:2000,
+            loop:true,
+            speed:1000,
+            grabCursor: true,
+            autoplayDisableOnInteraction : false,
+            paginationClickable: true
+          })
     function getCategoryByTop(id) {
         $.ajax({
             url: "${baseurl}category/json/"+id,    //请求的url地址

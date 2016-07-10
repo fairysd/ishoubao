@@ -270,17 +270,127 @@ function openNewPage(){
 	window.open(ad[cur].url);
 }
 $(function(){
+	//获取门店数据
+	 $.ajax({
+		            url: "/area/getareasByCityid/856",
+		            dataType: "json",		            
+		            async: false,		            
+		            type: "get",
+			        success: function(data) {
+			            if(data.success){
+			            	var store = data.body;
+			            	var storenum = 0;
+
+			            	for (var i = 0; i < store.length; i++) {
+			            		storenum += parseInt(store[i].storeCount);
+			            	};			            
+			            	$("#total span").html(storenum);
+			            	for (var i = 0; i < store.length; i++) {
+			            		$("#allstore").append('<li id="'+store[i].id+'">'+store[i].name+'( <span>'+store[i].storeCount+'</span> )</li>')
+			            	};
+			            }else{
+			            	console.log("该城市没有网点")
+			            }
+			            },
+		            error:function(data){            	
+		            console.log("请求错误")
+		            }
+	        	});
+	 //门店详细数据获取
+	 	 $.ajax({
+		            url: "/store/listByArea/857",
+		            dataType: "json",		            
+		            async: false,		            
+		            type: "get",
+			        success: function(data) {
+			            if(data.success){			            	
+			            	var detail = data.body;
+			            	console.log(detail);
+			            	for (var i = 0; i < detail.length; i++) {
+			            		$("#storedetail").append("<li><a address="+detail[i].address+" picurl="+detail[i].picurl+" latitude="+detail[i].latitude+" longitude="+detail[i].longitude+" >"+detail[i].name+"</a></li>")
+			            	};
+			            	$("#storedetail").append("<li><a id='kuozhan'>门店开阔中...</a></li>")
+			            }else{
+			            	console.log("该城市没有网点")
+			            }
+			            },
+		            error:function(data){            	
+		            console.log("请求错误")
+		            }
+	        	});
+	//获取数据 end
+	//获取对应地区门店信息
+	$("#allstore li").hover(function(){
+		var areaId = $(this).attr("id")
+		if (areaId==="total") {
+			return;
+		} 
+		// console.log(areaId);
+		$.ajax({
+		            url: "/store/listByArea/"+areaId,
+		            dataType: "json",		            
+		            async: false,		            
+		            type: "get",
+			        success: function(data) {
+			            if(data.success){	
+	      	     $("#storedetail").empty();
+			            	var detail = data.body;			            	
+			            	for (var i = 0; i < detail.length; i++) {
+			            		$("#storedetail").append("<li><a address="+detail[i].address+" picurl="+detail[i].picurl+" latitude="+detail[i].latitude+" longitude="+detail[i].longitude+" >"+detail[i].name+"</a></li>")
+			            	};
+			            	$("#storedetail").append("<li><a id='kuozhan'>门店开阔中...</a></li>")
+			            }else{
+			            	console.log("该城市没有网点")
+			            }
+			            },
+		            error:function(data){            	
+		            console.log("请求错误")
+		            }
+	        	});
+		detailclick();
+		store_page();
+	})
+	//点击门店展示地图
+	function detailclick() {
+		$(".stroe-cont ul li a").click(function(){
+			if ($(this).attr("id")==="kuozhan") {
+				return;
+			} 
+			$("#allmap").empty();
+			$("#allmap").attr("style","");
+			// console.log($(this).picurl)
+			var picurl = $(this).attr("picurl");
+			var longitude = $(this).attr("longitude");
+            var latitude = $(this).attr("latitude");
+            var address = $(this).attr("address");
+			$("#storelayer #picture").attr("src",picurl);
+			$("#storelayer .iframe h3").text(address);
+
+			
+		layer.open({
+		      			type:1,
+		      			area:["994px"],
+		      			content:$("#storelayer"),
+		      			shadeClose:true,
+		      			title:false,
+		      			scrollbar:false,
+      				});
+		initMap(longitude, latitude);
+
+				});
+
+	}
 	store_page();
 	store_title();
+	detailclick();
 	// 根据店面数量分页
 	function store_page(){
 			var storeAll = $(".stroe-cont ul li")
-	var storeNum = storeAll.length;	
-	var sCurNum = $(".page_store .num .cur-num");	
+	var storeNum = storeAll.length;
+	var sCurNum = $(".page_store .num .cur-num");
 	sCurNum.text(1)
 	if (storeNum > 0) {
-		 sPNum = Math.ceil(storeNum/5);
-		 
+		 sPNum = Math.ceil(storeNum/5);		 
 		 $(".page_store .num .total-num").html(sPNum);
 		$('.page_store .pre').bind('click',function(){
 			curNum = sCurNum.text();
@@ -293,7 +403,6 @@ $(function(){
 						sCurNum.text(curNum);
 						return;
 					}
-		
 	});  //pre click
 	$('.page_store .next').bind('click',function(){
 					CurNum = $(".page_store .num .cur-num").text();
@@ -312,17 +421,7 @@ $(function(){
 				});
 				// next click
 	}
-	var storeAdd = $(".stroe-cont ul li a");
-	storeAdd.click(function(){
-		layer.open({
-		      			type:2,
-		      			area:["994px","511px"],
-		      			content:[this.href,"no"],
-		      			shadeClose:true,
-		      			title:false
-      				})
-		return false;
-	});
+
 	};
 	// 根据城市区域多少分页
 		function store_title(){
@@ -360,5 +459,27 @@ $(function(){
 				});
 			}
 		};
+		//  百度地图api
+		function initMap(longitude, latitude) { 
+        // 百度地图API功能
+        var map = new BMap.Map("allmap");
+        var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});// 左上角，添加比例尺
+        var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
+        var top_right_navigation = new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL});
+        map.addControl(top_left_control);
+        map.addControl(top_left_navigation);
+        map.addControl(top_right_navigation);
+        if (longitude=="" || latitude =="") {
+            var point = new BMap.Point(0,0);
+            map.centerAndZoom(point, 18);
+        } else {
+            var point = new BMap.Point(longitude,latitude);
+            map.centerAndZoom(point, 18);
+        }
+        map.enableScrollWheelZoom(true);
+        var marker = new BMap.Marker(point);  // 创建标注
+        map.addOverlay(marker);               // 将标注添加到地图中
+        marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+    }
 
 });

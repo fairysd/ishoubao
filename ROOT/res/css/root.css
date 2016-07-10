@@ -1,66 +1,69 @@
 .zhi ul li{list-style: none;float:left;width:240px;text-align:center;}
 .store-title{
-	height: 26px;
-	    margin-bottom: 25px;
+    height: 26px;
+        margin-bottom: 25px;
 }
 .store-title ul{
-	text-align: right;
-	float: right;
-	text-align: right;
+    text-align: right;
+    float: right;
+    text-align: right;
     float: right;
     font-size: 16px;
     font-family: "微软雅黑";
     padding-right: 40px;
 }
 .store-title .title_page{
-	float: right;
-	padding-top: 4px;	
+    float: right;
+    padding-top: 4px;   
 }
 .store-title .title_page span{
-	float: right;
-	height: 14px;
-	width: 38px;
-	border:solid #8C8C8C 1px ;
-	    text-align: center;
+    float: right;
+    height: 14px;
+    width: 38px;
+    border:solid #8C8C8C 1px ;
+        text-align: center;
     line-height: 14px;
     cursor: pointer;
 } 
 .store-title ul li{
-	display: inline-block;	
+    display: inline-block;  
+        margin: 0 10px;
+        cursor: pointer;
 }
 .store-img{
-	width: 342px;
-	float: left;
+    width: 342px;
+    float: left;
     margin-right: 12px;
 }
 .stroe-cont{
-	width: 846px;
-	float: left;
-	height: 356px;
-	overflow: hidden;
-	position: relative;
+    width: 846px;
+    float: left;
+    height: 356px;
+    overflow: hidden;
+    position: relative;
 }
 .stroe-cont li{
-	/*display: inline-block;*/
-	width: 270px;
-	height: 168px;
-	float: left;
-	border: 1px solid #cacaca;
-	margin-bottom: 16px;
-	margin-left: 10px;
+    /*display: inline-block;*/
+    width: 270px;
+    height: 168px;
+    float: left;
+    border: 1px solid #cacaca;
+    margin-bottom: 16px;
+    margin-left: 10px;
 }
 .stroe-cont ul li a{
-	display: block;
-	font-size: 18px;
-	font-family: "微软雅黑";
-	height: 168px;
-	line-height: 168px;
-	text-align: center;
-	
+    display: block;
+    font-size: 18px;
+    font-family: "微软雅黑";
+    height: 168px;
+    line-height: 168px;
+    text-align: center;
+    cursor: pointer;
+    
 }
 
 .page_store{
-	    width: 270px;
+        width: 270px;
     height: 168px;
     position: absolute;
     right: 0;
@@ -71,8 +74,72 @@
     border: 1px solid #cacaca;
 }
 .page_store .num{
-	display: inline-block;
+    display: inline-block;
 }
 .page_store span:hover{
-	cursor: pointer;
+    cursor: pointer;
 }
+#storelayer{
+    width: 994px;
+    height: 511px;
+}
+#storelayer .storemap {
+                height: 459px;
+
+}
+            
+            #storelayer .iframe {
+                position: relative;
+                float: left;
+                width: 554px;
+                height: 478px;
+            }
+            #storelayer .iframe h3{
+                    top: -80px;
+                    position: relative;
+                    font-size: 18px;
+                    font-family: "微软雅黑";
+                    line-height: 30px;
+                    text-align: left;
+                    height: 30px;
+                    background-color: rgba(0,0,0,0.3);
+                    color: #fff;
+                    text-indent: 1em;
+            }
+            
+            #storelayer .picture {
+                position: relative;
+                float: left;
+                left: -2px;
+                height: 410px;
+
+            }
+            #storelayer .picture h3{
+                position: relative;
+                top: -35px;
+                font-size: 18px;
+                font-family: "微软雅黑";
+                line-height: 30px;
+                text-align: left;
+                height: 30px;
+                background-color: rgba(0,0,0,0.3);
+                color: #fff;
+                text-indent: 1em;
+            }
+            
+            #storelayer .storestream {
+                position: relative;
+                top: -69px;
+            }
+.layui-layer-page .layui-layer-content{
+                overflow: hidden;
+            }
+            #picture{
+                    width: 440px;
+                    height: 410px;
+                    position: relative;
+                    bottom: 0px;
+            }
+        #allstore li:hover{
+            color: #e1882a;
+        }
