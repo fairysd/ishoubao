@@ -305,11 +305,16 @@ $(function(){
 			        success: function(data) {
 			            if(data.success){			            	
 			            	var detail = data.body;
-			            	console.log(detail);
+			            	var kaituoNum = 5-detail.length;
+			            	// console.log(detail);
 			            	for (var i = 0; i < detail.length; i++) {
-			            		$("#storedetail").append("<li><a address="+detail[i].address+" picurl="+detail[i].picurl+" latitude="+detail[i].latitude+" longitude="+detail[i].longitude+" >"+detail[i].name+"</a></li>")
+			            		$("#storedetail").append("<li tel="+detail[i].tel+" address="+detail[i].address+" picurl="+detail[i].picurl+" latitude="+detail[i].latitude+" longitude="+detail[i].longitude+" ><a>"+detail[i].name+"</a><p>"+detail[i].address+"</p><p>"+detail[i].tel+"</p></li>")
 			            	};
-			            	$("#storedetail").append("<li><a id='kuozhan'>门店开阔中...</a></li>")
+			            	if (kaituoNum >= 0) {
+			            		for (var i = 0; i < kaituoNum; i++) {
+			            	 	$("#storedetail").append("<li class='last kuozhan'><img src=/asb-web/res/images/new/login/icon.png /><a class='kuozhan'>门店开拓中...</a></li>")
+			            		};
+			            	};
 			            }else{
 			            	console.log("该城市没有网点")
 			            }
@@ -321,7 +326,16 @@ $(function(){
 	//获取数据 end
 	//获取对应地区门店信息
 	$("#allstore li").hover(function(){
-		var areaId = $(this).attr("id")
+		var allLi = $("#allstore li");
+		var areaId = $(this).attr("id");
+		// console.log(allLi.length)
+
+		for (var i = 0; i < allLi.length; i++) {
+			// console.log(allLi[i])
+			$(allLi[i]).removeClass("active")
+			
+		};
+		$(this).addClass("active");
 		if (areaId==="total") {
 			return;
 		} 
@@ -333,12 +347,19 @@ $(function(){
 		            type: "get",
 			        success: function(data) {
 			            if(data.success){	
-	      	     $("#storedetail").empty();
-			            	var detail = data.body;			            	
+	      	     			$("#storedetail").empty();
+			            	var detail = data.body;
+			            	var kaituoNum = 5-detail.length;
+			            	// console.log(kaituoNum);   	
 			            	for (var i = 0; i < detail.length; i++) {
-			            		$("#storedetail").append("<li><a address="+detail[i].address+" picurl="+detail[i].picurl+" latitude="+detail[i].latitude+" longitude="+detail[i].longitude+" >"+detail[i].name+"</a></li>")
+			            		$("#storedetail").append("<li tel="+detail[i].tel+" address="+detail[i].address+" picurl="+detail[i].picurl+" latitude="+detail[i].latitude+" longitude="+detail[i].longitude+" ><a>"+detail[i].name+"</a><p>"+detail[i].address+"</p><p>"+detail[i].tel+"</p></li>")
 			            	};
-			            	$("#storedetail").append("<li><a id='kuozhan'>门店开阔中...</a></li>")
+			            	if (kaituoNum >= 0) {
+			            		for (var i = 0; i < kaituoNum; i++) {
+			            	 	$("#storedetail").append("<li class='last kuozhan'><img src=/asb-web/res/images/new/login/icon.png /><a class='kuozhan'>门店开拓中...</a></li>")
+			            		};
+			            	};
+			            	 			            	
 			            }else{
 			            	console.log("该城市没有网点")
 			            }
@@ -352,8 +373,8 @@ $(function(){
 	})
 	//点击门店展示地图
 	function detailclick() {
-		$(".stroe-cont ul li a").click(function(){
-			if ($(this).attr("id")==="kuozhan") {
+		$(".stroe-cont ul li").click(function(){
+			if ($(this).attr("class")==="last kuozhan") {
 				return;
 			} 
 			$("#allmap").empty();
@@ -363,13 +384,15 @@ $(function(){
 			var longitude = $(this).attr("longitude");
             var latitude = $(this).attr("latitude");
             var address = $(this).attr("address");
+            var tel = $(this).attr("tel");
 			$("#storelayer #picture").attr("src",picurl);
 			$("#storelayer .iframe h3").text(address);
+			$("#storelayer .picture h3").text("联系电话： "+tel+"");
 
 			
 		layer.open({
 		      			type:1,
-		      			area:["994px"],
+		      			area:["992px"],
 		      			content:$("#storelayer"),
 		      			shadeClose:true,
 		      			title:false,

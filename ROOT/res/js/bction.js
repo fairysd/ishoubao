@@ -481,5 +481,4 @@ $(function(){
         map.addOverlay(marker);               // 将标注添加到地图中
         marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
     }
-
 });
