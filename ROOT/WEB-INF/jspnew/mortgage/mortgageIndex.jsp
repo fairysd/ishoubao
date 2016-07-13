@@ -109,13 +109,13 @@
 			}
     </style>
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/style.css">
-    
+	<%@ include file="../common/otherHeader.jsp"%>
 </head>
 <body>
 <%@ include file="../common/header.jsp" %>
 <div class="pure-g topimg">
     <div class="pure-u-1-1">
-        <img src="${mybaseurl}/res/images/v2/jm_top.jpg" />
+        <img style="width:100%" src="${mybaseurl}/res/images/v2/jm_top.jpg" />
     </div>
 </div>
 <div class="out_box" style="margin-bottom: 20px;" >
@@ -159,7 +159,10 @@
 							<tr>
 								<td height="28" align=center>
 									<a id="adname" class="name" href="#"></a>&nbsp;&nbsp;&nbsp;&nbsp;贵宾热线：<span id="adtel" class="tel"></span></td>
-							</tr>							
+							</tr>
+							<tr style="display: none;">
+								<td align=center><span id="adaddr"></span>&nbsp;&nbsp;&nbsp;&nbsp;保障：<span id="adprice" class="org"></span>&nbsp;&nbsp;&nbsp;&nbsp;<span id="adtime" class="org"></span></td>
+									</tr>							
 						</tbody>
 					</table>
 					<a id="btnCarouselRt" class="btnCarouselRT" style="right: 86px;" onclick="clearInterval(autoplay);move('r');"></a>
