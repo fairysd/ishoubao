@@ -62,11 +62,14 @@ color: #000;
     display: block;
     font-size: 18px;
     font-family: "微软雅黑";
-    height: 168px;
-    line-height: 168px;
+    height: 70px;
+    line-height: 100px;
     text-align: center;
     cursor: pointer;
 }
+/*.stroe-cont ul li a.bgimg{
+    background:url(/asb-web/res/images/new/homepage/storebg.png) no-repeat center; 
+}*/
 .stroe-cont ul li a.kuozhan{
     display: block;
     font-size: 18px;
@@ -158,17 +161,19 @@ color: #000;
  #allstore li:hover{
     color: #e1882a;
 }
-#storedetail li:hover{
+/*#storedetail li:hover{
     background-color:#4fadf0;
-}
-#storedetail li.last:hover{
-    background-color:#fff;
-}
-#storedetail li:hover a{
+}*/
+    /*#storedetail li.last:hover{
+        background-color:#fff;
+    }*/
+/*#storedetail li:hover a{
     color: #fff;
     height: 70px;
     line-height: 100px;
-}
+    background: none;
+}*/
+
 #storedetail li:hover a.kuozhan{
     display: block;
     font-size: 18px;
@@ -180,16 +185,21 @@ color: #000;
     color: #646464;
 }
 #storedetail li p{
-    display:none;
+    display: block;
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    font-family: 微软雅黑;
+    line-height: 30px;
 }
-#storedetail li:hover p{
+/*#storedetail li:hover p{
     display:block;
     text-align: center;
     color: #fff;
     font-size: 16px;
     font-family: 微软雅黑;
     line-height: 30px;
-}
+}*/
 #storedetail li.last img{
     display: block;
     margin: auto;

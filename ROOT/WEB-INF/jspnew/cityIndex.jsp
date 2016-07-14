@@ -5,7 +5,6 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ include file="common/tag.jsp"%>
-<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -20,50 +19,11 @@
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/style.css">
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/main.css">
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/root.css">
-    <link type="text/css" rel="stylesheet" href="${mybaseurl}/res/css/unslider.css">
+    <link type="text/css" rel="stylesheet" href="${baseurl}res/css/idangerous.swiper.css"> 
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/style.css">
     <link type="text/css" rel="stylesheet" href="${baseurl}res/js/layer/skin/layer.css">
-    <style>
-        .quickEstimateBrand{height:150px;overflow-y:scroll;}
-        .unslider-nav{padding:5px 0;}
-        .unslider-nav ol {
-            list-style: none;
-            z-index: 20;
-            position: absolute;
-            top:493px;
-        }
-        .unslider-nav ol li {
-            display: inline-block;
-            width: 160px;
-            text-align: center;
-            overflow: hidden;
-            cursor: pointer;
-            height: 40px;
-            line-height:40px;
-            color:#fff;
-            font-size:14px;
-            border-right: 1px solid #9e9e9e;
-            background: rgba(101,103,115,0.4);
-        }
-        .unslider-nav ol li:last-child{border-right: none;width:156px;}
-        .unslider-nav ol li.unslider-active {
-            color: #00a199;
-            background: rgba(77,77,77,0.5);
-        }
-        .citybanner .banner-right{width: 380px; margin-left: 18px; border: 1px solid #e1e1e1; height: 375px;}
-        .citybanner .banner-right .floor1{background: #56abe4;height:50px;line-height: 50px;font-size:18px;color:#fff;}
-        .citybanner .banner-right .floor2{padding-top:30px;font-size:18px;}
-        .citybanner .banner-right .floor2 p{padding-bottom:10px;}
-        .tjnumber{font-size:28px;color:#56abe4;font-style: italic;padding-right:5px;}
-        .citybanner .banner-right .floor3{border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;height:90px;padding-top:35px;margin:0 20px;}
-        .citybanner .banner-right .floor4 img{width:32px;height:32px;padding-top:20px;}
-
-        .citystoreul li{background:none;color:#000;}
-        .citystoreul li.active{background:none;color:#e1882a;}
-        .citystoreul li:last-child{text-align: center;background:#FFB707;color:#fff;padding-left:0;width:140px;height: 30px;line-height: 30px;}
-        .nostorepic{width:918px;}
-        .citybtn img:hover{opacity: 0.9;}
-    </style>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+ <!--寄卖轮转图-->
     <style type="text/css">
         #dHomePageCarousel {
                 background: url("${mybaseurl}/res/images/new/mortage/mortagebg1_03.jpg") no-repeat scroll 0 0 transparent;
@@ -126,80 +86,298 @@
                 top: 17px;
                 width: 28px;
             }
+            .ssindex{
+                background-color: #FFFFFF;
+                    height: 200px;
+    padding-top: 50px;
+    box-shadow:#999999 1px 1px 1px 1px;
+            }
     </style>
 </head>
 <body>
 <%@ include file="common/header.jsp"%>
 <!-- banner -->
-<div class="myrow citybanner">
-    <div class="pure-g">
-        <div class="pure-u-3-4" style="width:800px;">
-            <div class="my-slider">
-                <ul>
-                    <c:forEach items="${ads1}" var="ad">
-                        <li data-nav="${ad.name}"><a href="${ad.url}"><img src="${ad.picurl}"/></a></li>
-                    </c:forEach>
-                </ul>
-            </div>
-        </div>
-        <div class="pure-u-1-4 banner-right">
-            <div class="pure-g floor1 tac">
-                <div class="pure-u-1-1">
-                    专业的二手回收平台
-                </div>
-            </div>
-            <div class="pure-g floor2 tac">
-                <c:set var="shopTj" value="${fn:split(shoptj, ',')}"/>
-                <div class="pure-u-1-3"><p><span class="tjnumber">${shopTj[0]}</span>家</p><p class="f14">全国门店</p></div>
-                <div class="pure-u-1-3"><p><span class="tjnumber">${shopTj[1]}</span>人</p><p class="f14">鉴定专员</p></div>
-                <div class="pure-u-1-3"><p><span class="tjnumber">${shopTj[2]}</span>个</p><p class="f14">订单成交量</p></div>
-            </div>
-            <div class="pure-g floor3 tac citybtn">
-                <div class="pure-u-1-2"><a href="${mybaseurl}/category/first"><img src="${mybaseurl}/res/images/v2/ban_1.gif"/></a></div>
-                <div class="pure-u-1-2" style="margin-left: 25px;"> <a href="${mybaseurl}/mortgage/"><img src="${mybaseurl}/res/images/v2/ban_2.gif"/></a></div>
-            </div>
-            <div class="pure-g floor4 tac">
-                <div class="pure-u-1-4"><img src="${mybaseurl}/res/images/v2/huanbao.gif"/><p>环保</p></div>
-                <div class="pure-u-1-4"><img src="${mybaseurl}/res/images/v2/liansuo.gif"/><p>连锁</p></div>
-                <div class="pure-u-1-4"><img src="${mybaseurl}/res/images/v2/gongdao.gif"/><p>公道</p></div>
-                <div class="pure-u-1-4"><img src="${mybaseurl}/res/images/v2/jianding.gif"/><p>鉴定</p></div>
-            </div>
+<div class = "banner_box">
+    <div class = "leftBox">
+        <div class = "box">
+            <i></i>
+            <span class="quickClose"><img src="${baseurl}res/images/closebtn.png"/></span>
+            <ul style="display:none;">
+                <li class = "active"><i></i>我要卖</li>
+                <li><i></i>我要抵押</li>
+            </ul>
+            <ul>
+                <li id="estimateQuickLi" class = "active"><label class = "select"><span>宝贝品类</span><b>名包</b>
+                    <ul class="quickEstimateUL">
+                        <li data-value="08d2d4cbf3974d8i8d56b26ba29266aa" class="quickEstimateFirst">名包</li>
+                        <li data-value="08d2d4cbff6j48f08d56b26ba29266aa">名表</li>
+                        <li data-value="gold">黄金</li>
+                        <li data-value="08d2d4cbf39748f08d56b26ba29266aa">手机</li>
+                        <li data-value="47f288756f1a4c5ebac0a2baf1f5ee80">贵金属</li>
+                        <li data-value="0">钻石</li>
+                    </ul>
+                </label>
+                    <label class = "select"><span>宝贝品种</span><b class="quickEstimateBrandB">爱马仕</b>
+                        <ul class="quickEstimateBrand">
+                        </ul>
+                    </label>
+                    <%--<label class = "select"><span>回收方法</span><b>门店</b>--%>
+                        <%--<ul>--%>
+                            <%--<li>门店</li>--%>
+                            <%--<li>快递</li>--%>
+                            <%--<li>上门</li>--%>
+                        <%--</ul>--%>
+                    <%--</label>--%>
+                    <label>
+                        <button id="quickEstimateBtn" data-url="">估价搜索</button>
+                    </label>
+                </li>
+                <li id="mortgageQuickLi">
+                    <%--<form name="dyform" id="dyform" action="${baseurl}webintention/create" method="post">--%>
+                        <input type="hidden" name="type" value="2"/>
+                        <input type="hidden" name="productType" id="quickProductType" value="贵金属寄卖"/>
+                    <label class = "select"><span>寄卖宝贝</span><b>贵金属寄卖</b>
+                    <ul class="quickProductTypeSelect">
+                        <li data-value="贵金属寄卖">贵金属寄卖</li>
+                        <li data-value="珠宝寄卖">珠宝寄卖</li>
+                        <li data-value="名表寄卖">名表寄卖</li>                        
+                        <li data-value="名包寄卖">名包寄卖</li>
+                    </ul>
+                </label>
+                    <label class = "select"><span>寄卖金额</span><b class = "no"><input type = "text" name="rzJe" id="quickrzJe">元</b></label>
+                    <label class = "select"><span>联系手机</span><b class = "no"><input type = "text" name="phone" id="quickPhone"></b></label>
+                    <label>
+                        <button id="indexKsdydksqBtn">快速寄卖申请</button>
+                    </label>
+                    <%--</form>--%>
+                </li>
+            </ul>
         </div>
     </div>
-</div>
-<div class="out_box" style="margin-top: -13px;"><img src="${mybaseurl}/res/images/v2/citybanner.jpg"/></div>
-<!-- 区域店推荐 -->
-<div class="mywrapper mt10">
-    <div class = "out_box">
-        <div class = "title">
-            <h6>REGIONAC STRORE IMAGE DISPLAY<br>区域店推荐</h6>
-        </div>
-        <!-- old vision  start-->
-        <div class = "man_content mystoretj" style="padding-bottom:30px; display:none">
-            <div class="pure-g">
-                <div class="pure-u-1-5">
-                    <div class = "t_nav">
-                        <ul class = "t_nav_right citystoreul">
-                            <c:forEach items="${areas}" var="area" varStatus="st">
-                                <li class="mystoretj_li<c:if test="${st.first}"> active</c:if>" data-region-id = "${area.id}" data-index="${st.index}"><span>${area.name}(${area.storeCount})</span></li>
-                            </c:forEach>
-                            <li>V</li>
-                        </ul>
-                    </div>
+    <!--<div class = "imgBox">
+        <ul>
+            <li class = "active">
+                <div class = "img_out_box"><img src = "${baseurl}res/images/banner1.jpg"></div>
+            </li>
+            <li>
+                <div class = "img_out_box"><img src = "${baseurl}res/images/banner2.jpg"></div>
+            </li>
+            <li>
+                <div class = "img_out_box"><img src = "${baseurl}res/images/banner3.jpg"></div>
+            </li>
+            <li>
+                <div class = "img_out_box"><img src = "${baseurl}res/images/banner4.jpg"></div>
+            </li>
+            <li>
+                <div class = "img_out_box"><img src = "${baseurl}res/images/banner5.jpg"></div>
+            </li>
+        </ul>
+    </div>-->
+    <div class = "swiper-container">
+            <div class="swiper-wrapper">
+                <div class = "swiper-slide">
+                    <div class = "img_out_box"><a href="${mybaseurl}/category/first"><img src = "${baseurl}res/images/banner1.jpg"></a></div>
                 </div>
-                <div class="pure-u-4-5">
-                    <div class = "t_content">
-                        <ul class = "t_c_left">
-                            <c:forEach items="${areas}" var="area" varStatus="st">
-                            <li class = "pb10 shoptjContent${st.index}<c:if test="${st.first}"> active</c:if>"></li>
-                            </c:forEach>
-                        </ul>
-                    </div>
+                <div class = "swiper-slide" >
+                    <div class = "img_out_box"><a href="${mybaseurl}/mortgage"><img src = "${baseurl}res/images/banner2.jpg"></a></div>
+                </div >
+                <div class = "swiper-slide">
+                    <div class = "img_out_box"><a href="${mybaseurl}/luxury"><img src = "${baseurl}res/images/banner3.jpg"></a></div>
+                </div>
+                <div class = "swiper-slide">
+                    <div class = "img_out_box"><a href="${mybaseurl}/consignment"><img src = "${baseurl}res/images/banner4.jpg"></a></div>
+                </div>
+                <div class = "swiper-slide">
+                    <div class = "img_out_box"><a href="http://shop.aishoubao.com"><img src = "${baseurl}res/images/banner5.jpg"></a></div>
                 </div>
             </div>
+            <div class="pagination"></div>  
         </div>
-        <!-- old vision  end-->
-        <!-- new vision start -->
+    <div class = "banner_nav_button">
+        <img id="estimateBtn" src="${mybaseurl}/res/images/v2/ban_1.gif">
+        <img id="mortgageBtn" src="${mybaseurl}/res/images/v2/ban_2.gif">
+    </div>    
+</div>
+<div class="out_box">
+    <ul id="content">
+        <li>
+            <img src="${mybaseurl}/res/images/v2/huanbao.gif"/>
+            <div>
+                <p>环保</p>
+                <span>循环利用&nbsp;绿色环保</span>
+            </div>
+        </li>
+        <li>
+            <img src="${mybaseurl}/res/images/v2/liansuo.gif"/>
+            <div>
+                <p>连锁</p>
+                <span>全国连锁&nbsp;值得信赖</span>
+            </div>
+        </li>
+        <li>
+            <img src="${mybaseurl}/res/images/v2/gongdao.gif"/>
+            <div>
+                <p>公道</p>
+                <span>隐私保护&nbsp;价格公道</span>
+            </div>
+        </li>
+        <li>
+            <img src="${mybaseurl}/res/images/v2/jianding.gif"/>
+            <div>
+                <p>鉴定</p>
+                <span>免费服务&nbsp;专业鉴定</span>
+            </div>
+        </li>
+    </ul>
+</div>
+<%@include file="common/index_common.jsp"%>
+<!-- shop -->
+<div class="mywrapper indexbg" style="clear: both;">
+    <div class = "out_box">
+        <div class = "title">
+            <h6>Love collecting treasure mall<br>爱收宝商城</h6>
+        </div>        
+            <div class="pure-g">
+                <div class="pure-u-1-4 shoptitle">
+                    <h3>限时优惠</h3>
+                    <div class="shoppic">
+                        <a href="http://shop.aishoubao.com"><img src="${mybaseurl}/res/images/new/shop/shoppic_10.jpg" alt="" /></a>
+                    </div>
+                    <!--<div class = "t_nav">
+                        <ul class = "t_nav_right" style="padding-top:45px;">
+                            <li class = "active"><i class="iconfont f24">&#xe604;</i> <span>大牌名包</span></li>
+                            <li><i class="iconfont f24">&#xe617;</i> <span>大牌名表</span></li>
+                            <li><i class="iconfont f20">&#xe602;</i> <span>黄金白银</span></li>
+                            <li><i class="iconfont f24">&#xe601;</i> <span>钻石珠宝</span></li>
+                            <li><i class="iconfont f24">&#xe605;</i> <span>手机数码</span></li>
+                        </ul>
+                    </div>-->
+                </div>
+                <div class="pure-u-3-4 xinshang">
+                    <h3>名品欣赏</h3>
+                    <div class="pure-u-1-3">
+                        <a href="http://shop.aishoubao.com/category.php?id=18"><img src="${mybaseurl}/res/images/new/shop/shoppic_03.jpg" alt="" /></a>
+                    </div>
+                    <div class="pure-u-1-3">
+                        <a href="http://shop.aishoubao.com/category.php?id=352"><img src="${mybaseurl}/res/images/new/shop/shoppic_05.jpg" alt="" /></a>
+                    </div>
+                    <div class="pure-u-1-3">
+                        <a href="http://shop.aishoubao.com/category.php?id=272"><img src="${mybaseurl}/res/images/new/shop/shoppic_07.jpg" alt="" /></a>
+                    </div>
+                    <!--<div class = "t_content">
+                        <ul class = "t_c_left">
+                            <li class = "active">
+                                <div class="pure-g mt20">
+                                    <c:forEach items="${goods18.goods}" var="good">
+                                    <div class="pure-u-1-4 tac pb20">
+                                        <a href="http://shop.aishoubao.com/${good.goodsUrl}" target="_blank">
+                                        <div class="hsdiv">
+                                                <img class="lazy" data-original="http://shop.aishoubao.com/${good.goodsImg}"/>
+                                                <p>${good.goodsName}</p>
+                                        </div>
+                                        <div class="myshop_pricediv">
+                                            <div class="pure-u-1-2">${good.goodsPrice}</div>
+                                            <div class="pure-u-1-2">立即购买</div>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    </c:forEach>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pure-g mt20">
+                                    <c:forEach items="${goods352.goods}" var="good">
+                                        <div class="pure-u-1-4 tac pb10">
+                                            <a href="http://shop.aishoubao.com/${good.goodsUrl}" target="_blank">
+                                                <div class="hsdiv">
+                                                    <img src="http://shop.aishoubao.com/${good.goodsImg}"/>
+                                                    <p>${good.goodsName}</p>
+                                                </div>
+                                                <div class="myshop_pricediv">
+                                                    <div class="pure-u-1-2">${good.goodsPrice}</div>
+                                                    <div class="pure-u-1-2">立即购买</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </c:forEach>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pure-g mt20">
+                                    <c:forEach items="${goods150.goods}" var="good">
+                                        <div class="pure-u-1-4 tac pb10">
+                                            <a href="http://shop.aishoubao.com/${good.goodsUrl}" target="_blank">
+                                                <div class="hsdiv">
+                                                    <img src="http://shop.aishoubao.com/${good.goodsImg}"/>
+                                                    <p>${good.goodsName}</p>
+                                                </div>
+                                                <div class="myshop_pricediv">
+                                                    <div class="pure-u-1-2">${good.goodsPrice}</div>
+                                                    <div class="pure-u-1-2">立即购买</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </c:forEach>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pure-g mt20">
+                                    <c:forEach items="${goods272.goods}" var="good">
+                                        <div class="pure-u-1-4 tac pb10">
+                                            <a href="http://shop.aishoubao.com/${good.goodsUrl}" target="_blank">
+                                                <div class="hsdiv">
+                                                    <img src="http://shop.aishoubao.com/${good.goodsImg}"/>
+                                                    <p>${good.goodsName}</p>
+                                                </div>
+                                                <div class="myshop_pricediv">
+                                                    <div class="pure-u-1-2">${good.goodsPrice}</div>
+                                                    <div class="pure-u-1-2">立即购买</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </c:forEach>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pure-g mt20">
+                                    <c:forEach items="${goods292.goods}" var="good">
+                                        <div class="pure-u-1-4 tac pb10">
+                                            <a href="http://shop.aishoubao.com/${good.goodsUrl}" target="_blank">
+                                                <div class="hsdiv">
+                                                    <img src="http://shop.aishoubao.com/${good.goodsImg}"/>
+                                                    <p>${good.goodsName}</p>
+                                                </div>
+                                                <div class="myshop_pricediv">
+                                                    <div class="pure-u-1-2">${good.goodsPrice}</div>
+                                                    <div class="pure-u-1-2">立即购买</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </c:forEach>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>-->
+                </div>
+            </div>        
+    </div>
+</div>
+<!-- 护理 -->
+<div class = "out_box">
+    <div class = "title nursingtitle">
+        <h6>NURSING<br>护理</h6>
+    </div>
+    <div class = "man_content main_content_js" style="padding-bottom:0;">
+        <div class="pure-g">
+            <div class="pure-u-1-1"><a href="${mybaseurl}/luxury"><img class="lazy" data-original="${mybaseurl}/res/images/v2/nursing_1.jpg"/></a></div>
+        </div>       
+    </div>
+</div>
+<!-- 区域店推荐 -->
+<div class = "out_box">
+    <div class = "title">
+        <h6>THE PREMIUM STORE<br>门店服务</h6>
+    </div>
         <div class="store-title">
             <div class="title_page">
                     <span class="next">&gt;</span>
@@ -227,7 +405,8 @@
                 <span class="next">&gt;</span>
             </div>
         </div>
-        <div id="storelayer" class="storedetail" style="display:none">
+</div>
+<div id="storelayer" class="storedetail" style="display:none">
             <div class="storemap">
                 <div class="iframe">
                     <div class = "map storemap" id="allmap"></div>
@@ -242,17 +421,78 @@
                 <img src="${baseurl}res/images/new/login/storestream.jpg" alt="" />
             </div>
         </div>
-        <!-- new vision end -->
+<!-- 新闻 -->
+<div class = "out_box">
+    <div class = "title">
+        <h6>Love to receive Po information<br>爱收宝资讯</h6>
+    </div>    
+        <div class="pure-g zixunbl">
+            <div class="pure-u-1-5">
+                <img src="${mybaseurl}/res/images/new/zinxunpic_03.jpg" alt="" />
+            </div>
+            <div class="pure-u-4-5 hotnews">                
+                <div class="newsmarquee">
+                    <ul class="newslist">
+                        <li><a href="${mybaseurl}/news/1"><span>></span>3D硬金与千足金的区别<span style="text-align: right;display: block;float: right; color: #000000;">2016-05-23</span></a></li>
+                        <li><a href="${mybaseurl}/news/2"><span>></span>穿的好不如戴的对 想做职场白骨精你得来块表<span style="text-align: right;display: block;float: right;color: #000000;">2016-04-13</span></a></li>
+                        <li><a href="${mybaseurl}/news/3"><span>></span>金价收盘创逾一周新高 蓄势决战千三之巅<span style="text-align: right;display: block;float: right;color: #000000;">2016-03-20</span></a></li>
+                        <li><a href="${mybaseurl}/news/4"><span>></span>细节控戛纳红毯上的这些珠宝你看到了吗？<span style="text-align: right;display: block;float: right;color: #000000;">2016-01-06</span></a></li>                       
+                    </ul>
+                </div>
+            </div>
+            <!--<div class="pure-u-2-5" style="text-align:right;"><img class="lazy" style="padding-left:175px;" data-original="${mybaseurl}/res/images/v2/news.jpg"/></div>-->
+        </div>
+</div>
+<!-- 实时指数 -->
+<div class="mywrapper indexbg" style="clear: both;height: 320px;">
+    <div class = "out_box">
+        <div class = "title zhishu">
+            <h6>REAL-TIME INDEX<br>实时指数</h6>
+        </div>
+        <div class = "man_content ssindex">
+            <ul>
+                <li><img class="lazy" data-original="http://photo.zhijinwang.com/cn/metals/gold/t24_au_cny_gram_180x114.gif" alt="纸黄金走势图" width="220" height="146" border="0" vspace="4"></li>
+                <li><img class="lazy" data-original="http://photo.zhijinwang.com/cn/metals/silver/t24_ag_cny_gram_180x114.gif" alt="白银价格走势图" width="220" height="146" border="0"></li>
+                <li><img class="lazy" data-original="http://photo.zhijinwang.com/cn/metals/platinum/t24_pt_cny_gram_180x114.gif" alt="铂金价格即时走势图" width="220" height="146" border="0"></li>
+                <li><img class="lazy" data-original="http://photo.zhijinwang.com/cn/metals/palladium/t24_pd_cny_gram_180x114.gif" alt="钯金价格即时走势图" width="220" height="146" border="0"></li>
+                <li><img class="lazy" data-original="http://photo.zhijinwang.com/cn/live_charts/t24_crude_182x116.gif" alt="美国原油即时走势图" width="220" height="146" border="0"></li>
+            </ul>
+       </div>
     </div>
 </div>
-<%@include file="common/index_common.jsp"%>
-
+<div style="clear:both;height:40px;">&nbsp;</div>
+<!-- 战略合作伙伴 -->
+<div class="mywrapper indexbg" style="clear: both;height: 265px;">
+    <div class = "out_box">
+        <div class = "title">
+            <h6>STRATEGIC PARTENR<br>战略合作伙伴</h6>
+        </div>
+        <div class = "man_content main_content_js hzhb" style="padding:40px 0;background: transparent;">
+            <ul class="">
+                <li><img src = "${baseurl}res/images/hLogo01.png" alt = "上海黄金交易所"></li>
+                <li><img src = "${baseurl}res/images/hLogo02.png" alt = "苏州东吴黄金"></li>
+                <li><img src = "${baseurl}res/images/hLogo03.png" alt = "新浪网"></li>
+                <li><img src = "${baseurl}res/images/hLogo04.png" alt = "中国奢侈品行业协会"></li>
+                <li><img src = "${baseurl}res/images/hLogo05.png" alt = "搜狐网"></li>
+                <li><img src = "${baseurl}res/images/hLogo06.png" alt = "中国珠宝玉石首饰行业协会"></li>
+                <li><img src = "${baseurl}res/images/hLogo07.png" alt = "央视网"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="chooseCity">
+    <p><img src="${mybaseurl}/res/images/v2/pos.jpg"/> 您的IP所属地为<span class="">${sessionScope.areainfo.name}</span>，但您正在进入<span class="">苏州</span>站</p>
+    <p>建议您选择工作生活的城市，否则商家将无法受理您的交易</p>
+    <p><span class="realCity"><a href="${mybaseurl}/selcity/${sessionScope.cityId}">切换到${sessionScope.areainfo.name}站</a></span><span class="oriCity"><a href="#" onclick="layer.closeAll();">继续访问苏州站</a></span></p>
+</div>
 <%@ include file="common/footer.jsp"%>
 <script src="${baseurl}res/js/jquery.lazyload.min.js"></script>
-<script src="${mybaseurl}/res/js/unslider-min.js"></script>
 <script type="text/javascript" src="${baseurl}res/js/layer/layer.js"></script>
+<script type="text/javascript" src="${baseurl}res/js/idangerous.swiper.js"></script>
+<script type="text/javascript" src="${baseurl}res/js/scroll.js"></script>
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=DeQszKLbgZNzVKY4ZflHkDbX"></script>
-<script type="text/javascript" src="${baseurl}res/js/bction.js"></script>
+<script type="text/javascript" src="${baseurl}res/js/action.js"></script>
+
 <script type="text/javascript"> 
             function AdItem(name, phone, address, Photo, price, time, url) {
                 this.name = name;
@@ -303,56 +543,168 @@
             } else {
                 adname.innerText = ad[2].name;
                 adtel.innerText = ad[2].phone;
-                adaddr.innerText = ad[2].address;
-                adprice.innerText = ad[2].price;
-                adtime.innerText = ad[2].time;
+//              adaddr.innerText = ad[2].address;
+//              adprice.innerText = ad[2].price;
+//              adtime.innerText = ad[2].time;
             }       
 </script>
 <script>
-    var cityId = ${cityId}; 
-    function getShopsByArea(areaId, index) {
-//        console.log($(".shoptjContent"+index).html().length);
-        var t = $(".shoptjContent"+index).html();
-        if (t.length > 1) {
-            return false;
-        }
+      var mySwiper = new Swiper('.swiper-container',{
+            pagination: '.pagination',
+            autoplay:2000,
+            loop:true,
+            speed:1000,
+            grabCursor: true,
+            autoplayDisableOnInteraction : false,
+            paginationClickable: true
+          })
+    function getCategoryByTop(id) {
         $.ajax({
-            url: "${baseurl}store/listByArea/"+areaId,
+            url: "${baseurl}category/json/"+id,    //请求的url地址
             dataType: "json",
             async: true,
             data: { },
             type: "GET",
             success: function(data) {
 //                console.log(data);
-                var u = data.body, len = u.length;
-                var res ="";
-                if(len > 0) {
-                    for (var i = 0; i<len; i++) {
-                        res += '<li data-value="'+u[i].id+'" data-longitude="'+u[i].longitude+'" data-latitude="'+u[i].latitude+'"><i></i>'+u[i].name+' &nbsp;&nbsp;'+u[i].address+'</li>';
-                        res += '<div class="pure-g store_js"><div class="pure-u-1-3"><img style="width:260px;height:130px;" src="'+u[i].picurl+'"/></div><div class="pure-u-1-3 store-content"><p class="store_name">爱收宝网络科技-'+u[i].name+'</p><p><span class="store_label">业务范围：</span><span class="store_ywfw">'+u[i].jyfw+'</span></p><p class="store_hsdbb"><span class="store_label">回收的宝贝：</span><span class="store_hsdbb_content">'+u[i].hsyw+'</span></p></div><div class="pure-u-1-3 store-content"><p class="paddr" style="padding-top:39px;"><span class="store_label">地址：</span><span class="store_addr">'+u[i].address+'</span></p><p><span class="store_label">贵宾专线：</span><span class="store_phone">'+u[i].tel+'</span></p><p><span class="store_label">营业时间：</span><span class="store_time">'+u[i].yysj+'</span></p></div></div>';
+                var u = data.body, len= u.length;
+                var v = "";
+                if (len>0) {
+                    $(".quickEstimateBrandB").html(u[0].name);
+                    $("#quickEstimateBtn").data("url", "${baseurl}category/"+id+"/"+u[0].id);
+                    for(var i=0; i<len;i++) {
+                        v += '<li data-value="'+u[i].id+'">'+u[i].name+'</li>';
                     }
-////                            console.log(res);
-                    $(".shoptjContent"+index).html(res);
-                } else {
-                    $(".shoptjContent"+index).html('<img class="nostorepic" src="${mybaseurl}/res/images/v2/cityIndex_nostore.jpg"/>');
                 }
+                $(".quickEstimateBrand").html(v);
+                bindDhevent();
+                $(".quickEstimateBrand li").on({
+                    "click":function(){
+                        $("#quickEstimateBtn").data("url", "${baseurl}category/"+id+"/"+$(this).data("value"));
+                    }
+                });
             }
         });
     }
-
     $(function(){
-        getShopsByArea(${areas[0].id}, 0);
-
         $("img.lazy").lazyload({skip_invisible : false,effect: "fadeIn"});
-        $('.my-slider').unslider({
-            arrows:false,
-            autoplay:true
+        $('.newsmarquee').kxbdSuperMarquee({
+            isMarquee:true,
+            isEqual:true,
+            scrollDelay:30,
+            direction:'up'
+        });
+        $('.hzhb').kxbdSuperMarquee({
+            isMarquee:true,
+            isEqual:true,
+            scrollDelay:20,
+            direction:'left'
+        });
+        $(".pro-slide li").hover(function(){
+            var _th = $(this),index = $(".pro-slide li").index(this);
+            if(!_th.hasClass('act')){
+                _th.addClass("act").siblings().removeClass('act');
+                $(".pro-slide li").css({ width : '71px'}).find('.JText').hide();
+                $(".pro-slide li").css('overflow','visible');
+                if($('body').hasClass('skSmallStyle')){
+                    _th.css({ width : '320px'}).find('.JText').stop().fadeIn();
+                }else{
+                    _th.css({ width : '404px'}).find('.JText').stop().fadeIn();
+                }
+            }
+        }).eq(0).trigger('mouseover');
+        //快速回收估价
+        $(".quickEstimateUL li").on({
+           "click":function(){
+               $cid = $(this).data("value");
+//               console.log($cid);
+               switch ($cid) {
+                   case -1:
+                       alert("该产品频道正在建设中,请稍候访问!");
+                       break;
+                   case 0:
+                       window.location.href="${baseurl}product/diamond";
+                       break;
+                   case "gold":
+                       window.location.href="${baseurl}product/8fa078e445184f1f9041ea1be763a5e8?ptype=gjs&goldType=gold";
+                       break;
+                   case "47f288756f1a4c5ebac0a2baf1f5ee80": //gjs
+                       $(".quickEstimateBrandB").html("铂金");
+                       $("#quickEstimateBtn").data("url", "${baseurl}product/21577fd8a5324e62a416978d15367515?ptype=gjs&goldType=pt");
+                       $(".quickEstimateBrand").html('<li data-value="product/21577fd8a5324e62a416978d15367515?ptype=gjs&goldType=pt">铂金</li><li data-value="product/094c2f5308514105a862c6299f9d320b?ptype=gjs&goldType=palau">钯金</li><li data-value="product/bcf8086e4f4647fabcfc3409430baa60?ptype=gjs&goldType=k">K金</li><li data-value="product/5f67c6baca4b4167a4b49b6df510a3f1?ptype=gjs&goldType=sliver">白银</li>');
+                       bindDhevent();
+                       $(".quickEstimateBrand li").on({
+                           "click":function(){
+                                $("#quickEstimateBtn").data("url", "${baseurl}"+$(this).data("value"));
+                           }
+                       });
+                       break;
+                   case "08d2d4cbf3974d8i8d56b26ba29266aa": //bag
+                   case "08d2d4cbff6j48f08d56b26ba29266aa": //clock
+                   case "08d2d4cbf39748f08d56b26ba29266aa": //phone
+                        getCategoryByTop($cid);
+                        break;
+               }
+           }
         });
 
-        $("li.mystoretj_li").on({
-            "mouseenter":function(){
-                var areaId = $(this).data("region-id");
-                getShopsByArea(areaId, $(this).data("index"));
+        $(".quickEstimateBrand li").on({
+           "click":function(){
+           }
+        });
+
+        $("#quickEstimateBtn").on({
+           "click":function(){
+               window.location.href=$(this).data("url");
+           }
+        });
+
+        $(".quickProductTypeSelect li").on({
+           "click":function() {
+               $("#quickProductType").attr("value", $(this).data("value"));
+           }
+        });
+       $("#indexKsdydksqBtn").on({
+           "click":function(){
+//                if ($("#quickrzJe").val()=="") {
+//                    alert("请输入融资金额!");
+//                    $("#quickrzJe").focus();
+//                    return false;
+//                } else {
+//                    $("#quickrzJe").val($("#quickrzJe").val()+"万元");
+//                }
+//               if ($("#quickPhone").val()=="") {
+//                   alert("请输入联系电话!");
+//                   $("#quickPhone").focus();
+//                   return false;
+//               }
+//               $("#dyform").submit();
+               window.location.href="${baseurl}mortgage";
+           }
+       });
+        $(".dy1ul li").on({
+           "click":function(){
+               $("#dy1productType").val($(this).data("value"));
+           }
+        });
+        $(".dy2ul li").on({
+            "click":function(){
+                $("#dy2productType").val($(this).data("value"));
+            }
+        });
+        $(".dy3ul li").on({
+            "click":function(){
+                $("#dy3productType").val($(this).data("value"));
+            }
+        });
+        $(".dy4ul li").on({
+            "click":function(){
+                $("#dy4productType").val($(this).data("value"));
+            }
+        });
+        $(".dy5ul li").on({
+            "click":function(){
+                $("#dy5productType").val($(this).data("value"));
             }
         });
 
@@ -370,11 +722,11 @@
                 alert("请选择商品类型");
                 return flag;
             }
-            if(brand==""){
-                flag=false;
-                alert("请输入品牌");
-                return flag;
-            }
+//            if(brand==""){
+//                flag=false;
+//                alert("请输入品牌");
+//                return flag;
+//            }
             if(goodsName==""){
                 flag=false;
                 alert("请填写商品名称");
@@ -407,6 +759,44 @@
             $("#jsform").submit();
         });
     });
+    $(document).ready(function () {
+        $(".quickEstimateFirst").trigger("click");
+        <c:if test="${sessionScope.cityId != '856'}">
+        //页面一打开就执行弹层
+        layer.ready(function(){
+            layer.open({
+                type: 1,
+                title:'温馨提示',
+                area: ['450px', '270px'],
+                shadeClose: true, //点击遮罩关闭
+                content: $('#chooseCity')
+            });
+        });
+        </c:if>
+
+    });
+
+    function check(form) {
+        if(form.rzTime.value=='' || !unsignedDoubleCheck(form.rzTime.value)){
+            alert("请输入正确的融资期限!");
+            form.rzTime.focus();
+            return false;
+        }
+        if(form.rzJe.value=='' || !unsignedDoubleCheck(form.rzJe.value)){
+            alert("请输入正确的融资金额!");
+            form.rzJe.focus();
+            return false;
+        }
+        if(form.phone.value=='' || !telRuleCheck2(form.phone.value)) {
+            alert("请输入正确的手机号码!");
+            form.phone.focus();
+            return false;
+        }
+        return true;
+    }
 </script>
+<style>
+    .layui-layer-title{font-size: 18px;}
+</style>
 </body>
 </html>
