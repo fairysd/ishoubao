@@ -270,6 +270,47 @@ function openNewPage(){
     window.open(ad[cur].url);
 }
 $(function(){
+    //获取地区电话号码
+    $.ajax({
+                    url: "http://www.aishoubao.com/store/shoptelByCityId/"+cityId,
+                    dataType: "json",                   
+                    async: false,                   
+                    type: "get",
+                    success: function(data) {
+                        if(data.success){
+                            var cityName = $(".city_select span").text();
+                            if (data.body) {
+                                $(".fontb").text(""+cityName+"服务热线："+data.body+"")
+                            }else{
+                                $(".fontb").text(""+cityName+"服务热线：400-086-1131")
+                            }
+                            
+
+                            }else{
+                            console.log(1);
+                         };
+                        },
+                    error:function(data){               
+                    console.log("请求错误")
+                    }
+                });
+    //获取地区电话号码
+    $.ajax({
+                    url: "recycle-api/api/shoptelByCityId/"+cityId,
+                    dataType: "json",                   
+                    async: false,                   
+                    type: "get",
+                    success: function(data) {
+                        if(data.success){
+                            console.log(data);
+                            }else{
+                            console.log(1);
+                         };
+                        },
+                    error:function(data){               
+                    console.log("请求错误")
+                    }
+                });
     //获取门店数据
      $.ajax({
                     url: "/area/getareasByCityid/"+cityId,
@@ -308,11 +349,11 @@ $(function(){
                             var kaituoNum = 5-detail.length;
                             // console.log(detail);
                             for (var i = 0; i < detail.length; i++) {
-                                $("#storedetail").append("<li tel="+detail[i].tel+" address="+detail[i].address+" picurl="+detail[i].picurl+" latitude="+detail[i].latitude+" longitude="+detail[i].longitude+" ><a>"+detail[i].name+"</a><p>"+detail[i].address+"</p><p>"+detail[i].tel+"</p></li>")
+                                $("#storedetail").append("<li tel="+detail[i].tel+" address="+detail[i].address+" picurl="+detail[i].picurl+" latitude="+detail[i].latitude+" longitude="+detail[i].longitude+" ><a class=bgimg>"+detail[i].name+"</a><p>"+detail[i].address+"</p><p>"+detail[i].tel+"</p></li>")
                             };
                            if (kaituoNum >= 0) {
                                 for (var i = 0; i < kaituoNum; i++) {
-                                $("#storedetail").append("<li class='last kuozhan'><img src=/asb-web/res/images/new/login/icon.png /><a class='kuozhan'>门店开拓中...</a></li>")
+                                $("#storedetail").append("<li class='last kuozhan'><img src=/res/images/new/login/icon.png /><a class='kuozhan'>门店开拓中...</a></li>")
                                 };
                             };
                         }else{
@@ -349,11 +390,11 @@ $(function(){
                             var detail = data.body;
                             var kaituoNum = 5-detail.length;                   
                             for (var i = 0; i < detail.length; i++) {
-                                $("#storedetail").append("<li tel="+detail[i].tel+" address="+detail[i].address+" picurl="+detail[i].picurl+" latitude="+detail[i].latitude+" longitude="+detail[i].longitude+" ><a>"+detail[i].name+"</a><p>"+detail[i].address+"</p><p>"+detail[i].tel+"</p></li>")
+                                $("#storedetail").append("<li tel="+detail[i].tel+" address="+detail[i].address+" picurl="+detail[i].picurl+" latitude="+detail[i].latitude+" longitude="+detail[i].longitude+" ><a class=bgimg>"+detail[i].name+"</a><p>"+detail[i].address+"</p><p>"+detail[i].tel+"</p></li>")
                             };
                             if (kaituoNum >= 0) {
                                 for (var i = 0; i < kaituoNum; i++) {
-                                $("#storedetail").append("<li class='last kuozhan'><img src=/asb-web/res/images/new/login/icon.png /><a class='kuozhan'>门店开拓中...</a></li>")
+                                $("#storedetail").append("<li class='last kuozhan'><img src=/res/images/new/login/icon.png /><a class='kuozhan'>门店开拓中...</a></li>")
                                 };
                             };
                         }else{

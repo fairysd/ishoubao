@@ -84,7 +84,7 @@
                                    <li><a href="http://shop.aishoubao.com" target="_blank">商城</a></li>
                                </ul>
                                <ul>
-                                   <li>回收的宝贝</li>
+                                   <li>回收宝贝</li>
                                    <li><a href="${mybaseurl}/product/8fa078e445184f1f9041ea1be763a5e8?ptype=gjs&goldType=gold">黄金</a> <a href="${mybaseurl}/product/diamond">珠宝</a></li>
                                    <li><a href="${mybaseurl}/product/diamond">钻石</a></li>
                                    <li><a href="${mybaseurl}/category/08d2d4cbf3974d8i8d56b26ba29266aa/0">名包</a> <a href="${mybaseurl}/category/08d2d4cbff6j48f08d56b26ba29266aa/0">名表</a></li>
@@ -121,10 +121,10 @@
         <h1 class = "logo">
             <a href="${baseurl}?curpage=page_index&cityId=2"><img src = "${baseurl}res/images/v2/logo.png" alt = "爱收宝"></a>
             <img class="smp" src="${mybaseurl}/res/images/new/2smpjypt.png"/>
-            <span class="service-number">服务热线：400-086-1131</span>
+            <span class="service-number"></span>
         </h1>
         <div class = "search_box">
-            <form action = "${baseurl}product/searchq" method = "post"><input type = "text" name = "q" id = "searchInput" placeholder="回收的宝贝">
+            <form action = "${baseurl}product/searchq" method = "post"><input type = "text" name = "q" id = "searchInput" placeholder="回收宝贝">
                 <button type = "submit" onclick="return validateSearchForm(this.form)">搜索</button>
             </form>
         </div>
@@ -137,7 +137,7 @@
             <li class="pure-menu-item w150 tac<c:if test="${curpage == 'page_daishou'}"> pure-menu-selected</c:if>"><a href="${mybaseurl}/consignment/" class="pure-menu-link">代售</a></li>
             <li class="pure-menu-item w150 tac<c:if test="${curpage == 'page_huli'}"> pure-menu-selected</c:if>"><a href="${mybaseurl}/luxury" class="pure-menu-link">护理</a></li>
             <li class="pure-menu-item w150 tac"><a href="http://shop.aishoubao.com" target="_blank" class="pure-menu-link">商城</a><span class="shopHot"></span></li>
-            <li class="pure-menu-item w275 tar"><sapn class="fontb">服务热线: 400-086-1131</sapn></li>
+            <li class="pure-menu-item w275 tar"><sapn class="fontb"></sapn></li>
         </ul>
     </div>
 </header>
