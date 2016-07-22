@@ -107,15 +107,66 @@
 			.consignment h2{
 				border-left: #007af5 solid 3px;				
 			}
-    </style>
+			.jmnotice .container{
+				width: 1200px;
+				margin:0 auto;
+				} 
+			.jmnotice .container .pure-u-1-2.notice{
+				width: 37%;
+				margin-right: 3%;
+			}
+			.jmnotice .container .pure-u-1-2.jmproblem{
+				width: 60%;
+			}
+			.jmnotice .container h3{
+				font-size: 18px;
+				color: #323232;
+				border-bottom: solid 1px #000;
+				border-top: solid 2px #906F3A;
+				padding: 10px 0;
+			}
+			.jmnotice .container h3 span{
+				color: #646464;
+			}
+			.jmnotice .container p{
+				color: #646464;
+			}
+			.jmnotice .container p span{
+				color: red;
+				font-size: 12px;
+			} 
+			.jmnotice .container p.title{
+				color: #323232;
+				margin-top: 20px;
+				    line-height: 25px;
+			}
+			.jmnotice .container p.problem{
+				color: #000;
+				margin-top: 20px;
+				    line-height: 25px;
+				    margin-bottom: 5px;
+				    font-weight: 500;
+				    font-size: 14px;
+			}
+			.jmnotice .container p.last{
+				border-bottom: dashed 1px #000;
+				padding-bottom: 16px;
+			}
+			.jmnotice{
+				background-color: #FAFAFA;
+				padding-top: 20px;
+				padding-bottom:30px;
+			}
+	</style>
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/style.css">
-	<%@ include file="../common/otherHeader.jsp"%>
+    
 </head>
 <body>
 <%@ include file="../common/header.jsp" %>
 <div class="pure-g topimg">
+
     <div class="pure-u-1-1">
-        <img style="width:100%" src="${mybaseurl}/res/images/v2/jm_top.jpg" />
+        <img src="${mybaseurl}/res/images/v2/jm_top.jpg" />
     </div>
 </div>
 <div class="out_box" style="margin-bottom: 20px;" >
@@ -172,12 +223,44 @@
     
 </div>
 </div>
-<div class="pure-g footerimg">
+<!-- <div class="pure-g footerimg">
     <div class="pure-u-1-1">
         <img class="lazy" data-original="${mybaseurl}/res/images/v2/jm_footer.jpg" width: 1200;/>
     </div>
+</div> -->
+<div class="pure-g jmnotice">
+	<div class="container">
+		<div class="pure-u-1-2 notice">
+	        <h3>寄卖须知 <span>INSTRUCTIONS</span></h3>
+	        <p class="title">【申请条件】</p>
+	        <p>寄卖申请要求：寄卖的物品及附件，申请人身份证。</br><span>(目前仅支持门店寄卖)</span></p>
+	        <p>寄卖宝贝种类：黄金贵金属类、钻石珠宝类、名报名表类。</p>
+	        <p class="title">【寄卖限额】</p>
+	        <p>不超过评估价的95%</p>
+	        <p class="title">【办理流程】</p>
+	        <p>1、鉴定评估物品寄卖价值；</p>
+	        <p>2、双方协商 签署凭证；</p>
+	        <p>3、成交；</p>
+	        <p class="title">【我们的优势】</p>
+	        <p>1、即时成交；</p>
+	        <p>2、拥有一个经验丰富的专业鉴定评估团队；</p>
+	        <p>3、寄卖金额高，最高可达评估价的95%。；</p>
+	    </div>
+	    <div class="pure-u-1-2 jmproblem">
+	        <h3>常见问题 <span>PROBLEMS</span></h3>
+	        <p class="problem">1.寄卖时需要提供什么</p>
+	        <p>寄卖的物品及附件（来源证明、鉴定证书等），寄卖客户身份证。</p>
+	        <p class="last">寄卖客户属于法人的，应提供企业法人营业执照，企业法人代码证，法人代表身份证复印件。</p>
+	        <p class="problem">2.寄卖宝贝如何估价？</p>
+	        <p>寄卖宝贝的价值，由经验丰富的爱收宝鉴定团队或爱收宝自动估价系统进行专业高效的估价，并与您协商寄卖价格。</p>
+	        <p class="problem">3.寄卖与代售的区别是什么？</p>
+	        <p class="last">寄卖是一种特许的货币交易行为，寄卖公司组建或经营设有前置条件。代售是一般物品交易行为，是物品的所有权人将物品置于代售行售卖。</p>
+	        
+	        <p class="problem">4.那些宝贝可以寄卖？</p>
+	        <p class="last">黄金、贵金属、钻石、珠宝、名包、名表，详情咨询客服！！</p>	        
+	    </div>
+	</div>    
 </div>
-
 <%@ include file="../common/footer.jsp" %>
 <script src="${baseurl}res/js/jquery.lazyload.min.js"></script>
 <script src="${baseurl}res/js/action.js"></script>
@@ -196,17 +279,17 @@
 				this.price = price;
 				this.time = time;
 			}
-		var ad = new Array();
-			ad[0] = new AdItem('黄金寄卖：高价诚信', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/1.png', '专业寄卖值得信赖', '', '${mybaseurl}/product/8fa078e445184f1f9041ea1be763a5e8?ptype=gjs&goldType=gold');
-			ad[1] = new AdItem('名包寄卖：正规安全', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/2.png', '专业的鉴定团队鉴定人', '', '${mybaseurl}/category/08d2d4cbf3974d8i8d56b26ba29266aa/0');
-			ad[2] = new AdItem('名表寄卖：灵活高效 ', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/3.png', '保证客户利益有效实行', '', '${mybaseurl}/category/08d2d4cbff6j48f08d56b26ba29266aa/0');
-			ad[3] = new AdItem('手机寄卖：方便快捷', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/4.png', '资深的推广运营团队', '', '${mybaseurl}/category/08d2d4cbf39748f08d56b26ba29266aa/0');
-			ad[4] = new AdItem('铂金寄卖：专业鉴定', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/5.png', '线上线下整合营销推广', '', '${mybaseurl}/product/21577fd8a5324e62a416978d15367515?ptype=gjs&goldType=pt');
-			ad[5] = new AdItem('钯金寄卖：低息放心', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/6.png', '量身定制品牌营销方案', '', '${mybaseurl}/product/094c2f5308514105a862c6299f9d320b?ptype=gjs&goldType=palau');
-			ad[6] = new AdItem('K金寄卖： 闲置换新', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/7.png', '量身定制品牌营销方案', '', '${mybaseurl}/product/bcf8086e4f4647fabcfc3409430baa60?ptype=gjs&goldType=k');
-			ad[7] = new AdItem('白银寄卖：便捷省心', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/8.png', '量身定制品牌营销方案', '', '${mybaseurl}/product/5f67c6baca4b4167a4b49b6df510a3f1?ptype=gjs&goldType=sliver');
-			ad[8] = new AdItem('钻石寄卖：贴心服务', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/9.png', '量身定制品牌营销方案', '', '${mybaseurl}/product/diamond');
-		var img = new Array();
+			var ad = new Array();
+			ad[0] = new AdItem('黄金寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/1.png', '专业寄卖值得信赖', '', '#');
+			ad[1] = new AdItem('名包寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/2.png', '专业的鉴定团队鉴定人', '', '#');
+			ad[2] = new AdItem('名表寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/3.png', '保证客户利益有效实行', '', '#');
+			ad[3] = new AdItem('手机/数码专卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/4.png', '资深的推广运营团队', '', '#');
+			ad[4] = new AdItem('铂金寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/5.png', '线上线下整合营销推广', '', '#');
+			ad[5] = new AdItem('钯金寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/6.png', '量身定制品牌营销方案', '', '#');
+			ad[6] = new AdItem('K金寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/7.png', '量身定制品牌营销方案', '', '#');
+			ad[7] = new AdItem('白银寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/8.png', '量身定制品牌营销方案', '', '#');
+			ad[8] = new AdItem('钻石寄卖', '400-086-1131', '', '${mybaseurl}/res/images/new/mortage/9.png', '量身定制品牌营销方案', '', '#');
+			var img = new Array();
 			img[0] = document.getElementById("imgSmallLeft");
 			img[1] = document.getElementById("imgMiddleLeft");
 			img[2] = document.getElementById("imgBig");
