@@ -32,26 +32,50 @@
         .ds_right{float:left;width:450px;}
         .dsnav{background-color: #FAFAFA;height:524px;}
         .eventblock{
-        	position: relative;
+            position: relative;
         }
         .eventblock span{
-        	font-size: 18px;
-        	font-weight: bold;
-        	color: #323232;
+            font-size: 18px;
+            font-weight: bold;
+            color: #323232;
         }
         .eventword{
-        	background-color: rgb(255,255,204);
-        	position: relative;
-        	width: 250px;
-        	top: -80px;
-        	left: 16px;
-        	opacity: 0;
-        	height: 96px;
-        	transition: opacity 1s;
+            background-color: rgb(255,255,204);
+            position: relative;
+            width: 250px;
+            top: -80px;
+            left: 16px;
+            opacity: 0;
+            height: 96px;
+            transition: opacity 1s;
         }
         .eventword:hover{
-        	opacity: 1;
+            opacity: 1;
         }
+        .dsprocess{
+            padding-bottom: 35px;
+        }
+        .dstitle{
+            text-align: center;
+            padding:25px;
+        }
+        .step_process{
+            text-align: center;
+        }
+         .step_process h3{
+            font-size: 16px;
+            font-family: 微软雅黑;
+            padding: 10px 0;
+            color: #000;
+         }
+         .step_process p{
+            font-size: 14px;
+            color: #9f9f9f;
+            width: 263px;
+            margin:0 auto;
+            line-height: 24px;
+
+         }
        </style>
 </head>
 <body>
@@ -74,13 +98,9 @@
                                 <select id="goodsType" name="productType" class="pure-u-23-24" style="height: 35px;width:150px;margin-right: 20px;">
                                     <option value="名包">名包</option>
                                     <option value="名表">名表</option>
-                                    <option value="钻石">钻石</option>
                                     <option value="珠宝">黄金</option>
-                                    <option value="K金">K金</option>
-                                    <option value="钯金">钯金</option>
-                                    <option value="铂金">铂金</option>
-                                    <option value="白银">白银</option>
-                                    <option value="玉石">玉石</option>                                    
+                                    <option value="贵金属">贵金属</option>
+                                    <option value="玉石">玉石</option>
                                     <option value="其它">其它</option>
                                 </select>
                             </div>
@@ -117,9 +137,35 @@
     </div>
 </div>
 <div class="out_box" style="clear:both;">
-<div class="pure-g">
+<!-- <div class="pure-g">
     <div class="pure-u-1-1">
         <img class="lazy" data-original="${mybaseurl}/res/images/v2/ds_lc.jpg"/>
+    </div>
+</div> -->
+<div class="pure-g dsprocess">
+
+<div class="pure-u-1-1 dstitle">
+    <img src="${mybaseurl}/res/images/new/consignment/processtit_03.png" alt="">
+</div>
+    <div class="pure-u-1-4 step_process">
+        <img class="lazy" src ="${mybaseurl}/res/images/new/consignment/process_03.png"/>
+        <h3>信息提交</h3>
+        <p>您填写完商品的基本信息之后，我们的鉴定师会在24小时内联系您，向您了解所售商品的完整信息。</p>
+    </div>
+    <div class="pure-u-1-4 step_process">
+        <img class="lazy" src ="${mybaseurl}/res/images/new/consignment/process_05.png"/>
+        <h3>鉴定审核</h3>
+        <p>专业鉴定师对您的商品进行初步鉴定后，请将商品邮寄到我公司，我们将对您的商品进行鉴定评级，并与您确认商品价格。</p>
+    </div>
+    <div class="pure-u-1-4 step_process">
+        <img class="lazy" src ="${mybaseurl}/res/images/new/consignment/process_07.png"/>
+        <h3>网上代售</h3>
+        <p>您的商品将以最好的面貌上线展示，我们强大的销售团队会将它快速卖出，在此期间我们将妥善保管您的商品。</p>
+    </div>
+    <div class="pure-u-1-4 step_process">
+        <img class="lazy" src="${mybaseurl}/res/images/new/consignment/process_09.png"/>
+        <h3>交易成功</h3>
+        <p>商品成功售出后，商品的对应金额将自动汇入您的银行账户。</p>
     </div>
 </div>
 </div>
@@ -175,17 +221,17 @@
         var eventword = $(".eventword");
         var eventblock= $(".eventblock");        
         for(i = 0;i<eventword.length;i++){
-        		eventblock.each(function(){
-	        		$(this).mouseenter(function(){
-	        				 $(this).parent().find(".eventword").css("opacity",1)       			
-	        		})	
-	        		$(this).mouseleave(function(){
-	        			$(this).parent().find(".eventword").css("opacity",0)    
-	        		})
-        		})
+                eventblock.each(function(){
+                    $(this).mouseenter(function(){
+                             $(this).parent().find(".eventword").css("opacity",1)                   
+                    })  
+                    $(this).mouseleave(function(){
+                        $(this).parent().find(".eventword").css("opacity",0)    
+                    })
+                })
         }
         
-				
+                
         $("#save").click(function(){
                 var flag=true;
                 var  goodsType=$("#goodsType").val();
