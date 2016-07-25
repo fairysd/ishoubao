@@ -42,7 +42,7 @@
 				</div>
 				<div id="picture" class="picture">
 					<img src="${baseurl}res/images/new/login/storepic.jpg" alt="" />
-					<h3>门店照片</h3>
+					
 				</div>
 			</div>
 			<div class="storestream">
