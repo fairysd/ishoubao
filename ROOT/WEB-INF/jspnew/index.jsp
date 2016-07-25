@@ -19,8 +19,7 @@
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/style.css">
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/main.css">
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/root.css">
-    <link type="text/css" rel="stylesheet" href="${baseurl}res/css/idangerous.swiper.css"> 
-    <link type="text/css" rel="stylesheet" href="${baseurl}res/css/style.css">
+    <link type="text/css" rel="stylesheet" href="${baseurl}res/css/idangerous.swiper.css">
     <link type="text/css" rel="stylesheet" href="${baseurl}res/js/layer/skin/layer.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
  <!--寄卖轮转图-->
@@ -176,19 +175,19 @@
     <div class = "swiper-container">
             <div class="swiper-wrapper">
                 <div class = "swiper-slide">
-                    <div class = "img_out_box"><a href="${mybaseurl}/category/first"><img src = "${baseurl}res/images/banner1.jpg"></a></div>
+                    <a href="${mybaseurl}/category/first"><img src = "${baseurl}res/images/banner1.jpg"></a>
                 </div>
                 <div class = "swiper-slide" >
-                    <div class = "img_out_box"><a href="${mybaseurl}/mortgage"><img src = "${baseurl}res/images/banner2.jpg"></a></div>
+                    <a href="${mybaseurl}/mortgage"><img src = "${baseurl}res/images/banner2.jpg"></a>
                 </div >
                 <div class = "swiper-slide">
-                    <div class = "img_out_box"><a href="${mybaseurl}/luxury"><img src = "${baseurl}res/images/banner3.jpg"></a></div>
+                    <a href="${mybaseurl}/luxury"><img src = "${baseurl}res/images/banner3.jpg"></a>
                 </div>
                 <div class = "swiper-slide">
-                    <div class = "img_out_box"><a href="${mybaseurl}/consignment"><img src = "${baseurl}res/images/banner4.jpg"></a></div>
+                    <a href="${mybaseurl}/consignment"><img src = "${baseurl}res/images/banner4.jpg"></a>
                 </div>
                 <div class = "swiper-slide">
-                    <div class = "img_out_box"><a href="http://shop.aishoubao.com"><img src = "${baseurl}res/images/banner5.jpg"></a></div>
+                    <a href="http://shop.aishoubao.com"><img src = "${baseurl}res/images/banner5.jpg"></a>
                 </div>
             </div>
             <div class="pagination"></div>  
