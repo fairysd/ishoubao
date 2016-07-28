@@ -28,7 +28,7 @@
             <li><a href = "${baseurl}help/sqtk">如何申请退款</a></li>
             <li><a href = "${baseurl}help/bjsm">维修补件说明</a></li>
         </ul>
-        <ul style="border-right: 1px solid #ddd;padding-right: 140px;">
+        <ul style="border-right: 1px solid #ddd;padding-right: 136px;margin-right:12px;">
             <li>购物保障</li>
             <li><a href = "${baseurl}help/zpbz">正品保障</a></li>
             <li><a href = "${baseurl}help/zcxy">注册协议</a></li>
@@ -36,9 +36,9 @@
             <li><a href = "${baseurl}help/mzsm">免责声明</a></li>
         </ul>
         <div class = "serviceRx">
-            <p><span class="vip">服务热线:</span><span class = "red1">&nbsp;&nbsp;400-086-1131<br></span>
+            <p style="text-align:left;"><span class="vip">服务热线:</span><span class = "red1">400-086-1131<br></span>
             <span class="vip">苏州服务热线:</span><span class = "red1">189-5113-9999<br></span>
-            <span class="vip">服务时间:</span><span class = "red1">&nbsp;&nbsp;8：30-23：00<br></span>
+            <span class="vip">服务时间:</span><span class = "red1">8：30-23：00<br></span>
                 <img src = "${baseurl}res/images/v2/qrcode.jpg">
             </p>
         </div>
@@ -55,6 +55,7 @@
             <li><a href="${mybaseurl}/">奢侈品回收</a></li>
             <li><a href="${mybaseurl}/category/08d2d4cbf39748f08d56b26ba29266aa/0">手机回收</a></li>
             <li><a href="${mybaseurl}/category/08d2d4cbf39748f08d56b26ba29266aa/0">数码回收</a></li>
+            <li><a target="_blank" href="http://www.designt.cn/">上品工业设计</a></li>
         </ul>
     </div>
     <div class = "footer_fix_2">
@@ -98,8 +99,8 @@
                 userinfo = data;
                 userinfo = JSON.stringify(userinfo);
                 userinfo = $.parseJSON(userinfo);
-                console.log(userinfo);
-                console.log(userinfo.userId);
+                // console.log(userinfo);
+                // console.log(userinfo.userId);
                 if(data.userId) {
                     $('#loginUserInfo').html('<a href="http://shop.aishoubao.com/user.php" target="_top">'+data.userInfo.username+'</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://shop.aishoubao.com/user.php?act=logout&backurl=http://www.aishoubao.com" target="_top">退出</a>');
                 } else {
@@ -124,3 +125,4 @@
 </script>
 <script src="http://kefu.qycn.com/vclient/state.php?webid=113372" language="javascript" type="text/javascript"></script>
 <script language="javascript">var qykf_userinfo_url='http://shop.aishoubao.com/userheader.php?kf=1&callback=?'</script><script>(function(){var c=document.createElement("script"),s=document.getElementsByTagName("script")[0];c.src="//kefu.qycn.com/vclient/state.php?webid=113372";s.parentNode.insertBefore(c,s);})();</script>
+<script>(function(){var c=document.createElement("script"),s=document.getElementsByTagName("script")[0];c.src="//kefu.qycn.com/vclient/state.php?webid=113372";s.parentNode.insertBefore(c,s);})();</script>
