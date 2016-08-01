@@ -6,6 +6,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!-- 工具栏 -->
 <nav class="bar bar-tab">
+<a class="tab-item external" href="tel:189-5113-9999">
+        <span class="icon icon-phone"></span>
+        <span class="tab-label">一键通话</span>
+    </a>
     <a class="tab-item external" href="http://shop.aishoubao.com/mobile/">
         <span class="icon icon-cart"></span>
         <span class="tab-label">我要买</span>
