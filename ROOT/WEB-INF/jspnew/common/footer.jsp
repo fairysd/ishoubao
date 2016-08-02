@@ -28,7 +28,7 @@
             <li><a href = "${baseurl}help/sqtk">如何申请退款</a></li>
             <li><a href = "${baseurl}help/bjsm">维修补件说明</a></li>
         </ul>
-        <ul style="border-right: 1px solid #ddd;padding-right: 136px;margin-right:12px;">
+        <ul style="border-right: 1px solid #ddd;padding-right: 134px;margin-right:12px;">
             <li>购物保障</li>
             <li><a href = "${baseurl}help/zpbz">正品保障</a></li>
             <li><a href = "${baseurl}help/zcxy">注册协议</a></li>
