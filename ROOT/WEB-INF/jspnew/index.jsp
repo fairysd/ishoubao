@@ -12,14 +12,16 @@
     <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1" />
     <meta name="renderer" content="webkit" />
     <meta content="zh-cn" http-equiv="content-language" />
-    <meta name="keywords" content="" />
-    <meta name="description" content=""/>
+    <meta name="keywords" content="苏州黄金回收，黄金回收多少钱一克，千足金回收价，黄金现在多少钱一克，苏州二手奢侈品回收，黄金回收价格查询" />
+    <meta name="description" content="苏州爱收宝网络科技有限公司的总店位于苏州市观前街，以回收与售卖黄金珠宝、名包名表、手机数码为主。爱收宝采用线上结合线下的方式，来经营二手名品的回收、寄卖、代售、护理、置换的业务。"/>
     <title>爱收宝</title>
+    <meta name="baidu-site-verification" content="ZXJUwMQOuK" />
     <link rel="canonical" href="http://www.aishoubao.com/" />
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/style.css">
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/main.css">
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/root.css">
-    <link type="text/css" rel="stylesheet" href="${baseurl}res/css/idangerous.swiper.css">
+    <link type="text/css" rel="stylesheet" href="${baseurl}res/css/idangerous.swiper.css"> 
+    <link type="text/css" rel="stylesheet" href="${baseurl}res/css/style.css">
     <link type="text/css" rel="stylesheet" href="${baseurl}res/js/layer/skin/layer.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
  <!--寄卖轮转图-->
@@ -92,6 +94,7 @@
     box-shadow:#999999 1px 1px 1px 1px;
             }
     </style>
+    <%@ include file="common/otherHeader.jsp"%>
 </head>
 <body>
 <%@ include file="common/header.jsp"%>
@@ -138,6 +141,7 @@
                     <label class = "select"><span>寄卖宝贝</span><b>贵金属寄卖</b>
                     <ul class="quickProductTypeSelect">
                         <li data-value="贵金属寄卖">贵金属寄卖</li>
+                        <li data-value="钻石寄卖">钻石寄卖</li>
                         <li data-value="珠宝寄卖">珠宝寄卖</li>
                         <li data-value="名表寄卖">名表寄卖</li>                        
                         <li data-value="名包寄卖">名包寄卖</li>
@@ -432,9 +436,9 @@
             <div class="pure-u-4-5 hotnews">                
                 <div class="newsmarquee">
                     <ul class="newslist">
-                        <li><a href="${mybaseurl}/news/1"><span>></span>3D硬金与千足金的区别<span style="text-align: right;display: block;float: right; color: #000000;">2016-05-23</span></a></li>
-                        <li><a href="${mybaseurl}/news/2"><span>></span>穿的好不如戴的对 想做职场白骨精你得来块表<span style="text-align: right;display: block;float: right;color: #000000;">2016-04-13</span></a></li>
-                        <li><a href="${mybaseurl}/news/3"><span>></span>金价收盘创逾一周新高 蓄势决战千三之巅<span style="text-align: right;display: block;float: right;color: #000000;">2016-03-20</span></a></li>
+                        <li><a href="${mybaseurl}/news/1"><span>></span>知识篇：3D硬金与千足金的区别<span style="text-align: right;display: block;float: right; color: #000000;">2016-05-23</span></a></li>
+                        <li><a href="${mybaseurl}/news1.jsp"><span>></span>走进爱收宝系列：感谢你能来！<span style="text-align: right;display: block;float: right;color: #000000;">2016-04-13</span></a></li>
+                        <li><a href="${mybaseurl}/news.jsp"><span>></span>走进爱收宝系列：你说登山的意义在于什么？<span style="text-align: right;display: block;float: right;color: #000000;">2016-07-09</span></a></li>
                         <li><a href="${mybaseurl}/news/4"><span>></span>细节控戛纳红毯上的这些珠宝你看到了吗？<span style="text-align: right;display: block;float: right;color: #000000;">2016-01-06</span></a></li>                       
                     </ul>
                 </div>
@@ -491,7 +495,6 @@
 <script type="text/javascript" src="${baseurl}res/js/scroll.js"></script>
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=DeQszKLbgZNzVKY4ZflHkDbX"></script>
 <script type="text/javascript" src="${baseurl}res/js/action.js"></script>
-
 <script type="text/javascript"> 
             function AdItem(name, phone, address, Photo, price, time, url) {
                 this.name = name;
