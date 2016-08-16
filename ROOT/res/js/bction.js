@@ -270,6 +270,20 @@ function openNewPage(){
     window.open(ad[cur].url);
 }
 $(function(){
+        // 回收模块特效
+    $(".toggle-click").click(function(){
+        
+        if ($(".noble-metal").css("display")==="none") {
+            $(".mywrapper.indexbg").animate({height:"550px"});
+            $(".noble-metal").css("display","block");
+            $(this).find("img").attr("src","/res/images/new/index/fuhao_03.png");
+        }else{
+            $(".mywrapper.indexbg").animate({height:"390px"});
+            $(".noble-metal").css("display","none");
+            $(this).find("img").attr("src","/res/images/new/index/fuhao_06.png");
+        }
+        return false;
+    })
     //获取地区电话号码
     $.ajax({
                     url: "http://www.aishoubao.com/store/shoptelByCityId/"+cityId,
@@ -283,9 +297,7 @@ $(function(){
                                 $(".fontb").text(""+cityName+"服务热线："+data.body+"")
                             }else{
                                 $(".fontb").text(""+cityName+"服务热线：400-086-1131")
-                            }
-                            
-
+                            }                         
                             }else{
                             console.log(1);
                          };

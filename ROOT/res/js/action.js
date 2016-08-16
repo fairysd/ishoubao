@@ -270,6 +270,20 @@ function openNewPage(){
 	window.open(ad[cur].url);
 }
 $(function(){
+	// 回收模块特效
+	$(".toggle-click").click(function(){
+		
+		if ($(".noble-metal").css("display")==="none") {
+			$(".mywrapper.indexbg").animate({height:"550px"});
+			$(".noble-metal").css("display","block");
+			$(this).find("img").attr("src","/res/images/new/index/fuhao_03.png");
+		}else{
+			$(".mywrapper.indexbg").animate({height:"390px"});
+			$(".noble-metal").css("display","none");
+			$(this).find("img").attr("src","/res/images/new/index/fuhao_06.png");
+		}
+		return false;
+	})
 	//获取门店数据
 	 $.ajax({
 		            url: "/area/getareasByCityid/856",
@@ -308,11 +322,11 @@ $(function(){
 			            	var kaituoNum = 5-detail.length;
 			            	// console.log(detail);
 			            	for (var i = 0; i < detail.length; i++) {
-			            		$("#storedetail").append("<li tel="+detail[i].tel+" address="+detail[i].address+" picurl="+detail[i].picurl+" latitude="+detail[i].latitude+" longitude="+detail[i].longitude+" ><a>"+detail[i].name+"</a><p>"+detail[i].address+"</p><p>"+detail[i].tel+"</p></li>")
+			            		$("#storedetail").append("<li tel="+detail[i].tel+" address="+detail[i].address+" picurl="+detail[i].picurl+" latitude="+detail[i].latitude+" longitude="+detail[i].longitude+" ><a class=bgimg>"+detail[i].name+"</a><p>"+detail[i].address+"</p><p>"+detail[i].tel+"</p></li>")
 			            	};
 			            	if (kaituoNum >= 0) {
 			            		for (var i = 0; i < kaituoNum; i++) {
-			            	 	$("#storedetail").append("<li class='last kuozhan'><img src=/asb-web/res/images/new/login/icon.png /><a class='kuozhan'>门店开拓中...</a></li>")
+			            	 	$("#storedetail").append("<li class='last kuozhan'><img src=/res/images/new/login/icon.png /><a class='kuozhan'>门店开拓中...</a></li>")
 			            		};
 			            	};
 			            }else{
@@ -352,11 +366,11 @@ $(function(){
 			            	var kaituoNum = 5-detail.length;
 			            	// console.log(kaituoNum);   	
 			            	for (var i = 0; i < detail.length; i++) {
-			            		$("#storedetail").append("<li tel="+detail[i].tel+" address="+detail[i].address+" picurl="+detail[i].picurl+" latitude="+detail[i].latitude+" longitude="+detail[i].longitude+" ><a>"+detail[i].name+"</a><p>"+detail[i].address+"</p><p>"+detail[i].tel+"</p></li>")
+			            		$("#storedetail").append("<li tel="+detail[i].tel+" address="+detail[i].address+" picurl="+detail[i].picurl+" latitude="+detail[i].latitude+" longitude="+detail[i].longitude+" ><a class=bgimg>"+detail[i].name+"</a><p>"+detail[i].address+"</p><p>"+detail[i].tel+"</p></li>")
 			            	};
 			            	if (kaituoNum >= 0) {
 			            		for (var i = 0; i < kaituoNum; i++) {
-			            	 	$("#storedetail").append("<li class='last kuozhan'><img src=/asb-web/res/images/new/login/icon.png /><a class='kuozhan'>门店开拓中...</a></li>")
+			            	 	$("#storedetail").append("<li class='last kuozhan'><img src=/res/images/new/login/icon.png /><a class='kuozhan'>门店开拓中...</a></li>")
 			            		};
 			            	};
 			            	 			            	
