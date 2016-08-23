@@ -5,6 +5,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ include file="common/tag.jsp"%>
+<%@ taglib prefix="asb" uri="/cmstag" %>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -12,7 +13,7 @@
     <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1" />
     <meta name="renderer" content="webkit" />
     <meta content="zh-cn" http-equiv="content-language" />
-    <meta name="keywords" content="苏州黄金回收，黄金回收多少钱一克，千足金回收价，黄金现在多少钱一克，苏州二手奢侈品回收，黄金回收价格查询" />
+    <meta name="keywords" content="苏州黄金回收，黄金回收多少钱一克，今日黄金现价，黄金现在多少钱一克，苏州二手奢侈品回收，黄金回收价格查询" />
     <meta name="description" content="苏州爱收宝网络科技有限公司的总店位于苏州市观前街，以回收与售卖黄金珠宝、名包名表、手机数码为主。爱收宝采用线上结合线下的方式，来经营二手名品的回收、寄卖、代售、护理、置换的业务。"/>
     <title>爱收宝</title>
     <meta name="baidu-site-verification" content="ZXJUwMQOuK" />
@@ -21,7 +22,6 @@
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/main.css">
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/root.css">
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/idangerous.swiper.css"> 
-    <link type="text/css" rel="stylesheet" href="${baseurl}res/css/style.css">
     <link type="text/css" rel="stylesheet" href="${baseurl}res/js/layer/skin/layer.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
  <!--寄卖轮转图-->
@@ -93,6 +93,10 @@
     padding-top: 50px;
     box-shadow:#999999 1px 1px 1px 1px;
             }
+            .newslist li span{
+                float: right;
+                color:#000;
+            }
     </style>
     <%@ include file="common/otherHeader.jsp"%>
 </head>
@@ -123,13 +127,6 @@
                         <ul class="quickEstimateBrand">
                         </ul>
                     </label>
-                    <%--<label class = "select"><span>回收方法</span><b>门店</b>--%>
-                        <%--<ul>--%>
-                            <%--<li>门店</li>--%>
-                            <%--<li>快递</li>--%>
-                            <%--<li>上门</li>--%>
-                        <%--</ul>--%>
-                    <%--</label>--%>
                     <label>
                         <button id="quickEstimateBtn" data-url="">估价搜索</button>
                     </label>
@@ -156,29 +153,10 @@
                 </li>
             </ul>
         </div>
-    </div>
-    <!--<div class = "imgBox">
-        <ul>
-            <li class = "active">
-                <div class = "img_out_box"><img src = "${baseurl}res/images/banner1.jpg"></div>
-            </li>
-            <li>
-                <div class = "img_out_box"><img src = "${baseurl}res/images/banner2.jpg"></div>
-            </li>
-            <li>
-                <div class = "img_out_box"><img src = "${baseurl}res/images/banner3.jpg"></div>
-            </li>
-            <li>
-                <div class = "img_out_box"><img src = "${baseurl}res/images/banner4.jpg"></div>
-            </li>
-            <li>
-                <div class = "img_out_box"><img src = "${baseurl}res/images/banner5.jpg"></div>
-            </li>
-        </ul>
-    </div>-->
+    </div> 
     <div class = "swiper-container">
             <div class="swiper-wrapper">
-                <div class = "swiper-slide">
+                <!-- <div class = "swiper-slide">
                     <a href="${mybaseurl}/category/first"><img src = "${baseurl}res/images/banner1.jpg"></a>
                 </div>
                 <div class = "swiper-slide" >
@@ -192,7 +170,14 @@
                 </div>
                 <div class = "swiper-slide">
                     <a href="http://shop.aishoubao.com"><img src = "${baseurl}res/images/banner5.jpg"></a>
-                </div>
+                </div> -->
+                <asb:ad posId="eb46a0578c5a40ea94e47d8d93ebc150" res="testres">
+                         <c:forEach items="${testres}" var="article">
+                         <div class = "swiper-slide">
+                            <a href="${article.url}"><img src = "${article.picurl}"></a>
+                        </div>
+                        </c:forEach>
+                </asb:ad>
             </div>
             <div class="pagination"></div>  
         </div>
@@ -245,16 +230,7 @@
                     <h3>限时优惠</h3>
                     <div class="shoppic">
                         <a href="http://shop.aishoubao.com"><img src="${mybaseurl}/res/images/new/shop/shoppic_10.jpg" alt="" /></a>
-                    </div>
-                    <!--<div class = "t_nav">
-                        <ul class = "t_nav_right" style="padding-top:45px;">
-                            <li class = "active"><i class="iconfont f24">&#xe604;</i> <span>大牌名包</span></li>
-                            <li><i class="iconfont f24">&#xe617;</i> <span>大牌名表</span></li>
-                            <li><i class="iconfont f20">&#xe602;</i> <span>黄金白银</span></li>
-                            <li><i class="iconfont f24">&#xe601;</i> <span>钻石珠宝</span></li>
-                            <li><i class="iconfont f24">&#xe605;</i> <span>手机数码</span></li>
-                        </ul>
-                    </div>-->
+                    </div> 
                 </div>
                 <div class="pure-u-3-4 xinshang">
                     <h3>名品欣赏</h3>
@@ -267,100 +243,7 @@
                     <div class="pure-u-1-3">
                         <a href="http://shop.aishoubao.com/category.php?id=272"><img src="${mybaseurl}/res/images/new/shop/shoppic_07.jpg" alt="" /></a>
                     </div>
-                    <!--<div class = "t_content">
-                        <ul class = "t_c_left">
-                            <li class = "active">
-                                <div class="pure-g mt20">
-                                    <c:forEach items="${goods18.goods}" var="good">
-                                    <div class="pure-u-1-4 tac pb20">
-                                        <a href="http://shop.aishoubao.com/${good.goodsUrl}" target="_blank">
-                                        <div class="hsdiv">
-                                                <img class="lazy" data-original="http://shop.aishoubao.com/${good.goodsImg}"/>
-                                                <p>${good.goodsName}</p>
-                                        </div>
-                                        <div class="myshop_pricediv">
-                                            <div class="pure-u-1-2">${good.goodsPrice}</div>
-                                            <div class="pure-u-1-2">立即购买</div>
-                                        </div>
-                                        </a>
-                                    </div>
-                                    </c:forEach>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="pure-g mt20">
-                                    <c:forEach items="${goods352.goods}" var="good">
-                                        <div class="pure-u-1-4 tac pb10">
-                                            <a href="http://shop.aishoubao.com/${good.goodsUrl}" target="_blank">
-                                                <div class="hsdiv">
-                                                    <img src="http://shop.aishoubao.com/${good.goodsImg}"/>
-                                                    <p>${good.goodsName}</p>
-                                                </div>
-                                                <div class="myshop_pricediv">
-                                                    <div class="pure-u-1-2">${good.goodsPrice}</div>
-                                                    <div class="pure-u-1-2">立即购买</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </c:forEach>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="pure-g mt20">
-                                    <c:forEach items="${goods150.goods}" var="good">
-                                        <div class="pure-u-1-4 tac pb10">
-                                            <a href="http://shop.aishoubao.com/${good.goodsUrl}" target="_blank">
-                                                <div class="hsdiv">
-                                                    <img src="http://shop.aishoubao.com/${good.goodsImg}"/>
-                                                    <p>${good.goodsName}</p>
-                                                </div>
-                                                <div class="myshop_pricediv">
-                                                    <div class="pure-u-1-2">${good.goodsPrice}</div>
-                                                    <div class="pure-u-1-2">立即购买</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </c:forEach>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="pure-g mt20">
-                                    <c:forEach items="${goods272.goods}" var="good">
-                                        <div class="pure-u-1-4 tac pb10">
-                                            <a href="http://shop.aishoubao.com/${good.goodsUrl}" target="_blank">
-                                                <div class="hsdiv">
-                                                    <img src="http://shop.aishoubao.com/${good.goodsImg}"/>
-                                                    <p>${good.goodsName}</p>
-                                                </div>
-                                                <div class="myshop_pricediv">
-                                                    <div class="pure-u-1-2">${good.goodsPrice}</div>
-                                                    <div class="pure-u-1-2">立即购买</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </c:forEach>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="pure-g mt20">
-                                    <c:forEach items="${goods292.goods}" var="good">
-                                        <div class="pure-u-1-4 tac pb10">
-                                            <a href="http://shop.aishoubao.com/${good.goodsUrl}" target="_blank">
-                                                <div class="hsdiv">
-                                                    <img src="http://shop.aishoubao.com/${good.goodsImg}"/>
-                                                    <p>${good.goodsName}</p>
-                                                </div>
-                                                <div class="myshop_pricediv">
-                                                    <div class="pure-u-1-2">${good.goodsPrice}</div>
-                                                    <div class="pure-u-1-2">立即购买</div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </c:forEach>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>-->
+                    
                 </div>
             </div>        
     </div>
@@ -436,10 +319,17 @@
             <div class="pure-u-4-5 hotnews">                
                 <div class="newsmarquee">
                     <ul class="newslist">
-                        <li><a href="${mybaseurl}/news/1"><span>></span>知识篇：3D硬金与千足金的区别<span style="text-align: right;display: block;float: right; color: #000000;">2016-05-23</span></a></li>
+                      <c:if test="${empty curId}">
+                        <asb:articlePos posId="1" count="10" res="testres">
+                         <c:forEach items="${testres}" var="article">
+                        <li><a href="${mybaseurl}/news/article/${article.id}">${article.title}<span><fmt:formatDate value="${article.publishTime}" type="date" dateStyle="long"/></span></a></li>
+                        </c:forEach>
+                        </asb:articlePos>
+                    </c:if>
+        <!--                 <li><a href="${mybaseurl}/news/1"><span>></span>知识篇：3D硬金与千足金的区别<span style="text-align: right;display: block;float: right; color: #000000;">2016-05-23</span></a></li>
                         <li><a href="${mybaseurl}/news1.jsp"><span>></span>走进爱收宝系列：感谢你能来！<span style="text-align: right;display: block;float: right;color: #000000;">2016-04-13</span></a></li>
                         <li><a href="${mybaseurl}/news.jsp"><span>></span>走进爱收宝系列：你说登山的意义在于什么？<span style="text-align: right;display: block;float: right;color: #000000;">2016-07-09</span></a></li>
-                        <li><a href="${mybaseurl}/news/4"><span>></span>细节控戛纳红毯上的这些珠宝你看到了吗？<span style="text-align: right;display: block;float: right;color: #000000;">2016-01-06</span></a></li>                       
+                        <li><a href="${mybaseurl}/news/4"><span>></span>细节控戛纳红毯上的这些珠宝你看到了吗？<span style="text-align: right;display: block;float: right;color: #000000;">2016-01-06</span></a></li> -->                       
                     </ul>
                 </div>
             </div>
