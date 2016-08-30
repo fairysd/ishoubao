@@ -296,7 +296,7 @@ $(function(){
                             if (data.body) {
                                 $(".fontb").text(""+cityName+"服务热线："+data.body+"")
                             }else{
-                                $(".fontb").text(""+cityName+"服务热线：400-086-1131")
+                                $(".fontb").text(""+cityName+"服务热线：400-828-6811")
                             }                         
                             }else{
                             console.log(1);
