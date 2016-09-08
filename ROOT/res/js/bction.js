@@ -295,6 +295,10 @@ $(function(){
                             var cityName = $(".city_select span").text();
                             if (data.body) {
                                 $(".fontb").text(""+cityName+"服务热线："+data.body+"")
+                                $(".cityname").text(cityName);
+                                $(".cityphone").text(data.body);
+                                 $(".footcityname").text(""+cityName+"服务热线：")
+                                 $(".footcityphone").text(data.body);
                             }else{
                                 $(".fontb").text(""+cityName+"服务热线：400-828-6811")
                             }                         

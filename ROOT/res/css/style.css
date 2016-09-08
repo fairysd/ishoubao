@@ -167,7 +167,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
     display: block;
     width: 0;
     height: 0;
-    border: 3px solid #fff; border-left-color: #4d4d4d; border-top-color: #4d4d4d;
+    border: 3px solid transparent; border-right-color: #4d4d4d; border-bottom-color: #4d4d4d;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
@@ -729,7 +729,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #
 .mt20{margin-top:20px;}
 .nav_send a{cursor: default;}
 .sale_list a:hover{color:#9A6700;}
-.vip{font-size:16px;color:#323232;font-style: italic;}
+.vip{font-size:16px;color:#323232;font-style: italic;font-family: 微软雅黑;}
 .red1{font-size:16px;padding-left:20px;padding-right: 20px;}
 .serviceRx{text-align:right;padding-right:20px;}
 .serviceRx img{padding:20px;}

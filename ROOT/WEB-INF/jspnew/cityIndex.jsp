@@ -6,6 +6,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ include file="common/tag.jsp"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="asb" uri="/cmstag" %>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -19,8 +20,8 @@
     <link rel="canonical" href="http://www.aishoubao.com/" />
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/style.css">
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/main.css">
+    <link type="text/css" rel="stylesheet" href="${baseurl}res/css/idangerous.swiper.css">
     <link type="text/css" rel="stylesheet" href="${baseurl}res/css/root.css">
-    <link type="text/css" rel="stylesheet" href="${mybaseurl}/res/css/unslider.css">
     <link type="text/css" rel="stylesheet" href="${baseurl}res/js/layer/skin/layer.css">
     <style>
         .quickEstimateBrand{height:150px;overflow-y:scroll;}
@@ -126,6 +127,27 @@
                 top: 17px;
                 width: 28px;
             }
+            .citybanner .swiper-slide{
+                width: 100%;
+                position: relative;
+                overflow: hidden;
+            }
+            .citybanner .swiper-container .swiper-slide{
+                position: relative;
+            }
+            .citybanner .swiper-slide img{
+                position: relative;
+                left: 50%;
+                margin-left: -600px;
+                height: 376px;
+            }
+            .citybanner .swiper-container{
+                height: 376px;
+            }
+             .newslist li span{
+                float: right;
+                color:#000;
+            }
     </style>
 </head>
 <body>
@@ -133,41 +155,18 @@
 <!-- banner -->
 <div class="myrow citybanner">
     <div class="pure-g">
-        <div class="pure-u-3-4" style="width:800px;">
-            <div class="my-slider">
-                <ul>
+        <div class="pure-u-1-1">
+            <div class="swiper-container">
+                <ul class="swiper-wrapper">
                     <c:forEach items="${ads1}" var="ad">
-                        <li data-nav="${ad.name}"><a href="${ad.url}"><img src="${ad.picurl}"/></a></li>
+                        <li class = "swiper-slide"><a href="${ad.url}"><img src="${ad.picurl}"/></a></li>
                     </c:forEach>
                 </ul>
+                <div class="pagination"></div>
             </div>
-        </div>
-        <div class="pure-u-1-4 banner-right">
-            <div class="pure-g floor1 tac">
-                <div class="pure-u-1-1">
-                    专业的二手回收平台
-                </div>
-            </div>
-            <div class="pure-g floor2 tac">
-                <c:set var="shopTj" value="${fn:split(shoptj, ',')}"/>
-                <div class="pure-u-1-3"><p><span class="tjnumber">${shopTj[0]}</span>家</p><p class="f14">全国门店</p></div>
-                <div class="pure-u-1-3"><p><span class="tjnumber">${shopTj[1]}</span>人</p><p class="f14">鉴定专员</p></div>
-                <div class="pure-u-1-3"><p><span class="tjnumber">${shopTj[2]}</span>个</p><p class="f14">订单成交量</p></div>
-            </div>
-            <div class="pure-g floor3 tac citybtn">
-                <div class="pure-u-1-2"><a href="${mybaseurl}/category/first"><img src="${mybaseurl}/res/images/v2/ban_1.gif"/></a></div>
-                <div class="pure-u-1-2" style="margin-left: 25px;"> <a href="${mybaseurl}/mortgage/"><img src="${mybaseurl}/res/images/v2/ban_2.gif"/></a></div>
-            </div>
-            <div class="pure-g floor4 tac">
-                <div class="pure-u-1-4"><img src="${mybaseurl}/res/images/v2/huanbao.png"/><p>环保</p></div>
-                <div class="pure-u-1-4"><img src="${mybaseurl}/res/images/v2/liansuo.png"/><p>连锁</p></div>
-                <div class="pure-u-1-4"><img src="${mybaseurl}/res/images/v2/gongdao.png"/><p>公道</p></div>
-                <div class="pure-u-1-4"><img src="${mybaseurl}/res/images/v2/jianding.png""/><p>鉴定</p></div>
-            </div>
-        </div>
+        </div>        
     </div>
 </div>
-<div class="out_box" style="margin-top: -13px;"><img src="${mybaseurl}/res/images/v2/citybanner.jpg"/></div>
 <!-- 区域店推荐 -->
 <div class="mywrapper mt10">
     <div class = "out_box">
@@ -246,14 +245,58 @@
     </div>
 </div>
 <%@include file="common/index_common.jsp"%>
+<div class = "out_box" style="margin:35px auto;">
+    <div class = "title">
+        <h6>Love to receive Po information<br>爱收宝资讯</h6>
+    </div>    
+        <div class="pure-g zixunbl">
+            <div class="pure-u-1-5">
+                <img src="${mybaseurl}/res/images/new/zinxunpic_03.jpg" alt="" />
+            </div>
+            <div class="pure-u-4-5 hotnews">                
+                <div class="newsmarquee">
+                    <ul class="newslist">
+                      <c:if test="${empty curId}">
+                        <asb:articlePos posId="1" count="10" res="testres">
+                         <c:forEach items="${testres}" var="article">
+                        <li><a href="${mybaseurl}/news/article/${article.id}">${article.title}<span><fmt:formatDate value="${article.publishTime}" type="date" dateStyle="long"/></span></a></li>
+                        </c:forEach>
+                        </asb:articlePos>
+                    </c:if>
+        <!--                 <li><a href="${mybaseurl}/news/1"><span>></span>知识篇：3D硬金与千足金的区别<span style="text-align: right;display: block;float: right; color: #000000;">2016-05-23</span></a></li>
+                        <li><a href="${mybaseurl}/news1.jsp"><span>></span>走进爱收宝系列：感谢你能来！<span style="text-align: right;display: block;float: right;color: #000000;">2016-04-13</span></a></li>
+                        <li><a href="${mybaseurl}/news.jsp"><span>></span>走进爱收宝系列：你说登山的意义在于什么？<span style="text-align: right;display: block;float: right;color: #000000;">2016-07-09</span></a></li>
+                        <li><a href="${mybaseurl}/news/4"><span>></span>细节控戛纳红毯上的这些珠宝你看到了吗？<span style="text-align: right;display: block;float: right;color: #000000;">2016-01-06</span></a></li> -->                       
+                    </ul>
+                </div>
+            </div>
+            <!--<div class="pure-u-2-5" style="text-align:right;"><img class="lazy" style="padding-left:175px;" data-original="${mybaseurl}/res/images/v2/news.jpg"/></div>-->
+        </div>
+</div>
+<div style="margin-top:50px;">
+    <div>
+        <img style="width:100%;" src="${mybaseurl}/res/images/new/fourf.jpg" alt="">
+    </div>
+</div>
 
 <%@ include file="common/footer.jsp"%>
 <script src="${baseurl}res/js/jquery.lazyload.min.js"></script>
 <script src="${mybaseurl}/res/js/unslider-min.js"></script>
 <script type="text/javascript" src="${baseurl}res/js/layer/layer.js"></script>
+<script type="text/javascript" src="${baseurl}res/js/idangerous.swiper.js"></script>
+<script type="text/javascript" src="${baseurl}res/js/scroll.js"></script>
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=DeQszKLbgZNzVKY4ZflHkDbX"></script>
 <script type="text/javascript" src="${baseurl}res/js/bction.js"></script>
 <script type="text/javascript"> 
+var mySwiper = new Swiper('.swiper-container',{
+                    pagination: '.pagination',
+                    autoplay:2000,
+                    loop:true,
+                    speed:1000,
+                    grabCursor: true,
+                    autoplayDisableOnInteraction : false,
+                    paginationClickable: true
+                  })
             function AdItem(name, phone, address, Photo, price, time, url) {
                 this.name = name;
                 this.phone = phone;
@@ -341,6 +384,12 @@
     }
 
     $(function(){
+         $('.newsmarquee').kxbdSuperMarquee({
+            isMarquee:true,
+            isEqual:true,
+            scrollDelay:30,
+            direction:'up'
+        });
         getShopsByArea(${areas[0].id}, 0);
 
         $("img.lazy").lazyload({skip_invisible : false,effect: "fadeIn"});
