@@ -310,16 +310,23 @@ $(function(){
                     console.log("请求错误")
                     }
                 });
-    //获取地区电话号码
-    $.ajax({
-                    url: "recycle-api/api/shoptelByCityId/"+cityId,
+    //获取地区电话号码end
+    //获取banner         
+     $.ajax({
+                    url: "api/cms/substation/"+cityId,
                     dataType: "json",                   
                     async: false,                   
                     type: "get",
                     success: function(data) {
                         if(data.success){
-                            console.log(data);
-                            }else{
+                            if (banners in data) {
+                                var banners = data.body.banners;
+                                var bannersImg = $(".swiper-slide a img");                          
+                               for (var i = 0; i < 5; i++) {
+                                $(bannersImg[i]).attr("src", ""+banners[i].picurl+"");
+                            };
+                            }                            
+                        }else{
                             console.log(1);
                          };
                         },
@@ -327,6 +334,18 @@ $(function(){
                     console.log("请求错误")
                     }
                 });
+     //获取banner end
+     //初始化swiper
+        var mySwiper = new Swiper('.swiper-container',{
+                    pagination: '.pagination',
+                    autoplay:2000,
+                    loop:true,
+                    speed:1000,
+                    grabCursor: true,
+                    autoplayDisableOnInteraction : false,
+                    paginationClickable: true
+                  })
+    //初始化swiper end
     //获取门店数据
      $.ajax({
                     url: "/area/getareasByCityid/"+cityId,
